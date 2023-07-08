@@ -1,0 +1,59 @@
+<div class="halo-block halo-block-product halo-block-product-tabs padding-top-30 padding-bottom-50">
+    <div class="container">
+        <div class="productCarousel-tabs">
+            <ul class="tabs haloCustomScrollbar-x disable-srollbar" data-tab role="tablist">
+                {{#each categories}}
+                    {{#if name '===' 'Men'}}
+                        {{#each (limit children ../theme_settings.home_product_block-id-tab-cate-limit)}}
+                            {{#if @index '==' 0}}
+                                <li class="tab is-active" role="presentation">
+                                    <a class="tab-title" href="#category_{{id}}" role="tab" tabindex="0" aria-selected="true" aria-controls="category_{{id}}">
+                                        <span>{{name}}</span>
+                                    </a>
+                                </li>
+                            {{else}}
+                                <li class="tab" role="presentation">
+                                    <a class="tab-title" href="#category_{{id}}" role="tab" tabindex="0" aria-selected="false" aria-controls="category_{{id}}">
+                                        <span>{{name}}</span>
+                                    </a>
+                                </li>
+                            {{/if}}
+                        {{/each}}
+                    {{/if}}
+                {{/each}}
+            </ul>
+            <div class="tabs-contents">
+                {{#each categories}}
+                    {{#if name '===' 'Men'}}
+                        {{#each (limit children ../theme_settings.home_product_block-id-tab-cate-limit)}}
+                            {{#if @index '==' 0}}
+                                <div class="tab-content is-active" id="category_{{id}}" role="tabpanel" aria-hidden="true" data-tab-category-id="{{id}}" data-tab-category-url="{{concat url ../../data-sort-tab}}">
+                                    <div class="loadingOverlay"></div>
+                                    <div class="productCarousel">
+                                        {{> components/halothemes/product/halo-sample-product-2}}
+                                        {{> components/halothemes/product/halo-sample-product-2}}
+                                        {{> components/halothemes/product/halo-sample-product-2}}
+                                        {{> components/halothemes/product/halo-sample-product-2}}
+                                        {{> components/halothemes/product/halo-sample-product-2}}
+                                    </div>
+                                </div>
+                            {{else}}
+                                <div class="tab-content" id="category_{{id}}" role="tabpanel" aria-hidden="false" data-tab-category-id="{{id}}" data-tab-category-url="{{concat url ../../data-sort-tab}}">
+                                    <div class="loadingOverlay"></div>
+                                    <div class="productCarousel">
+                                        {{> components/halothemes/product/halo-sample-product-2}}
+                                        {{> components/halothemes/product/halo-sample-product-2}}
+                                        {{> components/halothemes/product/halo-sample-product-2}}
+                                        {{> components/halothemes/product/halo-sample-product-2}}
+                                        {{> components/halothemes/product/halo-sample-product-2}}
+                                    </div>
+                                </div>
+                            {{/if}}
+                        {{/each}}
+                    {{/if}}
+                {{/each}}
+            </div>
+        </div>
+    </div>
+</div>
+{{{region name="home_below_products_tab_by_category"}}}

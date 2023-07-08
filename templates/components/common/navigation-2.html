@@ -1,0 +1,22 @@
+<nav class="navUser">
+    <div class="bottomHeader-item">
+        <div class="item--quicksearch halo-search">
+            <div id="quickSearch" class="quickSearch">
+                {{> components/common/quick-search}}
+            </div>
+        </div>
+        <div class="item--cart halo-cart">
+            <a class="navUser-action" data-cart-preview data-options="align:right" href="{{urls.cart}}" aria-label="{{lang 'cart.nav_aria_label'}}">
+                <span class="navUser-item-cartLabel">
+                    <svg class="icon" role="img" aria-label="{{lang 'cart.cart_preview'}}">
+                        <title>{{lang 'cart.cart_preview'}}</title>
+                        <desc>{{lang 'cart.cart_preview'}}</desc>
+                        <use xlink:href="#icon-cart"></use>
+                    </svg>
+                </span>
+                <span class="countPill cart-quantity">{{cart.quantity}}</span>
+            </a>
+            <div class="dropdown-cart" id="cart-preview-dropdown" aria-hidden="true"></div>
+        </div>
+    </div>
+</nav>

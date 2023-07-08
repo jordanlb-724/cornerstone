@@ -1,0 +1,11 @@
+<ul class="brandList" data-brands-list-next="{{pagination.brands.next}}">
+    {{#each (sort brands)}}
+        <li class="brand" data-brand-code="{{dashcase name}}" data-brand-letter="{{limit (toLowerCase (dashcase name)) 1}}">
+            <article class="brand-name">
+                <h4 class="title">
+                    <a class="link" href="{{url}}">{{name}}</a>
+                </h4>
+            </article>
+        </li>
+    {{/each}}
+</ul>

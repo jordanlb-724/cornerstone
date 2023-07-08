@@ -1,0 +1,15 @@
+<form class="actionBar" method="get" data-sort-by data-show-products>
+    <div class="form-field">
+        <label class="form-label" for="limit">{{lang 'common.show_products_label'}}</label>
+        <select class="form-select" name="limit" id="limit">
+            <option value="9" {{#if '9' '==' theme_settings.categorypage_products_per_page }}selected{{/if}}>9 {{lang 'common.show_products'}}</option>
+            <option value="12" {{#if '12' '==' theme_settings.categorypage_products_per_page }}selected{{/if}}>12 {{lang 'common.show_products'}}</option>
+            <option value="15" {{#if '15' '==' theme_settings.categorypage_products_per_page }}selected{{/if}}>15 {{lang 'common.show_products'}}</option>
+            <option value="18" {{#if '18' '==' theme_settings.categorypage_products_per_page }}selected{{/if}}>18 {{lang 'common.show_products'}}</option>
+            <option value="21" {{#if '21' '==' theme_settings.categorypage_products_per_page }}selected{{/if}}>21 {{lang 'common.show_products'}}</option>
+            <option value="24" {{#if '24' '==' theme_settings.categorypage_products_per_page }}selected{{/if}}>24 {{lang 'common.show_products'}}</option>
+            <option value="27" {{#if '27' '==' theme_settings.categorypage_products_per_page }}selected{{/if}}>27 {{lang 'common.show_products'}}</option>
+            <option value="30" {{#if '30' '==' theme_settings.categorypage_products_per_page }}selected{{/if}}>30 {{lang 'common.show_products'}}</option>
+        </select>
+    </div>
+</form>

@@ -1,0 +1,60 @@
+{{#and (if theme_settings.halo-compare-colors) (if product.options.length)}}
+    {{#each product.options}}
+        {{#if type '===' 'Configurable_PickList_Swatch'}}
+            <div class="halo-compareColors">
+                <a class="halo-compareColors-link" href="#" data-reveal-id="compare-color-popup">
+                    <span class="icon">
+                        <img class="lazyload" src="{{cdn 'img/loading.svg'}}" data-src="{{cdn 'img/compare-color.png'}}" alt="{{lang 'products.compare_color'}}" title="{{lang 'products.compare_color'}}">
+                    </span>
+                    <span class="text">
+                        <span>{{lang 'products.compare_color'}}</span>
+                    </span>
+                </a>
+                <div id="compare-color-popup" class="modal modal--medium" data-reveal>
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h2 class="modal-header-title">{{lang 'products.compare_color_title'}}</h2>
+                            <button class="modal-close" type="button" title="Close">
+                                <span class="aria-description--hidden">Close</span>
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="halo-compareColors-swatch halo-productOptions" data-compare-color>
+                                {{#each this.values}}
+                                    <label class="form-option form-option-swatch" data-product-swatch-value="{{id}}">
+                                        {{#if image}}
+                                            <span class='form-option-variant form-option-variant--pattern' title="{{this.label}}" data-pattern="{{getImage image "24x24"}}" style="background-image: url('{{getImage image "24x24"}}');"></span>
+                                        {{/if}}
+                                        {{#if data.[2]}}
+                                            <span class='form-option-variant form-option-variant--color3' title="{{this.label}}">
+                                                <span style="background-color: #{{data.[0]}}"></span>
+                                                <span style="background-color: #{{data.[1]}}"></span>
+                                                <span style="background-color: #{{data.[2]}}"></span>
+                                            </span>
+                                        {{else}}
+                                            {{#if data.[1]}}
+                                                <span class='form-option-variant form-option-variant--color2' title="{{this.label}}">
+                                                    <span style="background-color: #{{data.[0]}}"></span>
+                                                    <span style="background-color: #{{data.[1]}}"></span>
+                                                </span>
+                                            {{else}}
+                                                {{#if data.[0]}}
+                                                    <span class='form-option-variant form-option-variant--color' title="{{this.label}}" style="background-color: #{{data.[0]}}"></span>
+                                                {{/if}}
+                                            {{/if}}
+                                        {{/if}}
+                                    </label>
+                                {{/each}}
+                            </div>
+                            <div id="color-swatch-image" class="halo-compareColors-image haloCustomScrollbar-x"></div>
+                            <div class="halo-compareColors-text">
+                                {{lang 'products.compare_color_text'}}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        {{/if}}
+    {{/each}}
+{{/and}}

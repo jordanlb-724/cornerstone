@@ -1,0 +1,5 @@
+{{#each (limit category.products theme_settings.home_product_block_limit)}}
+    <li class="product">
+        {{> components/products/card productsnew=../productsnew settings=../settings theme_settings=../theme_settings customer=../customer event="list" position=(add @index 1)}}
+    </li>
+{{/each}}

@@ -1,0 +1,13 @@
+<div class="halo-paginator">
+	{{#if page_type '==' 'category'}}
+		{{> components/common/paginator pagination.category total=category.total_products page_type=page_type theme_settings=theme_settings}}
+	{{/if}}
+
+	{{#if page_type '==' 'brand'}}
+		{{> components/common/paginator pagination.brand page_type=page_type brand=brand shop_by_brand=shop_by_brand theme_settings=theme_settings}}
+	{{/if}}
+
+	{{#if page_type '==' 'search'}}
+		{{> components/common/paginator pagination.product_results total=pagination.product_results.total page_type=page_type theme_settings=theme_settings}}
+	{{/if}}
+</div>

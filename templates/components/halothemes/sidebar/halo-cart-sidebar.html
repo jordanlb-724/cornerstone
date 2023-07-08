@@ -1,0 +1,16 @@
+{{#if page_type '!=' 'cart'}}
+	<div class="halo-sidebar halo-cart-sidebar halo-sidebar-right" id="halo-cart-sidebar">
+		<div class="halo-sidebar-header">
+			<a href="#" class="close">
+				<svg class="icon" role="img" aria-label="{{lang 'common.close'}}">
+					<title>{{lang 'common.close'}}</title>
+					<desc>{{lang 'common.close'}}</desc>
+					<use xlink:href="#icon-close"></use>
+				</svg>
+			</a>
+		</div>
+		<div class="halo-sidebar-wrapper haloCustomScrollbar">
+			{{> components/common/cart-preview}}
+		</div>
+	</div>
+{{/if}}

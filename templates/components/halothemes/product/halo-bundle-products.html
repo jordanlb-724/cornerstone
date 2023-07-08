@@ -1,0 +1,99 @@
+{{#each product.custom_fields}}
+    {{#startsWith '__bundle' name}}
+        <div class="container container-bundle-products">
+            <div class="halo-block halo-bundle-products halo-block-disable{{#or ../customer (if ../theme_settings.restrict_to_login '!==' true)}}{{else}} halo-bundle-login{{/or}}" id="halo-bundle-products" data-currency-symbol="{{../currency_selector.active_currency_code}}">
+                <div class="loadingOverlay"></div>
+                <div class="halo-block-header">
+                    <h2 class="title">{{lang 'products.bundle_title'}}</h2>
+                </div>
+                <div class="halo-block-content bundle-products-wrapper">
+                    <div class="bundle-product-left">
+                        <div class="halo-product-list">
+                            <div class="halo-product-item halo-product-itemFirst {{#if ../product.can_purchase}}isChecked{{/if}}" data-product-id="{{../product.id}}">
+                                <div class="halo-product-wrapper">
+                                    <div class="halo-product-image{{#and (if product.images.length '>=' 2) (if ../theme_settings.halo_card_image_swap)}} halo-product-imageSwap{{/and}}">
+                                        <i class="icon-plus"></i>
+                                        <a class="halo-product-link" href="{{../product.url}}">
+                                            <div class="halo-product-container">
+                                                {{> components/common/responsive-img
+                                                    image=../product.main_image
+                                                    fallback_size=../theme_settings.productgallery_size
+                                                    lazyload=../theme_settings.lazyload_mode
+                                                    default_image=../theme_settings.default_image_product
+                                                }}
+                                            </div>
+                                        </a>
+                                    </div>
+                                    <div class="halo-product-content">
+                                        <form method="post" action="/cart.php" enctype="multipart/form-data">
+                                            <input type="hidden" name="action" value="add">
+                                            <input type="hidden" name="product_id" value="{{../product.id}}">
+                                            <input type="hidden" name="qty[]" value="1">
+                                            <div class="halo-detail-field">
+                                                <input class="halo-detail-checkbox form-checkbox" type="checkbox" id="fbt_product{{../product.id}}" checked disabled>
+                                                <label class="halo-detail-label form-label" for="fbt_product{{../product.id}}">
+                                                    {{#if ../theme_settings.halo_card_title '==' 'ellipsis'}}
+                                                        <span class="halo-detail-name" style="-webkit-box-orient: vertical;">
+                                                            <span class="text">{{../product.title}}</span>
+                                                        </span>
+                                                    {{else}}
+                                                        <span class="halo-detail-name">
+                                                            <span class="text">{{../product.title}}</span>
+                                                        </span>
+                                                    {{/if}}
+                                                    <span class="halo-detail-price card-price"
+                                                        {{#if ../product.price.with_tax}}data-price-value="{{../product.price.with_tax.value}}"{{/if}}
+                                                        {{#if ../product.price.without_tax}}data-price-value="{{../product.price.without_tax.value}}"{{/if}}
+                                                    >
+                                                        {{#or ../customer (if ../theme_settings.restrict_to_login '!==' true)}}
+                                                            {{> components/products/price price=../product.price theme_settings=../theme_settings}}
+                                                        {{else}}
+                                                            {{> components/common/login-for-pricing}}
+                                                        {{/or}}
+                                                    </span>
+                                                </label>
+                                            </div>
+                                            {{#if ../product.options}}
+                                                <a class="button button--primary halo-toggle-options" href="#">
+                                                    <span class="text">{{lang 'products.choose_options'}}</span>
+                                                </a>
+                                                <div class="halo-detail-options halo-productOptions" data-fbt-option-change>
+                                                    <div class="halo-option-header">
+                                                        <span class="halo-option-title">{{lang 'products.choose_options'}}</span>
+                                                        <a href="#" class="halo-option-close" aria-label="Close" role="button">
+                                                            <svg class="icon" role="img" aria-label="{{lang 'common.close'}}">
+                                                                <title>{{lang 'common.close'}}</title>
+                                                                <desc>{{lang 'common.close'}}</desc>
+                                                                <use xlink:href="#icon-close"></use>
+                                                            </svg>
+                                                        </a>
+                                                    </div>
+                                                    <div class="halo-option-content haloCustomScrollbar">
+                                                        {{#each ../product.options}}
+                                                            {{{dynamicComponent 'components/halothemes/fbt-options'}}}
+                                                        {{/each}}
+                                                        <div class="productAttributes-message">
+                                                            <p class="alertBox-message"></p>
+                                                        </div>
+                                                        {{#if ../theme_settings.halo_stock_level}}
+                                                            <div class="productView-optionsStock u-hiddenVisually">
+                                                                <span>{{lang 'products.stock_hurry_up'}}</span>
+                                                                <span data-stock-left></span>
+                                                            </div>
+                                                        {{/if}}
+                                                    </div>
+                                                </div>
+                                            {{/if}}
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bundle-product-right"></div>
+                </div>
+            </div>
+        </div>
+    {{/startsWith}}
+{{/each}}
+{{inject 'productCustomFields' product.custom_fields}}

@@ -1,0 +1,30 @@
+<div class="form-field" data-product-attribute="swatch">
+    {{#each (limit this.values 4)}}
+        <label class="form-option form-option-swatch{{#if data.[2]}} three-colors{{/if}}{{#if data.[1]}} two-colors{{/if}}" data-product-swatch-value="{{id}}">
+            {{#if image}}
+                <span class='form-option-variant form-option-variant--pattern' title="{{this.label}}" style="background-image: url('{{getImage image "24x24"}}');"></span>
+            {{/if}}
+            {{#if data.[2]}}
+                <span class='form-option-variant form-option-variant--color form-option-variant--color3' title="{{this.label}}" style="background: linear-gradient(to bottom, #{{data.[0]}} 33%, rgba(0, 0, 0, 0) 33%), linear-gradient(to bottom, #{{data.[1]}} 66%, #{{data.[2]}} 66%)">
+                    <span style="background-color: #{{data.[0]}}"></span>
+                    <span style="background-color: #{{data.[1]}}"></span>
+                    <span style="background-color: #{{data.[2]}}"></span>
+                </span>
+            {{else}}
+                {{#if data.[1]}}
+                    <span class='form-option-variant form-option-variant--color form-option-variant--color2' title="{{this.label}}" style="background: linear-gradient(to bottom, #{{data.[0]}} 50%, #{{data.[1]}} 50%);">
+                        <span style="background-color: #{{data.[0]}}"></span>
+                        <span style="background-color: #{{data.[1]}}"></span>
+                    </span>
+                {{else}}
+                    {{#if data.[0]}}
+                        <span class='form-option-variant form-option-variant--color' title="{{this.label}}" style="background-color: #{{data.[0]}}"></span>
+                    {{/if}}
+                {{/if}}
+            {{/if}}
+        </label>
+    {{/each}}
+    {{#if this.values.length '>' 4}}
+        <a href="{{url}}" class="showmore">+{{toFixed (subtract this.values.length 4) 0}}</a>
+    {{/if}}
+</div>

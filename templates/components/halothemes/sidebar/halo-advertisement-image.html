@@ -1,0 +1,11 @@
+{{#if theme_settings.halo-sidebar-image}}
+    <div class="sidebarBlock" id="advertisement-image">
+        <div class="sidebarBlock-content">
+            <div class="advertisement-image">
+                <a class="image" href="{{theme_settings.halo-sidebar-image-link}}" aria-label="{{theme_settings.halo-sidebar-image}}">
+                    <img class="lazyload" src="{{cdn 'img/loading.svg'}}" data-src="https://cdn11.bigcommerce.com/s-{{settings.store_hash}}/product_images/uploaded_images/{{theme_settings.halo-sidebar-image}}" alt="{{theme_settings.halo-sidebar-image}}" title="{{theme_settings.halo-sidebar-image}}">
+                </a>
+            </div>
+        </div>
+    </div>
+{{/if}}

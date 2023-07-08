@@ -1,0 +1,52 @@
+{{#if theme_settings.halo_sizechart}}
+    {{#if theme_settings.halo_sizechart_type '==' 'all'}}
+        <div class="productView-sizeChart{{#if product.options}} productView-sizeChartOption{{/if}}">
+            <a class="productView-sizeChart-link" href="#" data-reveal-id="modal-size-chart-form">
+                <svg class="icon" role="img" aria-hidden="true" aria-label="{{lang 'products.size_chart'}}">
+                    <title>{{lang 'products.size_chart'}}</title>
+                    <desc>{{lang 'products.size_chart'}}</desc>
+                    <use xlink:href="#icon-size-chart"></use>
+                </svg>
+                <span class="text">{{lang 'products.size_chart'}}</span>
+            </a>
+            <div id="modal-size-chart-form" class="modal productView-sizeChartform" data-reveal>
+                <div class="modal-header">
+                    <h2 class="modal-header-title">{{lang 'products.size_chart'}}</h2>
+                    <button class="modal-close" type="button" title="Close">
+                        <span class="aria-description--hidden">Close</span>
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="productView-sizeChartimg">
+                        <img class="lazyload" src="{{cdn 'img/loading.svg'}}" data-src="https://cdn11.bigcommerce.com/s-{{settings.store_hash}}/product_images/uploaded_images/{{theme_settings.halo_sizechart_image}}" alt="{{lang 'products.size_chart'}}" title="{{lang 'products.size_chart'}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    {{else if theme_settings.halo_sizechart_type '==' 'custom'}}
+        {{#each product.custom_fields}}
+            {{#if name '===' '__sizechart'}}
+                <div class="productView-sizeChart{{#if ../product.options}} productView-sizeChartOption{{/if}}">
+                    <a class="productView-sizeChart-link" href="#" data-reveal-id="modal-size-chart-form">
+                        <span class="text">{{lang 'products.size_chart'}}</span>
+                    </a>
+                    <div id="modal-size-chart-form" class="modal productView-sizeChartform" data-reveal>
+                        <div class="modal-header">
+                            <h2 class="modal-header-title">{{lang 'products.size_chart'}}</h2>
+                            <button class="modal-close" type="button" title="Close">
+                                <span class="aria-description--hidden">Close</span>
+                                <span aria-hidden="true">×</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="productView-sizeChartimg">
+                                <img class="lazyload" src="{{cdn 'img/loading.svg'}}" data-src="https://cdn11.bigcommerce.com/s-{{../settings.store_hash}}/product_images/uploaded_images/{{value}}" alt="{{lang 'products.size_chart'}}" title="{{lang 'products.size_chart'}}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               {{/if}}
+        {{/each}}
+    {{/if}}
+{{/if}}

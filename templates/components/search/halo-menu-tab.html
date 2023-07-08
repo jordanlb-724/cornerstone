@@ -1,0 +1,36 @@
+{{#if forms.search.search_error}}
+    {{lang 'search.errorMessage' }}
+{{else}}
+    {{#each categories}}
+        {{forms.search.query}}
+        {{#if ../forms.search.query '===' (toLowerCase name)}}
+            {{#if children}}
+                <nav class="navPages">
+                    <ul class="navPages-list{{#if ../theme_settings.haloMegamenu}} navPages-list-megamenu{{/if}}{{#if ../theme_settings.navigation_design '!==' 'simple'}} navPages-list-depth-max{{/if}}">
+                        {{#each children}}
+                            {{#if children}}
+                                <li class="navPages-item{{#if children}} has-dropdown{{/if}}">
+                                    <p class="navPages-action navPages-action-depth-max has-subMenu is-root{{#if is_active}} activePage{{/if}}" data-label="{{url}}" data-index="{{@index}}">
+                                        <a class="text" href="{{url}}" aria-label="{{name}}">
+                                            <span>{{name}}</span>
+                                        </a>
+                                        <span class="navPages-action-moreIcon" aria-hidden="true">
+                                            <svg class="icon"><use xlink:href="#icon-chevron-down"></svg>
+                                        </span>
+                                    </p>
+                                    {{> components/common/navigation-dropdown}}
+                                </li>
+                            {{else}}
+                                <li class="navPages-item">
+                                    <a class="navPages-action no-subMenu navPages-action-end{{#if is_active}} activePage{{/if}}" data-label="{{url}}" href="{{url}}" aria-label="{{name}}" data-index="{{@index}}">
+                                        <span class="text">{{name}}</span>
+                                    </a>
+                                </li>
+                            {{/if}}
+                        {{/each}}
+                    </ul>
+                </nav>
+            {{/if}}
+        {{/if }}
+    {{/each}}
+{{/if}}

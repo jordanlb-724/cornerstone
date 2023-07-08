@@ -1,0 +1,17 @@
+<div class="halo-global-block" data-image-load="{{cdn 'img/loading.svg'}}" data-store-hash-image="https://cdn11.bigcommerce.com/s-{{settings.store_hash}}/product_images/uploaded_images/">
+	{{> components/halothemes/sidebar/halo-side-block}}
+
+	{{> components/halothemes/global/halo-newsletter-popup}}
+
+	{{> components/halothemes/global/halo-before-you-leave}}
+
+	{{> components/halothemes/global/halo-recently-viewed-products}}
+
+	{{> components/halothemes/global/halo-first-load-site}}
+
+	{{> components/halothemes/header/halo-megamenu}}
+
+	{{#if theme_settings.haloRecentlyBought}}
+		<div id="recently_bought_list"></div>
+	{{/if}}
+</div>

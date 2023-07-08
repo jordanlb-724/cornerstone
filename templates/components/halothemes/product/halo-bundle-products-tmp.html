@@ -1,0 +1,62 @@
+<div class="halo-product-item{{#if product.can_purchase}} isChecked{{/if}}" data-product-id="{{product.id}}">
+    <div class="halo-product-wrapper">
+        <div class="halo-product-image">
+            <i class="icon-plus"></i>
+            <a class="halo-product-link{{#and (if product.images.length '>=' 2) (if theme_settings.halo_card_image_swap)}} halo-product-imageSwap{{/and}}" href="{{product.url}}">
+                <div class="halo-product-container">
+                    {{> components/common/responsive-img
+                        image=product.main_image
+                        fallback_size=theme_settings.productgallery_size
+                        lazyload=theme_settings.lazyload_mode
+                        default_image=theme_settings.default_image_product
+                    }}
+                    {{#and (if product.images.length '>=' 2) (if theme_settings.halo_card_image_swap)}}
+                        {{#each product.images}}
+                            {{#if @index '==' 1}}
+                                <span class="halo-product-image2">
+                                    {{> components/common/responsive-img
+                                        image=this
+                                        fallback_size=../../theme_settings.productgallery_size
+                                        lazyload=../../theme_settings.lazyload_mode
+                                        default_image=../../theme_settings.default_image_product
+                                    }}
+                                </span>
+                            {{/if}}
+                        {{/each}}
+                    {{/and}}
+                </div>
+            </a>
+        </div>
+        <div class="halo-product-content">
+            <form method="post" action="{{urls.cart}}" enctype="multipart/form-data">
+                <input type="hidden" name="action" value="add">
+                <input type="hidden" name="product_id" value="{{product.id}}">
+                <input type="hidden" name="qty[]" value="1">
+                <div class="halo-detail-field">
+                    <input class="halo-detail-checkbox form-checkbox" type="checkbox" id="fbt_product{{product.id}}" {{#if product.can_purchase}}checked{{else}}disabled{{/if}}>
+                    <label class="halo-detail-label form-label" for="fbt_product{{product.id}}">
+                        {{#if theme_settings.halo_card_title '==' 'ellipsis'}}
+                            <span class="halo-detail-name" style="-webkit-box-orient: vertical;">
+                                <span class="text">{{product.title}}</span>
+                            </span>
+                        {{else}}
+                            <span class="halo-detail-name">
+                                <span class="text">{{product.title}}</span>
+                            </span>
+                        {{/if}}
+                        <span class="halo-detail-price card-price"
+                            {{#if product.price.with_tax}}data-price-value="{{product.price.with_tax.value}}"{{/if}}
+                            {{#if product.price.without_tax}}data-price-value="{{product.price.without_tax.value}}"{{/if}}
+                        >
+                            {{#or customer (if theme_settings.restrict_to_login '!==' true)}}
+                                {{> components/products/price price=product.price}}
+                            {{else}}
+                                {{> components/common/login-for-pricing}}
+                            {{/or}}
+                        </span>
+                    </label>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

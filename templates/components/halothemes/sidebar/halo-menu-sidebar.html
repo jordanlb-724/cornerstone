@@ -1,0 +1,15 @@
+<div class="halo-sidebar halo-menu-sidebar halo-sidebar-left{{#if theme_settings.haloMegamenu}} halo-menu-megamenu{{/if}}" id="halo-menu-sidebar">
+    <div class="halo-sidebar-header">
+        <span class="title">{{lang 'common.menu'}}</span>
+        <a href="#" class="close">
+            <svg class="icon" role="img" aria-label="{{lang 'common.close'}}">
+                <title>{{lang 'common.close'}}</title>
+                <desc>{{lang 'common.close'}}</desc>
+                <use xlink:href="#icon-close"></use>
+            </svg>
+        </a>
+    </div>
+    <div class="halo-sidebar-wrapper navPages-container haloCustomScrollbar" data-menu>
+        {{> components/common/navigation-mobile }}
+    </div>
+</div>

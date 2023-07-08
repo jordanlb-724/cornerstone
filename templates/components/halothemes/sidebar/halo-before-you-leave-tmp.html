@@ -1,0 +1,37 @@
+<div class="card card-custom card-custom-2" data-product-id="{{product.id}}">
+    <a class="card-link" href="{{product.url}}">
+        <div class="card-img-container">
+            {{> components/common/responsive-img
+                image=product.main_image
+                class="card-image"
+                fallback_size=theme_settings.productgallery_size
+                lazyload=theme_settings.lazyload_mode
+                default_image=theme_settings.default_image_product
+            }}
+        </div>
+    </a>
+    <div class="card-content">
+        <h4 class="card-title">
+            {{#if theme_settings.halo_card_title '==' 'ellipsis'}}
+                <a href="{{product.url}}" class="card-ellipsis" style="-webkit-box-orient: vertical;">{{product.title}}</a>
+            {{else}}
+                <a href="{{product.url}}">{{product.title}}</a>
+            {{/if}}
+        </h4>
+        <div class="card-price" data-test-info-type="price">
+            {{#or customer (if theme_settings.restrict_to_login '!==' true)}}
+                {{> components/products/price price=product.price}}
+            {{else}}
+                {{> components/common/login-for-pricing}}
+            {{/or}}
+        </div>
+        {{#if theme_settings.haloAddOptionForProduct}}
+            <div class="card-option card-option-{{product.id}}">
+                {{> components/halothemes/product/halo-add-option-for-product-card}}
+            </div>
+        {{/if}}
+        <a href="{{product.url}}" class="card-action">
+            <span class="text">{{lang 'products.details_link'}}</span>
+        </a>
+    </div>
+</div>

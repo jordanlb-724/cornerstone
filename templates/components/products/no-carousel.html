@@ -1,0 +1,7 @@
+<ul class="productGrid col-lg-12 col-4 mb-4 mb-xl-0" id="{{block_id}}" data-block="{{block_id}}" data-list-name="{{list}}">
+    {{#each (limit products block_limit)}}
+        <li class="product">
+            {{> components/products/card productsnew=../productsnew settings=../settings theme_settings=../theme_settings customer=../customer event="list" position=(add @index 1)}}
+        </li>
+    {{/each}}
+</ul>

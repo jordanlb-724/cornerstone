@@ -1,0 +1,14 @@
+{{#if theme_settings.halo-sidebar-custom-block}}
+    <div class="sidebarBlock" id="advertisement-content">
+        {{#if theme_settings.halo-sidebar-custom-block-title}}
+            <h3 class="sidebarBlock-heading">{{theme_settings.halo-sidebar-custom-block-title}}</h3>
+        {{/if}}
+        {{#if theme_settings.halo-sidebar-custom-block-text}}
+            <div class="sidebarBlock-content">
+                <div class="advertisement-content">
+                    {{{theme_settings.halo-sidebar-custom-block-text}}}
+                </div>
+            </div>
+        {{/if}}
+    </div>
+{{/if}}

@@ -1,0 +1,25 @@
+<div class="halo-block halo-block-product" id="halo-similar-products">
+    <div class="container">
+        <div class="halo-block-header">
+            <h2 class="title">{{title}}</h2>
+        </div>
+        {{#if settings.data_tag_enabled}}
+            {{> components/products/carousel
+                products=products
+                productsnew=productsnew
+                block_id=block_id
+                block_limit=block_limit
+                block_column=block_column
+                list="Customers also viewed"
+            }}
+        {{else}}
+            {{> components/products/carousel
+                products=products
+                productsnew=productsnew
+                block_id=block_id
+                block_limit=block_limit
+                block_column=block_column
+            }}
+        {{/if}}
+    </div>
+</div>

@@ -1,0 +1,117 @@
+<article class="card card-product-with-banner{{#and (if product.images.length '>=' 2) (if theme_settings.halo_card_image_swap)}} card-hover{{/and}}" data-product-id="{{product.id}}">
+    <p class="text-center mt-1"><a class="text-underline-black" href="{{product.url}}">Shop Collection</a></p>
+    <figure class="card-figure">
+        {{#if theme_settings.halo-label-product}}
+            <div class="halo-badges halo-badges-{{theme_settings.halo_label_product_position}}">
+                {{#each productsnew}}
+                    {{#if id '==' ../product.id}}
+                        <div class="new-badge halo-badge">
+                            <span class="text">{{lang 'products.new_label'}}</span>
+                        </div>
+                    {{/if}}
+                {{/each}}
+                {{#or product.price.non_sale_price_with_tax product.non_sale_price_without_tax}}
+                    <div class="sale-badge halo-badge">
+                        {{#if product.price.non_sale_price_with_tax}}
+                            <span class="text">{{lang 'products.sale_label'}}{{round (subtract 100 (multiply (divide product.price.with_tax.value product.price.non_sale_price_with_tax.value) 100)) 0}}%</span>
+                        {{/if}}
+                        {{#if product.price.non_sale_price_without_tax}}
+                            <span class="text">{{lang 'products.sale_label'}}{{round (subtract 100 (multiply (divide product.price.without_tax.value product.price.non_sale_price_without_tax.value) 100)) 0}}%</span>
+                        {{/if}}
+                    </div>
+                {{/or}}
+                {{#each product.custom_fields}}
+                    {{#if name '===' '__customlabel'}}
+                        <div class="custom-badge halo-badge">
+                            <span class="text">{{{value}}}</span>
+                        </div>
+                    {{/if}}
+                    {{#if name '===' '__customlabel2'}}
+                        <div class="custom-badge-2 halo-badge">
+                            <span class="text">{{{value}}}</span>
+                        </div>
+                    {{/if}}
+                {{/each}}
+                {{#if product.out_of_stock_message}}
+                    <div class="soldOut-badge halo-badge">
+                        <span class="text">{{lang 'products.sold_out_label'}}</span>
+                    </div>
+                {{/if}}
+            </div>
+        {{/if}}
+        <a href="{{product.url}}" class="card-link">
+            <div class="card-img-container{{#if product.images.length '<' 1}} card-img-container2{{/if}} {{theme_settings.productwithbanner_size}}">
+                {{#unless product.images.length '<' 1}}
+                    {{> components/common/responsive-img
+                        image=product.main_image
+                        class="card-image"
+                        fallback_size=theme_settings.productwithbanner_size
+                        lazyload=theme_settings.lazyload_mode
+                        default_image=theme_settings.default_image_product
+                    }}
+                    {{#and (if product.images.length '>=' 2) (if theme_settings.halo_card_image_swap)}}
+                        {{#each product.images}}
+                            {{#if @index '==' 1}}
+                                <span class="card-image-2">
+                                    {{> components/common/responsive-img
+                                        image=this
+                                        class=""
+                                        fallback_size=../../theme_settings.productwithbanner_size
+                                        lazyload=../../theme_settings.lazyload_mode
+                                        default_image=../../theme_settings.default_image_product
+                                    }}
+                                </span>
+                            {{/if}}
+                        {{/each}}
+                    {{/and}}
+                {{else}}
+                    {{> components/common/responsive-img
+                        class="card-no-image"
+                        fallback_size=theme_settings.productwithbanner_size
+                        lazyload=theme_settings.lazyload_mode
+                        default_image=theme_settings.default_image_product
+                    }}
+                {{/unless}}
+            </div>
+        </a>
+    </figure>
+    <div class="card-body">
+        <div class="card-body-content">
+            {{#and (if product.brand) (if theme_settings.halo_card_brand)}}
+                <p class="card-text" data-test-info-type="brandName">{{product.brand.name}}</p>
+            {{/and}}
+            <h4 class="card-title">
+                {{#if theme_settings.halo_card_title '==' 'ellipsis'}}
+                    <a href="{{product.url}}" class="card-ellipsis" style="-webkit-box-orient: vertical;">{{product.title}}</a>
+                {{else}}
+                    <a href="{{product.url}}">{{product.title}}</a>
+                {{/if}}
+            </h4>
+            {{#and (if settings.show_product_rating) (if theme_settings.halo_card_ratings)}}
+                <p class="card-rating" data-test-info-type="productRating">
+                    <span class="rating--small">
+                        {{> components/products/ratings rating=product.rating}}
+                    </span>
+                    {{#if product.num_reviews}}
+                        <span class="rating--count">({{product.num_reviews}})</span>
+                    {{/if}}
+                </p>
+            {{/and}}
+            <div class="card-price" data-test-info-type="price">
+                {{#or customer (if theme_settings.restrict_to_login '!==' true)}}
+                    {{> components/products/price price=product.price}}
+                {{else}}
+                    {{> components/common/login-for-pricing}}
+                {{/or}}
+            </div>
+
+            {{#if theme_settings.haloAddOptionForProduct}}
+                {{#if product.options}}
+                    <div class="card-option card-option-{{product.id}}">
+                        {{> components/halothemes/product/halo-add-option-for-product-card}}
+                    </div>
+                {{/if}}
+            {{/if}}
+        </div>
+    </div>
+</article>

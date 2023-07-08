@@ -1,0 +1,31 @@
+{{#if product.options}}
+    <a class="button button--primary halo-toggle-options" href="#">
+        <span class="text">{{lang 'products.choose_options'}}</span>
+    </a>
+    <div class="halo-detail-options halo-productOptions" data-fbt-option-change>
+        <div class="halo-option-header">
+            <span class="halo-option-title">{{lang 'products.choose_options'}}</span>
+            <a href="#" class="halo-option-close" aria-label="Close" role="button">
+                <svg class="icon" role="img" aria-label="{{lang 'common.close'}}">
+                    <title>{{lang 'common.close'}}</title>
+                    <desc>{{lang 'common.close'}}</desc>
+                    <use xlink:href="#icon-close"></use>
+                </svg>
+            </a>
+        </div>
+        <div class="halo-option-content haloCustomScrollbar">
+            {{#each product.options}}
+                {{{dynamicComponent 'components/halothemes/fbt-options'}}}
+            {{/each}}
+            <div class="productAttributes-message">
+                <p class="alertBox-message"></p>
+            </div>
+            {{#if theme_settings.halo_stock_level}}
+                <div class="productView-optionsStock u-hiddenVisually">
+                    <span>{{lang 'products.stock_hurry_up'}}</span>
+                    <span data-stock-left></span>
+                </div>
+            {{/if}}
+        </div>
+    </div>
+{{/if}}

@@ -1,0 +1,38 @@
+{{#each product.options}}
+    {{#if type '===' 'Configurable_PickList_Swatch'}}
+        <div class="form-field">
+            {{#each (limit this.values 5)}}
+                <label class="form-option form-option-swatch" data-product-swatch-value="{{id}}">
+                    {{#if image}}
+                        <span class="form-option-tooltip">{{this.label}}</span>
+                        <span class='form-option-variant form-option-variant--pattern' title="{{this.label}}" style="background-image: url('{{getImage image "24x24"}}');"></span>
+                    {{/if}}
+                    {{#if data.[2]}}
+                        <span class="form-option-tooltip">{{this.label}}</span>
+                        <span class='form-option-variant form-option-variant--color form-option-variant--color2' title="{{this.label}}">
+                            <span style="background-color: #{{data.[0]}}"></span>
+                            <span style="background-color: #{{data.[1]}}"></span>
+                            <span style="background-color: #{{data.[2]}}"></span>
+                        </span>
+                    {{else}}
+                        {{#if data.[1]}}
+                            <span class="form-option-tooltip">{{this.label}}</span>
+                            <span class='form-option-variant form-option-variant--color form-option-variant--color2' title="{{this.label}}">
+                                <span style="background-color: #{{data.[0]}}"></span>
+                                <span style="background-color: #{{data.[1]}}"></span>
+                            </span>
+                        {{else}}
+                            {{#if data.[0]}}
+                                <span class="form-option-tooltip">{{this.label}}</span>
+                                <span class='form-option-variant form-option-variant--color' title="{{this.label}}" style="background-color: #{{data.[0]}}"></span>
+                            {{/if}}
+                        {{/if}}
+                    {{/if}}
+                </label>
+            {{/each}}
+            {{#if this.values.length '>' 5}}
+                <a href="{{../../../product.url}}" class="showmore">+{{toFixed (subtract this.values.length 4) 0}}</a>
+            {{/if}}
+        </div>
+    {{/if}}
+{{/each}}

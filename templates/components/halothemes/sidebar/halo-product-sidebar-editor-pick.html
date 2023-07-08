@@ -1,0 +1,18 @@
+{{#if theme_settings.halo-sidebar-products}}
+    {{#if listid}}
+        <div class="sidebarBlock featured-products" id="product-by-list-{{id}}" data-list-id="{{listid}}">
+            <div class="loadingOverlay"></div>
+            <h3 class="sidebarBlock-heading">{{title}}</h3>
+            <div class="sidebarBlock-content">
+                <div class="products-list">
+                    <div class="productById" id="block_{{id}}" data-block="block_{{id}}"></div>
+                    {{#if theme_settings.halo-sidebar-products-btn}}
+                        <a href="{{theme_settings.halo-sidebar-products-link}}" class="link">
+                            <span class="text">{{theme_settings.halo-sidebar-products-btn}}</span>
+                        </a>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    {{/if}}
+{{/if}}

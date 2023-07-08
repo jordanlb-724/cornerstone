@@ -1,0 +1,18 @@
+{{#if theme_settings.halo-ask-an-expert}}
+    {{#unless page_type '==' 'product'}}
+        <div class="halo-ask-an-expert-btn">
+            <a class="ask-an-expert-link" href="#">
+                <img class="lazyload" src="{{cdn 'img/loading.svg'}}" data-src="https://cdn11.bigcommerce.com/s-{{settings.store_hash}}/product_images/uploaded_images/{{theme_settings.halo-ask-an-expert-btn}}" alt="{{theme_settings.halo-ask-an-expert-title}}" title="{{theme_settings.halo-ask-an-expert-title}}">
+                <span class="icon">
+                    <svg><use xlink:href="#icon-question"></use></svg>
+                </span>
+            </a>
+        </div>
+    {{else}}
+        <div class="halo-askAnExpert">
+            <a class="button ask-an-expert-link" href="#">
+                <span class="text">{{theme_settings.halo-ask-an-expert-title}}</span>
+            </a>
+        </div>
+    {{/unless}}
+{{/if}}

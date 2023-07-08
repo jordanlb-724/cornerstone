@@ -1,0 +1,90 @@
+<article class="card card-quick-search{{#and (if images.length '>=' 2) (if theme_settings.halo_card_image_swap)}} card-hover{{/and}}" data-product-id="{{id}}" {{#if settings.data_tag_enabled}} data-event-type="{{event}}" data-entity-id="{{id}}" data-position="{{position}}" data-name="{{name}}" data-product-category="{{#each category}}{{#if @last}}{{this}}{{else}}{{this}}, {{/if}}{{/each}}" data-product-brand="{{brand.name}}" data-product-price="{{#if price.with_tax}}{{price.with_tax.value}}{{else}}{{price.without_tax.value}}{{/if}}"  {{/if}}>
+    <figure class="card-figure">
+        <a href="{{url}}" class="card-link" {{#if settings.data_tag_enabled}} data-event-type="product-click" {{/if}}>
+            <div class="card-img-container{{#if images.length '<' 1}} card-img-container2{{/if}}">
+                {{#unless images.length '<' 1}}
+                    {{> components/common/responsive-img
+                        image=image
+                        class="card-image"
+                        fallback_size=theme_settings.product_quicksearch_size
+                        lazyload=theme_settings.lazyload_mode
+                        default_image=theme_settings.default_image_product
+                    }}
+                    {{#and (if images.length '>=' 2) (if theme_settings.halo_card_image_swap)}}
+                        {{#each images}}
+                            {{#if @index '==' 1}}
+                                <span class="card-image-2">
+                                    {{> components/common/responsive-img
+                                        image=this
+                                        class=""
+                                        fallback_size=../../theme_settings.product_quicksearch_size
+                                        lazyload=../../theme_settings.lazyload_mode
+                                        default_image=../../theme_settings.default_image_product
+                                    }}
+                                </span>
+                            {{/if}}
+                        {{/each}}
+                    {{/and}}
+                {{else}}
+                    {{> components/common/responsive-img
+                        class="card-no-image"
+                        fallback_size=theme_settings.product_quicksearch_size
+                        lazyload=theme_settings.lazyload_mode
+                        default_image=theme_settings.default_image_product
+                    }}
+                {{/unless}}
+            </div>
+        </a>
+    </figure>
+    <div class="card-body">
+        <div class="card-body-content">
+            {{#and (if brand.name) (if theme_settings.halo_card_brand)}}
+                <p class="card-text" data-test-info-type="brandName">{{brand.name}}</p>
+            {{/and}}
+
+            <h4 class="card-title">
+                {{#if theme_settings.halo_card_title '==' 'ellipsis'}}
+                    <a href="{{url}}" class="card-ellipsis" {{#if settings.data_tag_enabled}} data-event-type="product-click" {{/if}} style="-webkit-box-orient: vertical;">
+                        {{name}}
+                    </a>
+                {{else}}
+                    <a href="{{url}}" {{#if settings.data_tag_enabled}} data-event-type="product-click" {{/if}}>
+                        {{name}}
+                    </a>
+                {{/if}}
+            </h4>
+
+            <div class="card-wrapper">
+                {{#and (if settings.show_product_rating) (if theme_settings.halo_card_ratings)}}
+                    <p class="card-rating" data-test-info-type="productRating">
+                        <span class="rating--small">
+                            {{> components/products/ratings rating=rating}}
+                        </span>
+                        <span class="number-review">{{#if num_reviews}}({{num_reviews}}){{/if}}</span>
+                    </p>
+                {{/and}}
+                <div class="card-price" data-test-info-type="price">
+                    {{#or customer (if theme_settings.restrict_to_login '!==' true)}}
+                        {{> components/products/price price=price}}
+                    {{else}}
+                        {{> components/common/login-for-pricing}}
+                    {{/or}}
+                </div>
+            </div>
+
+            {{> components/products/bulk-discount-rates}}
+
+            {{#if theme_settings.haloAddOptionForProduct}}
+                <div class="card-option card-option-{{id}}">
+                    <div class="form-field"></div>
+                </div>
+            {{/if}}
+        </div>
+
+        <div class="card-body-button">
+            <a href="{{url}}" class="card-action">
+                <span class="text">{{lang 'products.details_link'}}</span>
+            </a>
+        </div>
+    </div>
+</article>

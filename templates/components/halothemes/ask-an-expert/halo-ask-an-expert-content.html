@@ -1,0 +1,59 @@
+{{#if theme_settings.halo_ask_an_expert_title}}
+    <div class="modal-header">
+        <h2 class="modal-header-title">{{theme_settings.halo_ask_an_expert_title}}</h2>
+    </div>
+{{/if}}
+<div class="modal-body" {{#if page_type '==' 'product'}}data-product-id="{{product.id}}" data-product-title="{{product.title}}" data-product-url="{{product.url}}" data-product-sku="{{product.sku}}" data-product-image="{{getImage product.main_image}}"{{/if}}>
+    {{#if theme_settings.halo_ask_an_expert_desc1}}
+        <h3 class="halo-ask-an-expert-heading">
+            <span>{{theme_settings.halo_ask_an_expert_desc1}}</span>
+        </h3>
+    {{/if}}
+    {{#if theme_settings.halo_ask_an_expert_desc2}}
+        <div class="halo-ask-an-expert-text">{{theme_settings.halo_ask_an_expert_desc2}}</div>
+    {{/if}}
+    <span class="halo-line">halo line</span>
+    {{#if theme_settings.halo_ask_an_expert_desc3}}
+        <div class="halo-ask-an-expert-intro">{{theme_settings.halo_ask_an_expert_desc3}}</div>
+    {{/if}}
+    <div id="halo-ask-an-expert-results" class="halo-ask-an-expert-text"></div>
+    <form class="form" id="halo-ask-an-expert-form">
+        <div class="form-field">
+            <label class="form-label hiddenLabels" for="customer_name">Your Name</label>
+            <input required type="text" class="form-input" name="customer_name" id="customer_name" placeholder="Your Name">
+        </div>
+        <div class="form-field">
+            <label class="form-label hiddenLabels" for="customer_email">Your Email</label>
+            <input required type="text" class="form-input" name="customer_email" id="customer_email" placeholder="Your Email">
+        </div>
+        <div class="form-field">
+            <label class="form-label hiddenLabels" for="customer_phone">Your Phone</label>
+            <input required type="tel" class="form-input" name="customer_phone" id="customer_phone" placeholder="Your Phone">
+        </div>
+        <div class="form-field form-field-radio">
+            <label class="form-label">Do you need:</label>
+            <input class="form-radio" id="pricing-radio" type="radio" name="type_package" checked value="Pricing">
+            <label class="form-label" for="pricing-radio">Pricing</label>
+            <input class="form-radio" id="answers-radio" type="radio" name="type_package" value="Answers">
+            <label class="form-label" for="answers-radio">Answers</label>
+            <input class="form-radio" id="both-radio" type="radio" name="type_package" value="Pricing & Answers">
+            <label class="form-label" for="both-radio">Both</label>
+        </div>
+        <div class="form-field form-field-textarea">
+            <label class="form-label" for="comment_area">What can i help you with today?</label>
+            <textarea name="comment_area" cols="30" rows="6" class="form-input" id="comment_area" required></textarea>
+        </div>
+        <div class="form-field form-field-radio form-field-radio2">
+            <label class="form-label form-label-custom">How would you like me to contact you?</label>
+            <input class="form-radio" id="phone-radio" type="radio" name="type_contact" checked value="Phone">
+            <label class="form-label" for="phone-radio">Phone</label>
+            <input class="form-radio" id="email-radio" type="radio" name="type_contact" value="Email">
+            <label class="form-label" for="email-radio">Email</label>
+            <input class="form-radio" id="both-radio-2" type="radio" name="type_contact" value="Phone & Email">
+            <label class="form-label" for="both-radio-2">Both</label>
+        </div>
+        <div class="form-actions">
+           <button type="button" class="button button--tertiary" id="halo-ask-an-expert-button">Send Question</button>
+        </div>
+    </form>
+</div>

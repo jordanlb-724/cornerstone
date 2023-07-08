@@ -1,0 +1,113 @@
+<nav class="navPages">
+    <ul class="navPages-list navPages-list-mobile"></ul>
+    <ul class="navPages-list navPages-list--user" data-level-list>
+        <li class="navPages-item navPages-item-user">
+            {{#if customer}}
+                <a class="navPages-action navPages-action-end" href="{{urls.account.index}}">
+                    <span class="text">
+                        <svg class="icon" role="img" aria-label="{{lang 'common.account'}}">
+                            <title>{{lang 'common.account'}}</title>
+                            <desc>{{lang 'common.account'}}</desc>
+                            <use xlink:href="#icon-user"></use>
+                        </svg>
+                        {{lang 'account.title'}}
+                    </span>
+                </a>
+            {{else}}
+                <a class="navPages-action navPages-action-end" href="{{urls.auth.login}}">
+                    <span class="text">
+                        <svg class="icon" role="img" aria-label="{{lang 'common.account'}}">
+                            <title>{{lang 'common.account'}}</title>
+                            <desc>{{lang 'common.account'}}</desc>
+                            <use xlink:href="#icon-user"></use>
+                        </svg>
+                        {{lang 'login.title'}}
+                    </span>
+                </a>
+            {{/if}}
+        </li>
+        <li class="navPages-item navPages-item-user">
+            <a class="navPages-action navPages-action-end" href="/wishlist.php">
+                <span class="text">
+                    <svg class="icon" role="img" aria-label="{{lang 'account.wishlists.heading'}}">
+                        <title>{{lang 'account.wishlists.heading'}}</title>
+                        <desc>{{lang 'account.wishlists.heading'}}</desc>
+                        <use xlink:href="#icon-heart"></use>
+                    </svg>
+                    {{lang 'account.wishlists.heading'}}
+                </span>
+            </a>
+        </li>
+        {{#if settings.phone_number}}
+            <li class="navPages-item navPages-item-user">
+                <a class="navPages-action navPages-action-end" href="tel:{{settings.phone_number}}">
+                    <span class="text">
+                        <svg class="icon" role="img" aria-label="{{lang 'account.addresses.phone'}}">
+                            <title>{{lang 'account.addresses.phone'}}</title>
+                            <desc>{{lang 'account.addresses.phone'}}</desc>
+                            <use xlink:href="#icon-phone"></use>
+                        </svg>
+                        {{settings.phone_number}}
+                    </span>
+                </a>
+            </li>
+        {{/if}}
+        {{#if theme_settings.haloInfoTop}}
+            <li class="navPages-item item--info halo-info navPages-item-user">
+                <a class="navPages-action" href="#" data-header-info>
+                    <span class="text">
+                        <svg class="icon" role="img" aria-label="{{lang 'common.info'}}">
+                            <title>{{lang 'common.info'}}</title>
+                            <desc>{{lang 'common.info'}}</desc>
+                            <use xlink:href="#icon-info"></use>
+                        </svg>
+                        {{lang 'common.info'}}
+                    </span>
+                </a>
+            </li>
+        {{/if}}
+        {{#if currency_selector.currencies.length '>' 1}}
+            <li class="navPages-item navPages-item-user has-dropdown currencies" data-level="2">>
+                <p id="currency_selector" class="navPages-action navPages-action-depth-max has-subMenu is-root">
+                    <a class="text" href="#">
+                        <span class="flag">{{{currency_selector.active_currency_flag}}}</span>
+                        {{currency_selector.active_currency_code}}
+                    </a>
+                    <span class="navPages-action-moreIcon" aria-hidden="true">
+                        <svg class="icon"><use xlink:href="#icon-chevron-down"></svg>
+                    </span>
+                </p>
+                <div class="navPage-subMenu navPage-subMenu-horizontal level-2" id="navPages-currency">
+                    <ul class="navPage-subMenu-list">
+                        <li class="navPage-subMenu-item-child navPage-subMenu-title" data-level="2">
+                            <p class="navPage-subMenu-action navPages-action">
+                                <span class="navPages-action-moreIcon" aria-hidden="true">
+                                    <svg class="icon"><use xlink:href="#icon-long-arrow-left"></svg>
+                                </span>
+                                <a class="text" href="#">
+                                    {{currency_selector.active_currency_code}}
+                                </a>
+                            </p>
+                        </li>
+                        {{#each currency_selector.currencies}}
+                            <li class="navPage-subMenu-item-child navPages-action-end" data-level="3">
+                                <a class="navPage-subMenu-action navPages-action" href="{{{switch_url}}}">
+                                    <span class="text"><span class="flag">{{{flag}}}</span>{{name}}</span>
+                                </a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </li>
+        {{/if}}
+        {{#if theme_settings.show_social-links}}
+            <li class="navPages-item navPages-item-user">
+                <div class="navPages-action navPages-action-end">
+                    <div class="text">
+                        {{> components/common/social-links}}
+                    </div>
+                </div>
+            </li>
+        {{/if}}
+    </ul>
+</nav>

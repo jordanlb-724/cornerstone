@@ -1,0 +1,41 @@
+{{#partial "page"}}
+<div class="container--medium">
+    <div class="haloFaqs-header">
+        <div class="breadcrumb-wrapper">
+            {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+        </div>
+        <h1 class="page-heading h1 fw-bold text-center">{{page.title}}</h1>
+    </div>
+    <div class="page page-normal page--faqs">
+        {{#if theme_settings.halo-faqs-sidebar}}
+            <div class="page-sidebar halo-faqs-sidebar page-sidebar-vertical{{#if theme_settings.halo-category-verticalSidebar-position '==' 'right'}} page-sidebar-right{{/if}}">
+                <div class="page-sidebar-close">
+                    <span class="title">{{lang 'common.sidebar'}}</span>
+                    <a href="#" class="close">
+                        <svg class="icon" role="img" aria-label="{{lang 'common.close'}}">
+                            <title>{{lang 'common.close'}}</title>
+                            <desc>{{lang 'common.close'}}</desc>
+                            <use xlink:href="#icon-close"></use>
+                        </svg>
+                    </a>
+                </div>
+                <div class="haloFaqs-header__des"></div>
+                {{> components/halothemes/sidebar/halo-faqs-sidebar}}
+            </div>
+        {{/if}}
+        <main class="page-content halo-faqs-content{{#if theme_settings.halo-category-verticalSidebar-position '==' 'right'}} page-content-right{{/if}}">
+            {{#if theme_settings.halo-faqs-sidebar}}
+                <div class="page-sidebar-mobile-wrapper">
+                    <div class="page-sidebar-mobile">
+                        <span class="text">{{lang 'common.sidebar'}}</span>
+                        <svg class="icon"><use xlink:href="#icon-sidebar"></use></svg>
+                    </div>
+                </div>
+            {{/if}}
+            {{{page.content}}}
+            {{{region name="page_builder_content"}}}
+        </main>
+    </div>
+</div>
+{{/partial}}
+{{> layout/base}}

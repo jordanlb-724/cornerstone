@@ -1,0 +1,115 @@
+{{#if theme_settings.halo_before_you_leave}}
+    <section id="before-you-leave" class="before-you-leave side_popup" data-time="{{theme_settings.halo-before-you-leave-time}}" style="display: none;">
+        {{> components/halothemes/sidebar/halo-button-close}}
+        <div class="before-you-leave-inner haloCustomScrollbar">
+            {{#if theme_settings.halo-before-you-leave-logo '!=' ''}}
+                <div class="logo">
+                    <a href="/">
+                        <img src="https://cdn11.bigcommerce.com/s-{{settings.store_hash}}/product_images/uploaded_images/{{theme_settings.halo-before-you-leave-logo}}" alt="{{theme_settings.halo-before-you-leave-logo}}" title="{{theme_settings.halo-before-you-leave-logo}}">
+                    </a>
+                </div>
+            {{/if}}
+
+            <div class="before-you-leave-banner">
+                <div class="banner-inner ">
+                    {{#if theme_settings.halo-before-you-leave-img '!=' ''}}
+                        <a class="image-wrapper" href="{{theme_settings.halo-before-you-leave-link}}" title="{{theme_settings.halo-before-you-leave-title}}">
+                            <img class="lazyload" src="" data-src="https://cdn11.bigcommerce.com/s-{{settings.store_hash}}/product_images/uploaded_images/{{theme_settings.halo-before-you-leave-img}}" alt="">
+                        </a>
+                    {{/if}}
+                    <div class="content text-center{{#unless theme_settings.halo-before-you-leave-img}} noImage{{/unless}}">
+                        <div class="content-inner">
+                            {{#if theme_settings.halo-before-you-leave-title '!=' ''}}
+                                <h2 class="title">{{theme_settings.halo-before-you-leave-title}}</h2>
+                            {{/if}}
+                            {{#if theme_settings.halo-before-you-leave-text-1 '!=' ''}}
+                                <p class="desc1">{{theme_settings.halo-before-you-leave-text-1}}</p>
+                            {{/if}}
+                            {{#if theme_settings.halo-before-you-leave-text-2 '!=' ''}}
+                                <p class="desc2">{{theme_settings.halo-before-you-leave-text-2}}</p>
+                            {{/if}}
+                            {{#if theme_settings.halo-before-you-leave-heading-1 '!=' ''}}
+                                <h3 class="heading2"><span>"{{theme_settings.halo-before-you-leave-heading-1}}"</span></h3>
+                            {{/if}}
+                        </div>
+                        {{#if theme_settings.halo-before-you-leave-btn-text '!=' ''}}
+                            <a class="button button--secondary before-you-leave-continue" href="{{theme_settings.halo-before-you-leave-btn-link}}" title="{{theme_settings.halo-before-you-leave-btn-text}}">
+                                <span>{{theme_settings.halo-before-you-leave-btn-text}}</span>
+                            </a>
+                        {{/if}}
+                    </div>
+                </div>
+            </div>
+
+            <div class="before-you-leave-tab">
+                <div class="tabs-wrapper">
+                    <ul class="tabs" data-tab>
+                        {{#if theme_settings.halo-before-you-leave-recommended}}
+                            <li class="tab is-active recommended" data-id="recommended">
+                                <a class="tab-title" href="#tab-recommended" aria-label="{{lang 'common.recommended'}}">{{lang 'common.recommended'}} <span class="count">0</span></a>
+                            </li>
+                        {{/if}}
+                        {{#if theme_settings.halo-before-you-leave-history}}
+                            <li class="tab history{{#if theme_settings.halo-before-you-leave-recommended '==' false}} is-active{{/if}}" data-id="history">
+                                <a class="tab-title" href="#tab-history" aria-label="{{lang 'common.history' }}">{{lang 'common.history' }} <span class="count">0</span></a>
+                            </li>
+                        {{/if}}
+                    </ul>
+                    {{#if theme_settings.halo-before-you-leave-search}}
+                        <div class="before-you-leave-search">
+                            <a class="search-icon" href="#" aria-label="Quick Search" data-search-leave>
+                                <svg class="icon icon-search" role="img" aria-label="{{lang 'search.quick_search.input_label'}}">
+                                    <title>{{lang 'search.quick_search.input_label'}}</title>
+                                    <desc>{{lang 'search.quick_search.input_placeholder'}}</desc>
+                                    <use xlink:href="#icon-search"></use>
+                                </svg>
+                                <svg class="icon icon-close" role="img" aria-label="{{lang 'common.close'}}">
+                                    <title>{{lang 'common.close'}}</title>
+                                    <desc>{{lang 'common.close'}}</desc>
+                                    <use xlink:href="#icon-close"></use>
+                                </svg>
+                            </a>
+                            {{> components/halothemes/sidebar/halo-before-you-leave-search}}
+                        </div>
+                    {{/if}}
+                </div>
+                <div class="tabs-contents halo_tabs-contents">
+                    {{#if theme_settings.halo-before-you-leave-recommended}}
+                        <div class="tab-content is-active" id="tab-recommended">
+                            <div class="no-products text-center">
+                                <svg class="icon" role="img" aria-label="{{lang 'common.sorry_no_products'}}">
+                                    <title>{{lang 'common.sorry_no_products'}}</title>
+                                    <desc>{{lang 'common.sorry_no_products'}}</desc>
+                                    <use xlink:href="#icon-no-products"></use>
+                                </svg>
+                                <div class="text">{{lang 'common.sorry_no_products'}}</div>
+                            </div>
+                            <div class="productGrid halo-dots halo-arrows-custom">
+                            </div>
+                        </div>
+                    {{/if}}
+
+                    {{#if theme_settings.halo-before-you-leave-history}}
+                        <div class="tab-content{{#if theme_settings.halo-before-you-leave-recommended '==' false}} is-active{{/if}}" id="tab-history">
+                            <div id="history-products-list-tmp" class="tab-content--product history-products-list-tmp">
+                                <div class="no-products text-center">
+                                    <svg class="icon" role="img" aria-label="{{lang 'common.sorry_no_products'}}">
+                                        <title>{{lang 'common.sorry_no_products'}}</title>
+                                        <desc>{{lang 'common.sorry_no_products'}}</desc>
+                                        <use xlink:href="#icon-no-products"></use>
+                                    </svg>
+                                    <div class="text">{{lang 'common.sorry_no_products'}}</div>
+                                </div>
+                                <div class="productGrid halo-dots halo-arrows-custom"></div>
+                            </div>
+                        </div>
+                    {{/if}}
+                </div>
+            </div>
+
+            <div class="back-to-store">
+                <a class="button button--primary" href="/">{{lang 'common.back_to_store'}}</a>
+            </div>
+        </div>
+    </section>
+{{/if}}

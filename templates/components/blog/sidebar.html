@@ -1,0 +1,11 @@
+<nav>
+    {{> components/halothemes/sidebar/halo-recent-post post=post}}
+    {{> components/halothemes/sidebar/halo-tags post=post}}
+    {{#if theme_settings.halo-sidebar-products}}
+        {{#if products.featured}}
+            {{> components/halothemes/sidebar/halo-product-sidebar products=products.featured title=theme_settings.halo-sidebar-products-title}}
+        {{/if}}
+    {{/if}}
+    {{> components/halothemes/sidebar/halo-advertisement-image}}
+    {{> components/halothemes/sidebar/halo-advertisement-content}}
+</nav>

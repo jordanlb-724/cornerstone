@@ -1,0 +1,9 @@
+<form class="form" action="{{urls.search}}">
+    <fieldset class="form-fieldset">
+        <div class="form-field">
+            <label class="is-srOnly" for="search_query2">{{lang "search.quick_search.input_label"}}</label>
+            <input class="form-input" data-search-quick name="search_query2" id="search_query2" data-error-message="{{lang 'search.error.empty_field'}}" placeholder="{{lang 'search.quick_search.input_placeholder'}}" autocomplete="off">
+            <button type="submit"><svg class="icon"><use xlink:href="#icon-search"></use></svg></button>
+        </div>
+    </fieldset>
+</form>

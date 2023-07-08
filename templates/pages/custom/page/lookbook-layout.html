@@ -1,0 +1,20 @@
+{{#partial "page"}}
+<div class="container--medium">
+    <div class="haloLookbook-header">
+        <div class="breadcrumb-wrapper">
+            {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+        </div>
+        <h1 class="page-heading h1 fw-bold text-center">{{page.title}}</h1>
+    </div>
+    <div class="page page-normal">
+        <main class="page-content halo-lookbook-content">
+            {{{page.content}}}
+            <div class="halo-lookbook-share">
+                {{>components/common/share }}
+            </div>
+            {{{region name="page_builder_content"}}}
+        </main>
+    </div>
+</div>
+{{/partial}}
+{{> layout/base}}

@@ -1,0 +1,16 @@
+{{#if theme_settings.halo-sidebar-popular-tags}}
+    <div class="sidebarBlock" id="blog-tags">
+        <h5 class="sidebarBlock-heading"><span>{{lang 'blog.popular_tags'}}</span></h5>
+        <div class="sidebarBlock-content">
+            <ul class="recentPosts_tags">
+                {{#each blog.posts}}
+                    {{#each tags}}
+                        <li class="tag" data-tag="{{camelcase name}}">
+                            <a href="{{url}}" class="link">{{name}}</a>
+                        </li>
+                    {{/each}}
+                {{/each}}
+            </ul>
+        </div>
+    </div>
+{{/if}}

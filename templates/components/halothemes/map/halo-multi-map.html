@@ -1,0 +1,52 @@
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+<script type="text/javascript" src="{{cdn '/assets/js/theme/halothemes/haloMultiMap.js'}}"></script>
+<script type="text/javascript">
+    var ENVmap = new ENV_map();
+    var option = {
+        "token": "Envora_free",
+        "get_list": ".InfoFindInner",
+        "get_map": ".HL-ColRight .mapContact",
+        "get_search": ".search_map",
+        "data": [
+            {
+                "lat": 43.0306837,
+                "lng": -88.0679717,
+                "name": "Milwaukee, WI",
+                "text": "<h4 class='halo-location-heading'><span>Handle It Corporate & WI Warehouse</span></h4>\
+                            <p class='halo-location-info location'>12247 W. Fairview Ave.</p>\
+                            <p class='halo-location-info number'>Milwaukee, WI 53226</p>"
+            },
+            {
+                "lat": 33.8842059,
+                "lng": -118.0103249,
+                "name": "Mirada, CA",
+                "text": "<h4 class='halo-location-heading'><span>Handle It CA Warehouse</span></h4>\
+                            <p class='halo-location-info location'>15300 Desman Rd.</p>\
+                            <p class='halo-location-info number'>La Mirada, CA 90638</p>"
+            },
+            {
+                "lat": 29.1735207,
+                "lng": -82.1911044,
+                "name": "Ocala, FL",
+                "text": "<h4 class='halo-location-heading'><span>Handle It FL Warehouse</span></h4>\
+                            <p class='halo-location-info location'>1300 SW 38th Avenue</p>\
+                            <p class='halo-location-info number'>Ocala, FL 34474</p>"
+            },
+            {
+                "lat": 32.6830883,
+                "lng": -97.0839687,
+                "name": "Arlington, TX",
+                "text": "<h4 class='halo-location-heading'><span>Handle It TX Warehouse</span></h4>\
+                            <p class='halo-location-info location'>3700 New York Avenue<brSuite 300</p>\
+                            <p class='halo-location-info number'>Arlington, TX 76014</p>"
+            }
+        ],
+        "zoom": 5,
+    };
+    ENVmap.config = function () {
+        this.vars.icon_defaults = {
+            'url': 'http://www.fisherinvestments.com/~/media/fisher-investments/images/social-icons/white-icons/fisher-marketminder-icon.png?h=24&w=24&la=en',
+        };
+    };
+    ENVmap.view(option);
+</script>

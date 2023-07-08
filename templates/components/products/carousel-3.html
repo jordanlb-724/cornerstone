@@ -1,0 +1,5 @@
+{{#each (limit category.products theme_settings.home_product_block-id-tab-limit)}}
+    <div class="productCarousel-slide">
+        {{> components/products/card productsnew=../products.new settings=../settings theme_settings=../theme_settings customer=../customer event="list" position=(add @index 1)}}
+    </div>
+{{/each}}

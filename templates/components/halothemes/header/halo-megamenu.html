@@ -1,0 +1,13 @@
+{{#if theme_settings.haloMegamenu}}
+    {{#if theme_settings.haloMegamenuType '==' 'Source'}}
+        {{> components/halothemes/header/halo-megamenu-theme-file}}
+    {{/if}}
+
+    <div class="haloMegamenuBrand u-hidden">
+        <ul class="haloMegamenuBrand__list">
+            {{#each shop_by_brand}}
+                <li data-brand-code="{{dashcase name}}" data-brand-letter="{{limit (toLowerCase (dashcase name)) 1}}">{{name}}</li>
+            {{/each}}
+        </ul>
+    </div>
+{{/if}}

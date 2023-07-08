@@ -1,0 +1,14 @@
+{{#if theme_settings.halo_notify_me}}
+    <div class="productView-notifyMe" {{#unless product.out_of_stock}}style="display: none;"{{/unless}} data-product-title="{{product.title}}" data-product-url="{{product.url}}" data-product-variant="">
+        <form class="productView-notifyMe-form" method="post" action="">
+            <div class="form-field">
+                <label class="form-label" for="halo_notify_email">
+                    {{theme_settings.halo_notify_me_text}}
+                </label>
+                <input aria-required="true" type="email" class="form-input" name="email" id="halo_notify_email" placeholder="{{lang 'common.insert_email_address'}}">
+                <button type="button" class="button button--secondary" id="halo_notify_submit">{{lang 'common.email_submit'}}</button>
+            </div>
+        </form>
+        <div class="productView-notifyMe-text"></div>
+    </div>
+{{/if}}

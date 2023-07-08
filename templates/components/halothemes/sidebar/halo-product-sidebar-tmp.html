@@ -1,0 +1,48 @@
+<div class="card card-custom" data-product-id="{{id}}">
+    <a class="card-link" href="{{url}}">
+        <div class="card-img-container">
+            {{> components/common/responsive-img
+                image=image
+                class="card-image"
+                fallback_size=theme_settings.product_sidebar_size
+                lazyload=theme_settings.lazyload_mode
+                default_image=theme_settings.default_image_product
+            }}
+        </div>
+    </a>
+    <div class="card-content">
+        <h4 class="card-title">
+            {{#if theme_settings.halo_card_title '==' 'ellipsis'}}
+                <a href="{{url}}" class="card-ellipsis" style="-webkit-box-orient: vertical;">{{name}}</a>
+            {{else}}
+                <a href="{{url}}">{{name}}</a>
+            {{/if}}
+        </h4>
+        <div class="card-wrapper {{settings.show_product_rating}}">
+            {{#if theme_settings.halo_card_ratings}}
+                <p class="card-text" data-test-info-type="productRating">
+                    <span class="rating--small">
+                        {{> components/products/ratings rating_target=name rating=rating}}
+                    </span>
+                    <span class="number-review">{{#if num_reviews}}({{num_reviews}}){{/if}}</span>
+
+                </p>
+            {{/if}}
+            <div class="card-price" data-test-info-type="price">
+                {{#or customer (if theme_settings.restrict_to_login '!==' true)}}
+                    {{> components/products/price price=price}}
+                {{else}}
+                    {{> components/common/login-for-pricing}}
+                {{/or}}
+            </div>
+        </div>
+        {{#if theme_settings.haloAddOptionForProduct}}
+            <div class="card-option card-option-{{id}}">
+                <div class="form-field"></div>
+            </div>
+        {{/if}}
+        <a href="{{url}}" class="card-action">
+            <span class="text">{{lang 'products.details_link'}}</span>
+        </a>
+    </div>
+</div>

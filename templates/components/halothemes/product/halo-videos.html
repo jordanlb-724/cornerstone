@@ -1,0 +1,44 @@
+<div id="video-gallery-popup" class="modal" data-reveal>
+    <div class="modal-content">
+        <div class="modal-header">
+            <h2 class="modal-header-title">Video Gallery</h2>
+            <button class="modal-close" type="button" title="Close">
+                <span class="aria-description--hidden">Close</span>
+                <span aria-hidden="true">×</span>
+            </button>
+        </div>
+        <div class="modal-body">
+            <div class="videoGallery halo_videoGallery" data-video-gallery>
+                <div id="videoGallery-content">
+                    <div class="videoGallery-main">
+                        <iframe
+                            id="player"
+                            class="lazyload"
+                            type="text/html"
+                            width="640"
+                            height="390"
+                            frameborder="0"
+                            webkitAllowFullScreen
+                            mozallowfullscreen
+                            allowFullScreen
+                            data-src="//www.youtube.com/embed/{{this.featured.id}}"
+                            data-video-player>
+                        </iframe>
+                    </div>
+                    <ul class="videoGallery-list">
+                        {{#each this.list}}
+                            <li class="videoGallery-item">
+                                <a href="#" class="video {{#if @first}}is-active{{/if}}" data-video-item data-video-id="{{id}}">
+                                    <div class="video-figure">
+                                        <img class="lazyload" data-sizes="auto" src="{{cdn 'img/loading.svg'}}" data-src="//i.ytimg.com/vi/{{id}}/default.jpg"/>
+                                    </div>
+                                </a>
+                            </li>
+                        {{/each}}
+                    </ul>
+                </div>
+            </div>
+            <div class="loadingOverlay"></div>
+        </div>
+    </div>
+</div>

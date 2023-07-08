@@ -1,0 +1,231 @@
+---
+product:
+    videos:
+        limit: {{theme_settings.productpage_videos_count}}
+    reviews:
+        limit: {{theme_settings.productpage_reviews_count}}
+    related_products:
+        limit: {{theme_settings.productpage_related_products_count}}
+    similar_by_views:
+        limit: {{theme_settings.productpage_similar_by_views_count}}
+products:
+    new:
+        limit: 25
+---
+{{inject 'productId' product.id}}
+
+{{#partial "page"}}
+    <div class="page-product-custom">
+        <div class="halo-productView-top">
+            <div class="container">
+                <div class="breadcrumbs-product">
+                    {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+                </div>
+
+                {{> components/products/product-view-2}}
+
+                {{{region name="product_below_content"}}}
+            </div>
+        </div>
+
+        {{> components/halothemes/product/halo-bundle-products}}
+
+        {{#if theme_settings.show_product_details_tabs}}
+            <div class="container container-productView-tab">
+                <div class="productView-tab productView-tab-2 halo-description">
+                    {{> components/products/description-tabs-2}}
+                </div>
+            </div>
+        {{/if}}
+
+        <div class="halo-productView-bottom">
+            {{#if theme_settings.halo_homepage_layout_3}}
+            {{#if theme_settings.productpage_product_block-1 '==' 'Related'}}
+                {{> components/products/related
+                    products=product.related_products
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-1-title
+                    block_id="halo-product-block-1"
+                    block_limit=product.related_products.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_1_infinite
+                }}
+            {{else if theme_settings.productpage_product_block-1 '==' 'Customers'}}
+                {{> components/products/similar-by-view
+                    products=product.similar_by_views
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-1-title
+                    block_id="halo-product-block-1"
+                    block_limit=product.similar_by_views.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_1_infinite
+                }}
+            {{/if}}
+        {{else}}
+            {{#if theme_settings.productpage_product_block-1 '==' 'Related'}}
+                {{> components/products/related
+                    products=product.related_products
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-1-title
+                    block_id="halo-product-block-1"
+                    block_limit=product.related_products.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_1_infinite
+                }}
+            {{else if theme_settings.productpage_product_block-1 '==' 'Customers'}}
+                {{> components/products/similar-by-view
+                    products=product.similar_by_views
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-1-title
+                    block_id="halo-product-block-1"
+                    block_limit=product.similar_by_views.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_1_infinite
+                }}
+            {{/if}}
+        {{/if}}
+
+            <div class="container container-product-reviews">
+                {{#if settings.show_product_reviews}}
+                    {{#if product.reviews.total}}
+                        <section class="toggle productReviews" id="product-reviews" data-product-reviews>
+                            <div class="toggle-title">
+                                <h4 class="page-heading">{{lang 'products.reviews.header'}}</h4>
+                                <span class="number-review">{{lang 'products.reviews.number_review' total=product.reviews.total}}</span>
+                                <a class="write-review button button--secondary" href="{{product.url}}{{#if is_ajax}}#write_review{{/if}}"
+                                    {{#unless is_ajax }}data-reveal-id="modal-review-form"{{/unless}}>
+                                    {{lang 'products.reviews.write_a_review'}}
+                                </a>
+                            </div>
+                            <div class="toggle-content is-open" id="productReviews-content" aria-hidden="false">
+                                <ul class="productReviews-list" id="productReviews-list">
+                                    {{#each product.reviews.list}}
+                                    <li class="productReview">
+                                        <article>
+                                            <header>
+                                                <h5 class="productReview-title">{{ title }}</h5>
+                                                <span class="productReview-rating rating--small">
+                                                    {{> components/products/ratings rating=rating}}
+                                                    <span class="productReview-ratingNumber">{{ rating }}</span>
+                                                </span>
+                                                {{#if name}}
+                                                    <p class="productReview-author">
+                                                        {{lang 'products.reviews.post_on_by' date=date name=name }}
+                                                    </p>
+                                                {{else}}
+                                                    <p class="productReview-author">
+                                                        {{lang 'products.reviews.post_on_by' date=date name=(lang 'products.reviews.anonymous_poster')}}
+                                                    </p>
+                                                {{/if}}
+                                            </header>
+                                            <p class="productReview-body">{{nl2br text}}</p>
+                                        </article>
+                                    </li>
+                                    {{/each}}
+                                </ul>
+                            </div>
+                        </section>
+                    {{/if}}
+                    {{{snippet 'reviews'}}}
+                {{/if}}
+            </div>
+
+            {{#if theme_settings.halo_homepage_layout_3}}
+            {{#if theme_settings.productpage_product_block-2 '==' 'Related'}}
+                {{> components/products/related
+                    products=product.related_products
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-2-title
+                    block_id="halo-product-block-2"
+                    block_limit=product.related_products.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_2_infinite
+                    show_dots_bar="true"
+                }}
+            {{else if theme_settings.productpage_product_block-2 '==' 'Customers'}}
+                {{> components/products/similar-by-view
+                    products=product.similar_by_views
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-2-title
+                    block_id="halo-product-block-2"
+                    block_limit=product.related_products.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_2_infinite
+                    show_dots_bar="true"
+                }}
+            {{/if}}
+        {{else}}
+            {{#if theme_settings.productpage_product_block-2 '==' 'Related'}}
+                {{> components/products/related
+                    products=product.related_products
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-2-title
+                    block_id="halo-product-block-2"
+                    block_limit=product.related_products.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_2_infinite
+                }}
+            {{else if theme_settings.productpage_product_block-2 '==' 'Customers'}}
+                {{> components/products/similar-by-view
+                    products=product.similar_by_views
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-2-title
+                    block_id="halo-product-block-2"
+                    block_limit=product.related_products.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_2_infinite
+                }}
+            {{/if}}
+        {{/if}}{{#if theme_settings.halo_homepage_layout_3}}
+            {{#if theme_settings.productpage_product_block-2 '==' 'Related'}}
+                {{> components/products/related
+                    products=product.related_products
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-2-title
+                    block_id="halo-product-block-2"
+                    block_limit=product.related_products.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_2_infinite
+                    show_dots_bar="true"
+                }}
+            {{else if theme_settings.productpage_product_block-2 '==' 'Customers'}}
+                {{> components/products/similar-by-view
+                    products=product.similar_by_views
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-2-title
+                    block_id="halo-product-block-2"
+                    block_limit=product.related_products.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_2_infinite
+                    show_dots_bar="true"
+                }}
+            {{/if}}
+        {{else}}
+            {{#if theme_settings.productpage_product_block-2 '==' 'Related'}}
+                {{> components/products/related
+                    products=product.related_products
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-2-title
+                    block_id="halo-product-block-2"
+                    block_limit=product.related_products.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_2_infinite
+                }}
+            {{else if theme_settings.productpage_product_block-2 '==' 'Customers'}}
+                {{> components/products/similar-by-view
+                    products=product.similar_by_views
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-2-title
+                    block_id="halo-product-block-2"
+                    block_limit=product.related_products.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_2_infinite
+                }}
+            {{/if}}
+        {{/if}}
+        </div>
+    </div>
+
+    {{> components/products/schema}}
+{{/partial}}
+{{> layout/base}}

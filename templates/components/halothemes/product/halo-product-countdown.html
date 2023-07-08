@@ -1,0 +1,15 @@
+{{#if theme_settings.halo_product_countdown_show}}
+    {{#if theme_settings.halo_product_countdown '==' 'all'}}
+        <div class="productView-countDown countdown_{{id}}" data-countdown-id="{{id}}" data-countdown="{{theme_settings.halo_product_countdown_time}}"></div>
+    {{else if theme_settings.halo_product_countdown '==' 'custom'}}
+        {{#each custom_fields}}
+            {{#if name '==' '__countdown'}}
+                <div class="productView-countDown countdown_{{../../id}}" data-countdown-id="{{../../id}}" data-countdown="{{{value}}}"></div>
+            {{/if}}
+        {{/each}}
+    {{else if theme_settings.halo_product_countdown '==' 'sale'}}
+        {{#or non_sale_price_with_tax non_sale_price_without_tax}}
+            <div class="productView-countDown countdown_{{id}}" data-countdown-id="{{id}}" data-countdown="{{theme_settings.halo_product_countdown_time}}"></div>
+        {{/or}}
+    {{/if}}
+{{/if}}

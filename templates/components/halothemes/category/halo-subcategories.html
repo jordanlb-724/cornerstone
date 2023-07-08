@@ -1,0 +1,20 @@
+{{#if category.subcategories}}
+    <div class="haloSubCategories">
+        <div class="haloSubCategories__container">
+            <div class="haloSubCategories__item">
+                <div class="haloSubCategories__content haloSubCategories__all">
+                    <span class="haloSubCategories__name">{{lang 'common.all'}}</span>
+                    <span class="haloSubCategories__count">({{category.total_products}})</span>
+                </div>
+            </div>
+            {{#each category.subcategories}}
+                <div class="haloSubCategories__item">
+                    <a class="haloSubCategories__content" href="{{url}}" aria-label="Button Go To Sub Category {{name}}">
+                        <span class="haloSubCategories__name">{{name}}</span>
+                        <span class="haloSubCategories__count">({{product_count}})</span>
+                    </a>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+{{/if}}

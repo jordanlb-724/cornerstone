@@ -1,0 +1,32 @@
+<div class="productCarousel-slide product-sample">
+    <article class="card card-sample">
+        <figure class="card-figure">
+            <a href="#" class="card-link" aria-label="Sample Card">
+                <div class="card-img-container animated-loading"></div>
+            </a>
+        </figure>
+        <div class="card-body">
+            <h3 class="card-title animated-loading">
+                <a aria-label="Sample Card Title" href="#"><span>Sample Card</span></a>
+            </h3>
+
+            <div class="card-wrapper animated-loading">
+                <div class="card-price" data-test-info-type="price">
+                    <span class="price">$000.00</span>
+                </div>
+            </div>
+
+            <div class="card-option animated-loading">
+                <div class="form-field"></div>
+            </div>
+
+            {{#or customer (if theme_settings.restrict_to_login '!==' true)}}
+                {{#if show_cart_action}}
+                    <div class="card-figcaption-bottom animated-loading">
+                        <a href="#" data-event-type="product-click" class="button button--secondary card-figcaption-button">Add To Cart</a>
+                    </div>
+                {{/if}}
+            {{/or}}
+        </div>
+    </article>
+</div>

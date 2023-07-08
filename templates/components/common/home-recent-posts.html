@@ -1,0 +1,68 @@
+{{#if theme_settings.halo_recent_post}}
+    <div class="halo-block halo-home-section block-post">
+        <div class="container">
+            <div class="halo-block-header">
+                <h3 class="title is-5 is-left normal">Recently Posts</h3>
+            </div>
+            <div class="list-post pt-5">
+                <div class="container-block-post custom-button-change-slide" id="blockpost">
+                    {{#each post}}
+                        {{#if @index '==' 0}}
+                            {{#if (merge this imageBlog=../theme_settings.halo_recent_post_img1)}}{{/if}}
+                        {{/if}}
+                        {{#if @index '==' 1}}
+                            {{#if (merge this imageBlog=../theme_settings.halo_recent_post_img2)}}{{/if}}
+                        {{/if}}
+                        {{#if @index '==' 2}}
+                            {{#if (merge this imageBlog=../theme_settings.halo_recent_post_img3)}}{{/if}}
+                        {{/if}}
+                        {{#if @index '==' 3}}
+                            {{#if (merge this imageBlog=../theme_settings.halo_recent_post_img4)}}{{/if}}
+                        {{/if}}
+                        <div class="halo-row-slider">
+                            <div class="item ">
+                                <div class="item-image halo-fadeInUp" data-halo-animate="0">
+                                    <a class="" href="{{url}}">
+                                        {{#if imageBlog}}
+                                            <img class="lazyload" src="{{cdn 'img/loading.svg'}}" data-src="https://cdn11.bigcommerce.com/s-{{../settings.store_hash}}/product_images/uploaded_images/{{imageBlog}}" alt="{{imageBlog}}" title="{{imageBlog}}">
+                                        {{else}}
+                                            {{> components/common/responsive-img
+                                                image=thumbnail
+                                                class=""
+                                                fallback_size=../theme_settings.recent_blog_size
+                                                lazyload=../theme_settings.lazyload_mode
+                                                default_image=../theme_settings.default_image_product
+                                            }}
+                                        {{/if}}
+                                    </a>
+                                </div>
+                                <div class="item-content">
+                                    <div class="content-box">
+                                        <p class="date halo-fadeInUp" data-halo-animate="1">{{#if author}}{{author}} -
+                                            {{/if}}{{date_published}}</p>
+                                        <h3 class="title is-5 mt-1 halo-fadeInUp" data-halo-animate="2">
+                                            {{#if ../theme_settings.halo_card_title '==' 'ellipsis'}}
+                                                <a href="{{url}}" style="-webkit-box-orient: vertical;">{{title}}</a>
+                                            {{else}}
+                                                <a class=" halo-fadeInUp" data-halo-animate="2" href="{{url}}">{{title}}</a>
+                                            {{/if}}
+                                        </h3>
+                                        {{#if summary}}
+                                        <p class="summary halo-fadeInUp" data-halo-animate="3">
+                                            {{{summary}}}&hellip;
+                                        </p>
+                                        {{/if}}
+                                        <a class="text redirect-item halo-fadeInUp" data-halo-animate="4" href="{{url}}">
+                                            <span class="text-underline-black">{{lang 'blog.read_more'}}</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    {{/each}}
+                </div>
+            </div>
+        </div>
+    </div>
+    {{{region name="home_below_recent_posts"}}}
+{{/if}}

@@ -1,0 +1,36 @@
+{{#if enable}}
+    {{#if type '==' 'Featured'}}
+        {{> components/products/featured
+            products=products.featured
+            productsnew=products.new
+            title=title_recommended
+            block_id="haloRecommendedBlock"
+            block_limit=theme_settings.haloRecommendedBlock_limit_1
+            block_column=theme_settings.haloRecommendedBlock_col_1
+            block_layout=theme_settings.haloRecommendedBlock_1_layout
+            show_dots_bar=show_dots_bar
+        }}
+    {{else if type '==' 'New'}}
+        {{> components/products/new
+            products=products.new
+            productsnew=products.new
+            title=title_recommended
+            block_id="haloRecommendedBlock"
+            block_limit=theme_settings.haloRecommendedBlock_limit_1
+            block_column=theme_settings.haloRecommendedBlock_col_1
+            block_layout=theme_settings.haloRecommendedBlock_1_layout
+            show_dots_bar=show_dots_bar
+        }}
+    {{else if type '==' 'Top'}}
+        {{> components/products/top
+            products=products.top_sellers
+            productsnew=products.new
+            title=title_recommended
+            block_id="haloRecommendedBlock"
+            block_limit=theme_settings.haloRecommendedBlock_limit_1
+            block_column=theme_settings.haloRecommendedBlock_col_1
+            block_layout=theme_settings.haloRecommendedBlock_1_layout
+            show_dots_bar=show_dots_bar
+        }}
+    {{/if}}
+{{/if}}

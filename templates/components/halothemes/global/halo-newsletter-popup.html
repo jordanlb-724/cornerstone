@@ -1,0 +1,51 @@
+{{#if theme_settings.halo_newsletter_popup}}
+    <div id="halo-newsletter-popup" class="halo-popup halo-newsletter-popup{{#unless theme_settings.halo_newsletter_popup_image}} halo-newsletter-popup-noImage{{/unless}} hide">
+        <div class="newsletter-popup-container">
+            <div class="newsletter-popup-inner">
+                <button type="button" data-close-newsletter-popup>
+                    <svg class="icon" role="img" aria-label="{{lang 'common.close'}}">
+                        <title>{{lang 'common.close'}}</title>
+                        <desc>{{lang 'common.close'}}</desc>
+                        <use xlink:href="#icon-close"></use>
+                    </svg>
+                </button>
+                {{#if theme_settings.halo_newsletter_popup_image}}
+                    <div class="newsletter-left">
+                        <img class="lazyload" src="{{cdn 'img/loading.svg'}}" data-src="https://cdn11.bigcommerce.com/s-{{settings.store_hash}}/product_images/uploaded_images/{{theme_settings.halo_newsletter_popup_image}}" alt="{{lang 'newsletter.subscribe'}}" title="{{lang 'newsletter.subscribe'}}">
+                    </div>
+                {{/if}}
+                <div class="newsletter-right">
+                    <h2 class="newsletter-heading">{{theme_settings.halo_newsletter_subscribe}}</h2>
+                    <div class="newsletter-message">
+                        <span>{{lang 'newsletter.subscribe_intro'}}</span>
+                    </div>
+                    <div id="popupSubcribeForm">
+                        <form class="form" action="{{urls.subscribe.action}}" method="post" id="popupSubcribeFormSubmit">
+                            <fieldset class="form-fieldset">
+                                <input type="hidden" name="action" value="subscribe">
+                                <input type="hidden" name="nl_first_name" value="bc">
+                                <input type="hidden" name="check" value="1">
+                                <div class="form-field">
+                                    <label class="form-label is-srOnly" for="nl_email2">{{lang 'newsletter.email_placeholder'}}</label>
+                                    <input class="form-input" id="nl_email2" name="nl_email" type="email" placeholder="{{lang 'newsletter.email_placeholder'}}">
+                                    <button class="button button--secondary button--large" type="submit">
+                                        {{lang 'newsletter.subscribe_submit_2'}}
+                                    </button>
+                                </div>
+                            </fieldset>
+                        </form>
+                    </div>
+                    {{#if theme_settings.show_social-links}}
+                        <div class="newsletter-item">
+                            <div class="newsletter-action">
+                                <div class="text">
+                                    {{> components/common/social-links}}
+                                </div>
+                            </div>
+                        </div>
+                    {{/if}}
+                </div>
+            </div>
+        </div>
+    </div>
+{{/if}}

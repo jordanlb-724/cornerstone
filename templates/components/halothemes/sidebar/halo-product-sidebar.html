@@ -1,0 +1,20 @@
+<div class="sidebarBlock" id="featured-products">
+    <h3 class="sidebarBlock-heading">{{title}}</h3>
+    <div class="sidebarBlock-content">
+        <div class="products-list"
+            data-slick='{
+                "rows": 3,
+                "dots": true,
+                "arrows": false,
+                "infinite": false,
+                "slidesToShow": 1,
+                "slidesToScroll": 1,
+                "adaptiveHeight": true
+            }'
+        >
+            {{#each (limit products theme_settings.sidebar_products_per_page)}}
+                {{> components/halothemes/sidebar/halo-product-sidebar-tmp theme_settings=../theme_settings}}
+            {{/each}}
+        </div>
+    </div>
+</div>

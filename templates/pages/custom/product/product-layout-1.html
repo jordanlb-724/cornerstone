@@ -1,0 +1,132 @@
+---
+product:
+    videos:
+        limit: {{theme_settings.productpage_videos_count}}
+    reviews:
+        limit: {{theme_settings.productpage_reviews_count}}
+    related_products:
+        limit: {{theme_settings.productpage_related_products_count}}
+    similar_by_views:
+        limit: {{theme_settings.productpage_similar_by_views_count}}
+products:
+    new:
+        limit: 25
+---
+{{inject 'productId' product.id}}
+
+{{#partial "page"}}
+    <div class="halo-productView-top">
+        <div class="container">
+            <div class="breadcrumbs-product">
+                {{> components/common/breadcrumbs breadcrumbs=breadcrumbs}}
+            </div>
+
+            {{> components/products/product-view}}
+
+            {{{region name="product_below_content"}}}
+        </div>
+    </div>
+
+    {{> components/halothemes/product/halo-bundle-products}}
+
+    <div class="halo-productView-bottom">
+        {{#if theme_settings.halo_homepage_layout_3}}
+            {{#if theme_settings.productpage_product_block-1 '==' 'Related'}}
+                {{> components/products/related
+                    products=product.related_products
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-1-title
+                    block_id="halo-product-block-1"
+                    block_limit=product.related_products.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_1_infinite
+                    show_dots_bar="true"
+                }}
+            {{else if theme_settings.productpage_product_block-1 '==' 'Customers'}}
+                {{> components/products/similar-by-view
+                    products=product.similar_by_views
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-1-title
+                    block_id="halo-product-block-1"
+                    block_limit=product.similar_by_views.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_1_infinite
+                    show_dots_bar="true"
+                }}
+            {{/if}}
+        {{else}}
+            {{#if theme_settings.productpage_product_block-1 '==' 'Related'}}
+                {{> components/products/related
+                    products=product.related_products
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-1-title
+                    block_id="halo-product-block-1"
+                    block_limit=product.related_products.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_1_infinite
+                }}
+            {{else if theme_settings.productpage_product_block-1 '==' 'Customers'}}
+                {{> components/products/similar-by-view
+                    products=product.similar_by_views
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-1-title
+                    block_id="halo-product-block-1"
+                    block_limit=product.similar_by_views.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_1_infinite
+                }}
+            {{/if}}
+        {{/if}}
+
+        {{#if theme_settings.halo_homepage_layout_3}}
+            {{#if theme_settings.productpage_product_block-2 '==' 'Related'}}
+                {{> components/products/related
+                    products=product.related_products
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-2-title
+                    block_id="halo-product-block-2"
+                    block_limit=product.related_products.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_2_infinite
+                    show_dots_bar="true"
+                }}
+            {{else if theme_settings.productpage_product_block-2 '==' 'Customers'}}
+                {{> components/products/similar-by-view
+                    products=product.similar_by_views
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-2-title
+                    block_id="halo-product-block-2"
+                    block_limit=product.related_products.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_2_infinite
+                    show_dots_bar="true"
+                }}
+            {{/if}}
+        {{else}}
+            {{#if theme_settings.productpage_product_block-2 '==' 'Related'}}
+                {{> components/products/related
+                    products=product.related_products
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-2-title
+                    block_id="halo-product-block-2"
+                    block_limit=product.related_products.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_2_infinite
+                }}
+            {{else if theme_settings.productpage_product_block-2 '==' 'Customers'}}
+                {{> components/products/similar-by-view
+                    products=product.similar_by_views
+                    productsnew=products.new
+                    title=theme_settings.productpage_product_block-2-title
+                    block_id="halo-product-block-2"
+                    block_limit=product.related_products.length
+                    block_column=theme_settings.productpage_product_block_col
+                    block_infinite=theme_settings.home_product_block_2_infinite
+                }}
+            {{/if}}
+        {{/if}}
+    </div>
+
+    {{> components/products/schema}}
+{{/partial}}
+{{> layout/base}}

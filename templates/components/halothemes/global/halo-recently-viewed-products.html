@@ -1,0 +1,138 @@
+{{#if theme_settings.halo_recently_viewed_products }}
+    <section class="recently-viewed-products-sidebar">
+        <div class="lst-seen-widget">
+            <div class="in-content">
+                {{#if theme_settings.halo_recently_viewed_products_title '!=' ''}}
+                    <h3 class="title text-center">{{theme_settings.halo_recently_viewed_products_title}}</h3>
+                {{/if}}
+                <div class="products-grid" id="recently-viewed-products-list">
+                    <div class="no-products text-center" style="flex-direction: column;display:none;">
+                        <svg class="icon" role="img" aria-label="{{lang 'common.no_item'}}">
+                            <title>{{lang 'common.no_item'}}</title>
+                            <desc>{{lang 'common.no_item'}}</desc>
+                            <use xlink:href="#icon-no-products"></use>
+                        </svg>
+                        <span class="text">{{lang 'common.sorry_no_products'}}</span>
+                    </div>
+                </div>
+                <div id="recently-viewed-products-list-tmp" style="display: none !important;"></div>
+            </div>
+        </div>
+
+        <div class="lst-social-media">
+            <div class="in-content">
+                <h3 class="title text-center">Social</h3>
+                <div class="media-grid text-center" id="recently-viewed-products-share">
+                    <ul class="list-social">
+                        {{#each social_media}}
+                            <li class="list-social__item">
+                                <a href="{{url}}" class="link link--text list-social__link" target="_blank" rel="noopener" aria-label="Open {{display_name}} Social Media in a new tab">
+                                    <svg class="icon" role="img" aria-label="{{display_name}}">
+                                        <title>{{display_name}}</title>
+                                        <desc>{{display_name}}</desc>
+                                        <use xlink:href="#icon-{{display_name}}"></use>
+                                    </svg>
+                                </a>
+                                <div class="info list-social__info text-left">
+                                    <a class="link link-underline" href="{{url}}" target="_blank" rel="noopener" aria-label="Open {{display_name}} Social Media in a new tab">
+                                        <span class="text">{{display_name}}</span>
+                                    </a>
+                                </div>
+                            </li>
+                        {{/each}}
+                        {{#if theme_settings.social_icon_tiktok_link}}
+                            <li class="list-social__item">
+                                <a href="{{theme_settings.social_icon_tiktok_link}}" class="link link--text list-social__link" target="_blank" rel="noopener" aria-label="Open {{display_name}} Social Media in a new tab">
+                                    <svg class="icon" role="img" aria-label="Tiktok">
+                                        <title>Tiktok</title>
+                                        <desc>Tiktok</desc>
+                                        <use xlink:href="#icon-tiktok"></use>
+                                    </svg>
+                                </a>
+                                <div class="info list-social__info text-left">
+                                    <a class="link link-underline" href="{{theme_settings.social_icon_tiktok_link}}" target="_blank" rel="noopener" aria-label="Open {{display_name}} Social Media in a new tab">
+                                        <span class="text">Tiktok</span>
+                                    </a>
+                                </div>
+                            </li>
+                        {{/if}}
+                        {{#if theme_settings.social_icon_google_plus_link}}
+                            <li class="list-social__item">
+                                <a href="{{theme_settings.social_icon_google_plus_link}}" class="link link--text list-social__link" target="_blank" rel="noopener" aria-label="Open {{display_name}} Social Media in a new tab">
+                                    <svg class="icon" role="img" aria-label="Google Plus">
+                                        <title>Google Plus</title>
+                                        <desc>Google Plus</desc>
+                                        <use xlink:href="#icon-google-plus"></use>
+                                    </svg>
+                                </a>
+                                <div class="info list-social__info text-left">
+                                    <a class="link link-underline" href="{{theme_settings.social_icon_google_plus_link}}" target="_blank" rel="noopener" aria-label="Open {{display_name}} Social Media in a new tab">
+                                        <span class="text">Google Plus</span>
+                                    </a>
+                                </div>
+                            </li>
+                        {{/if}}
+                        {{#if theme_settings.social_icon_snapchat_link}}
+                            <li class="list-social__item">
+                                <a href="{{theme_settings.social_icon_snapchat_link}}" class="link link--text list-social__link" target="_blank" rel="noopener" aria-label="Open {{display_name}} Social Media in a new tab">
+                                    <svg class="icon" role="img" aria-label="Snapchat Ghost">
+                                        <title>Snapchat Ghost</title>
+                                        <desc>Snapchat Ghost</desc>
+                                        <use xlink:href="#icon-snapchat-ghost"></use>
+                                    </svg>
+                                </a>
+                                <div class="info list-social__info text-left">
+                                    <a class="link link-underline" href="{{theme_settings.social_icon_snapchat_link}}" target="_blank" rel="noopener" aria-label="Open {{display_name}} Social Media in a new tab">
+                                        <span class="text">Snapchat Ghost</span>
+                                    </a>
+                                </div>
+                            </li>
+                        {{/if}}
+                        {{#if theme_settings.halo_newsletter_popup}}
+                            <li class="list-social__item mail-newsletter">
+                                <a href="#" data-open-newsletter-popup class="link link--text list-social__link" role="button">
+                                    <svg class="icon" role="img" aria-label="Newsletter Sign-up">
+                                        <title>Newsletter Sign-up</title>
+                                        <desc>Newsletter Sign-up</desc>
+                                        <use xlink:href="#icon-newsletter"></use>
+                                    </svg>>
+                                </a>
+                                <div class="info list-social__info text-left">
+                                    <a class="link link-underline" href="#" data-open-newsletter-popup role="button">
+                                        <span class="text">Newsletter Sign-up</span>
+                                    </a>
+                                </div>
+                            </li>
+                        {{/if}}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="wrap-icons">
+            <div class="expand-recently-viewed">
+                <svg class="icon" role="img" aria-label="Recently Viewed">
+                    <title>Recently Viewed</title>
+                    <desc>Recently Viewed</desc>
+                    <use xlink:href="#icon-recently-viewed"></use>
+                </svg>
+            </div>
+            <div class="expand-social-media">
+                <svg class="icon" role="img" aria-label="Social Media">
+                    <title>Social Media</title>
+                    <desc>Social Media</desc>
+                    <use xlink:href="#icon-social-media"></use>
+                </svg>
+            </div>
+            {{#if theme_settings.halo_recently_viewed_products_top}}
+                <div class="backtoTop">
+                    <svg class="icon" role="img" aria-label="{{lang 'common.top'}}">
+                        <title>{{lang 'common.top'}}</title>
+                        <desc>{{lang 'common.top'}}</desc>
+                        <use xlink:href="#icon-cross-line-top"></use>
+                    </svg>
+                </div>
+            {{/if}}
+        </div>
+    </section>
+{{/if}}

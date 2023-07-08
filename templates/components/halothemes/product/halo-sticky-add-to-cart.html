@@ -1,0 +1,128 @@
+<div id="halo_sticky_addToCart" class="{{#if theme_settings.halo_sticky_add_to_cart_mobile}}halo_sticky_addToCart_mb{{/if}}">
+    <div class="container">
+        <div class="item-wrap">
+            {{#if theme_settings.halo_product_countdown_show}}
+                {{#if theme_settings.halo_product_countdown '==' 'all'}}
+                    <div class="item item-left sticky-product-coutdown">
+                        <div class="productView-countDown countdown_{{product.id}}" data-countdown-id="{{product.id}}" data-countdown="{{theme_settings.halo_product_countdown_time}}"></div>
+                    </div>
+                {{else if theme_settings.halo_product_countdown '==' 'custom'}}
+                    {{#each custom_fields}}
+                        {{#if name '==' '__countdown'}}
+                            <div class="item item-left sticky-product-coutdown">
+                                <div class="productView-countDown countdown_{{../../id}}" data-countdown-id="{{../../product.id}}" data-countdown="{{{value}}}"></div>
+                            </div>
+                        {{/if}}
+                    {{/each}}
+                {{else if theme_settings.halo_product_countdown '==' 'sale'}}
+                    {{#or non_sale_price_with_tax non_sale_price_without_tax}}
+                        <div class="item item-left sticky-product-coutdown">
+                            <div class="productView-countDown countdown_{{product.id}}" data-countdown-id="{{product.id}}" data-countdown="{{theme_settings.halo_product_countdown_time}}"></div>
+                        </div>
+                    {{/or}}
+                {{/if}}
+            {{/if}}
+            <div class="item product-info">
+                <div class="product-wrapper">
+                    <div class="product-image" data-image-gallery-main>
+                        <img class="lazyload" data-src="{{getImage product.main_image 'productthumb_size' (cdn ../theme_settings.default_image_product)}}" data-main-image>
+                    </div>
+                    <div class="product-content">
+                        {{#if theme_settings.halo_card_title '==' 'ellipsis'}}
+                            <h3 class="productView-title card-ellipsis" style="-webkit-box-orient: vertical;">{{product.title}}<span class="option-value"></span></h3>
+                        {{else}}
+                            <h3 class="productView-title card-ellipsis">{{product.title}}<span class="option-value"></span></h3>
+                        {{/if}}
+                        <div class="productView-price sticky-price">
+                            {{#or customer (if theme_settings.restrict_to_login '!==' true)}}
+                                {{> components/products/price price=product.price}}
+                            {{else}}
+                                {{> components/common/login-for-pricing}}
+                            {{/or}}
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item item-right">
+                <div class="background-overlay"></div>
+                <form class="form form-popup product-main" method="post" action="{{product.cart_url}}" enctype="multipart/form-data" data-cart-item-add-2>
+                    <input type="hidden" name="action" value="add">
+                    <input type="hidden" name="product_id" value="{{product.id}}"/>
+                    <div class="productView-actions halo-productOptions">
+                        {{#if theme_settings.show_product_quantity_box}}
+                            <div class="form-field form-field--increments">
+                                <div class="form-increment" data-quantity-change-2>
+                                    <button class="button button--icon" data-action="dec">
+                                        <span class="is-srOnly">{{lang 'products.quantity_decrease'}}</span>
+                                    </button>
+                                    <input class="form-input form-input--incrementTotal"
+                                        id="qty_st"
+                                        name="qty[]"
+                                        type="number"
+                                        value="{{#if product.min_purchase_quantity}}{{product.min_purchase_quantity}}{{else}}1{{/if}}"
+                                        data-quantity-min="{{product.min_purchase_quantity}}"
+                                        data-quantity-max="{{product.max_purchase_quantity}}"
+                                        min="1"
+                                        pattern="[0-9]*"
+                                        aria-live="polite"
+                                    >
+                                    <button class="button button--icon" data-action="inc">
+                                        <span class="is-srOnly">{{lang 'products.quantity_increase'}}</span>
+                                    </button>
+                                </div>
+                            </div>
+                        {{/if}}
+                        {{#or customer (if theme_settings.restrict_to_login '!==' true)}}
+                            <div class="form-action">
+                                <button id="form-action-addToCart2" data-wait-message="{{lang 'products.adding_to_cart'}}" class="button button--primary halothemes" type="submit" {{#if product.can_purchase}}{{else}}disabled {{/if}}>
+                                    {{#if product.pre_order}}{{lang 'products.pre_order'}}{{else}}{{lang 'products.add_to_cart'}}{{/if}}
+                                </button>
+
+                                {{#if product.options}}
+                                    <a href="#" class="button button--primary choose_options_add">
+                                        <span>{{lang 'products.choose_options'}}</span>
+                                    </a>
+                                {{/if}}
+                            </div>
+                             {{{snippet 'product_addtocart'}}}
+
+                        {{/or}}
+
+                        {{#if product.options}}
+                            <div class="pop-up-option">
+                                <div class="container">
+                                    <button class="modal-close" type="button" title="Close">
+                                        <span class="aria-description--hidden">Close</span>
+                                        <span aria-hidden="true">×</span>
+                                    </button>
+                                    <div class="data-product-name">
+                                        <h3 class="productView-title card-ellipsis" style="-webkit-box-orient: vertical;">{{product.title}}<span class="option-value"></span></h3>
+                                        <div class="productView-price">
+                                            {{#or customer (if theme_settings.restrict_to_login '!==' true)}}
+                                                {{> components/products/price price=product.price}}
+                                            {{else}}
+                                                {{> components/common/login-for-pricing}}
+                                            {{/or}}
+                                        </div>
+                                    </div>
+                                    <div class="data-product-option{{#if product.options.length '>' 2}} data-product-option-2{{/if}} scrollbar haloCustomScrollbar haloCustomScrollbar-x" data-product-option-change-2>
+                                        {{#each product.options}}
+                                            {{{dynamicComponent 'components/halothemes/options-sticky-cart'}}}
+                                        {{/each}}
+                                    </div>
+                                    {{#if product.out_of_stock}}
+                                        {{#if product.out_of_stock_message}}
+                                            {{> components/common/alert/alert-error product.out_of_stock_message}}
+                                        {{else}}
+                                            {{> components/common/alert/alert-error (lang 'products.sold_out')}}
+                                        {{/if}}
+                                    {{/if}}
+                                </div>
+                            </div>
+                        {{/if}}
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

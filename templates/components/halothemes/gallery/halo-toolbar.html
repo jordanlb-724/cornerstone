@@ -1,0 +1,20 @@
+<div class="toolbar-wrapper">
+    <div class="toolbar-right">
+        {{#if theme_settings.haloStickyToolbar_limit}}
+            {{> components/halothemes/gallery/halo-show-products limit=limit}}
+        {{/if}}
+        {{#if theme_settings.haloStickyToolbar_sort}}
+            {{> components/products/filter sort=sort}}
+        {{/if}}
+        {{#if theme_settings.haloStickyToolbar_viewAs}}
+            {{> components/halothemes/gallery/halo-view-as}}
+        {{/if}}
+    </div>
+</div>
+{{#if theme_settings.haloStickyToolbar_viewAs}}
+    <div class="toolbar-wrapper toolbar-mobile">
+        <div class="toolbar-item">
+            {{> components/halothemes/gallery/halo-view-as-2}}
+        </div>
+    </div>
+{{/if}}

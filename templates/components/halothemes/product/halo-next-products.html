@@ -1,0 +1,22 @@
+{{#if theme_settings.halo-next-product}}
+    <div class="productView-nextProducts" data-product-id="{{product.id}}">
+        <div class="next-prev-icons">
+            <a class="prev-icon disable" href="#" data-target="#prev-product-modal" aria-label="{{lang 'common.previous'}}">
+                <svg class="icon"><use xlink:href="#slick-arrow-prev"></use></svg>
+                <span class="text">
+                    <span>{{lang 'common.previous'}}</span>
+                </span>
+            </a>
+            <a class="next-icon disable" href="#" data-next-prev-icon="" data-target="#next-product-modal" aria-label="{{lang 'common.next'}}">
+                <span class="text">
+                    <span>{{lang 'common.next'}}</span>
+                </span>
+                <svg class="icon"><use xlink:href="#slick-arrow-next"></use></svg>
+            </a>
+        </div>
+        <div class="next-prev-modal">
+            <div id="prev-product-modal" class="next-prev-content"></div>
+            <div id="next-product-modal" class="next-prev-content"></div>
+        </div>
+    </div>
+{{/if}}
