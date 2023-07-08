@@ -26,7 +26,7 @@ describe('CollapsibleGroup', () => {
         beforeEach(() => {
             collapsible = {
                 close: jest.fn(),
-                hasCollapsible: jest.fn()
+                hasCollapsible: jest.fn(),
             };
             childCollapsible = {};
 
@@ -57,7 +57,7 @@ describe('CollapsibleGroup', () => {
         beforeEach(() => {
             collapsible = {
                 close: jest.fn(),
-                hasCollapsible: jest.fn()
+                hasCollapsible: jest.fn(),
             };
             childCollapsible = {};
 

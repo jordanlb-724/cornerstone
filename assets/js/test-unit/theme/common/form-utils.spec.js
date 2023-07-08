@@ -7,7 +7,7 @@ describe('Validators', () => {
         validator = {
             add: jest.fn(),
             configure: jest.fn(),
-            setMessageOptions: jest.fn()
+            setMessageOptions: jest.fn(),
         };
     });
 
