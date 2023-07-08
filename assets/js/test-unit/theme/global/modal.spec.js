@@ -70,7 +70,7 @@ describe('Modal', () => {
                 window.document.documentElement,
                 $modalBody[0],
                 $modalBody.find('div')[0],
-                modal.$content[0]
+                modal.$content[0],
             ].forEach((elm) => {
                 ['scollHeight', 'offsetHeight', 'clientHeight', 'innerHeight'].forEach((property) => {
                     Object.defineProperty(elm, property, { configurable: true, value: 700 });
