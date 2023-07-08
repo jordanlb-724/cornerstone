@@ -387,6 +387,7 @@
 
         > .navPage-subMenu-action {
             border-bottom: 1px solid stencilColor("navPages-subMenu-separatorColor");
+            color: #000;
             margin-bottom: spacing("half") + spacing("quarter");
         }
     }
