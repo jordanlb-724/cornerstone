@@ -19,7 +19,7 @@ describe('PaymentMethod', () => {
               `<form>
                   <input name="credit_card_number" />
                   <input name="expiration" />
-              '</form>`
+              '</form>`,
             );
             $form.appendTo(document.body);
         });
