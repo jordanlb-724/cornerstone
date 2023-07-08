@@ -1,4 +1,8 @@
-import { creditCardType, storeInstrument, Formatters, Validators } from '../../../theme/common/payment-method';
+import {
+    creditCardType,
+    storeInstrument,
+    Formatters, Validators,
+} from '../../../theme/common/payment-method';
 
 describe('PaymentMethod', () => {
     describe('creditCardType', () => {
