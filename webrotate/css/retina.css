@@ -80,7 +80,7 @@
 }
 
 .wr360_player img {
-    border: none !important;
+    border: 0 !important;
     box-shadow: none !important;
     cursor: pointer !important;
     image-rendering: -webkit-optimize-contrast;
@@ -311,7 +311,7 @@
 
 .wr360_player .container .theme_panel .toolbar {
     background: inherit !important;
-    border: none !important;
+    border: 0 !important;
     box-sizing: content-box !important;
     height: 42px;
     margin: 0 auto;
@@ -681,7 +681,7 @@
 }
 
 .wr360_player .container .lightbox_rollover2 .lbox2_content iframe {
-    border: none;
+    border: 0;
     height: 100%;
     width: 100%;
 }

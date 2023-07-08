@@ -80,7 +80,7 @@
 }
 
 .wr360_player img {
-    border: none !important;
+    border: 0 !important;
     box-shadow: none !important;
     cursor: pointer !important;
     image-rendering: -webkit-optimize-contrast;
@@ -626,7 +626,7 @@
 }
 
 .wr360_player .container .lightbox_rollover2 .lbox2_content iframe {
-    border: none;
+    border: 0;
     height: 100%;
     width: 100%;
 }
