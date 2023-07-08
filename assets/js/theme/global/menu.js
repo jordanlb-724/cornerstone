@@ -4,7 +4,7 @@ import collapsibleGroupFactory from '../common/collapsible-group';
 const PLUGIN_KEY = 'menu';
 
 /*
- * Manage the behaviour of a menu
+ * Manage the behavior of a menu
  * @param {jQuery} $menu
  */
 class Menu {

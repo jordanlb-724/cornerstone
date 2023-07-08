@@ -16,7 +16,7 @@ function optionsFromData($element) {
 }
 
 /*
- * Manage the behaviour of a mobile menu
+ * Manage the behavior of a mobile menu
  * @param {jQuery} $toggle
  * @param {Object} [options]
  * @param {Object} [options.headerSelector]

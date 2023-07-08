@@ -6,7 +6,7 @@ import {
 
 describe('PaymentMethod', () => {
     describe('creditCardType', () => {
-        it('should return a credit card type from the first six caracters of a given string', () => {
+        it('should return a credit card type from the first six characters of a given string', () => {
             expect(creditCardType('370000')).toEqual('American Express');
             expect(creditCardType('388000')).toEqual('Diners Club');
             expect(creditCardType('601100')).toEqual('Discover');
@@ -19,12 +19,10 @@ describe('PaymentMethod', () => {
         let $form;
 
         beforeEach(() => {
-            $form = $(
-              `<form>
-                  <input name="credit_card_number" />
-                  <input name="expiration" />
-              '</form>`,
-            );
+            $form = $(`<form>
+                        <input name="credit_card_number" />
+                        <input name="expiration" />
+                    '</form>`);
             $form.appendTo(document.body);
         });
 
@@ -72,7 +70,7 @@ describe('PaymentMethod', () => {
                 expect(event.target.value).toEqual('11');
             });
 
-            it('should be completing month for intergers superior to one', () => {
+            it('should be completing month for integers superior to one', () => {
                 Formatters.setExpirationFormat('form input[name="expiration"]');
                 const event = $.Event('keyup');
                 const input = $('form input[name="expiration"]');
