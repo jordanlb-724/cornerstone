@@ -60,7 +60,7 @@ describe('Modal', () => {
 
             // Force heights of each element since jsdom does not provide these
             [
-                $('body')[0]
+                $('body')[0],
             ].forEach((elm) => {
                 ['scollHeight', 'offsetHeight', 'clientHeight', 'innerHeight'].forEach((property) => {
                     Object.defineProperty(elm, property, { configurable: true, value: 500 });
