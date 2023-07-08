@@ -3,6 +3,7 @@ import '../../../theme/global/jquery-migrate';
 // import { api } from '@bigcommerce/stencil-utils';
 jest.mock('@bigcommerce/stencil-utils');
 import utils from '@bigcommerce/stencil-utils';
+
 const api = utils.api;
 import modalFactory, { alertModal } from '../../../theme/global/modal';
 import foundation from '../../../theme/global/foundation';
@@ -13,7 +14,7 @@ import stateCountry from '../../../theme/common/state-country';
 
 describe('StateCountry', () => {
     let $countryElement,
-    $stateElement;
+        $stateElement;
 
     beforeEach(() => {
         $countryElement = $(`
@@ -40,7 +41,7 @@ describe('StateCountry', () => {
 
     describe('on error', () => {
         let $modalElement,
-modal;
+            modal;
 
         beforeEach(() => {
             $modalElement = $(`
@@ -78,13 +79,13 @@ modal;
             api.country.getByName.mockImplementation((countryName, callback) => {
                 let states = [];
                 switch (countryName) {
-                    case '1': break;
-                    case '3':
-                        states = [
-                            { id: '1', name: 'Kepler' },
-                            { id: '2', name: 'Grimaldi' },
-                            { id: '3', name: 'Byrgius' }
-                        ];
+                case '1': break;
+                case '3':
+                    states = [
+                        { id: '1', name: 'Kepler' },
+                        { id: '2', name: 'Grimaldi' },
+                        { id: '3', name: 'Byrgius' },
+                    ];
                     break;
                 }
 
