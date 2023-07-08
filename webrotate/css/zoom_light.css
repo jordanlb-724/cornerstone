@@ -65,6 +65,7 @@
     transition: 0.2s ease;
 }
 
+/* stylelint-disable-next-line function-url-quotes */
 @-moz-document url-prefix() {
     .wr360_player .container .spinner_hint .spinner_hint_item {
         padding-bottom: 8px;
@@ -90,17 +91,17 @@
 
 .wr360_player .arrow_zoom_cursor,
 .wr360_player .arrow_zoom_cursor > img {
-    cursor: url(../img/zoom_light/pointer-zoom-in.svg), zoom-in !important;
+    cursor: url("../img/zoom_light/pointer-zoom-in.svg"), zoom-in !important;
 }
 
 .wr360_player .arrow_zoom_cursor.container_zoomed,
 .wr360_player .arrow_zoom_cursor.container_zoomed > img {
-    cursor: url(../img/zoom_light/pointer-zoom-out.svg), zoom-out !important;
+    cursor: url("../img/zoom_light/pointer-zoom-out.svg"), zoom-out !important;
 }
 
 .wr360_player .arrow_zoom_cursor.container_zoomoff,
 .wr360_player .arrow_zoom_cursor.container_zoomoff > img {
-    cursor: url(../img/zoom_light/pointer-zoom-off.svg), pointer !important;
+    cursor: url("../img/zoom_light/pointer-zoom-off.svg"), pointer !important;
 }
 
 .wr360_player .zoom_cursor,
@@ -260,6 +261,7 @@
     width: 25px;
 }
 
+/* stylelint-disable-next-line function-url-quotes */
 @-moz-document url-prefix() {
     .wr360_player .container .theme_header .progress_wrap .progress_bar_anim span.percentnums,
     .wr360_player .container .theme_header .progress_wrap .progress_bar_anim_fs span.percentnums {
@@ -322,7 +324,7 @@
 }
 
 .wr360_player .container .theme_panel .toolbar a.fullscreenon_button {
-    background: url(../img/zoom_light/fullscreenon.svg) no-repeat 0 0;
+    background: url("../img/zoom_light/fullscreenon.svg") no-repeat 0 0;
     background-color: rgba(248, 248, 248, 0.8);
     background-size: 36px 36px;
     cursor: pointer;
@@ -337,7 +339,7 @@
 }
 
 .wr360_player a.fullscreenoff_button {
-    background: url(../img/zoom_light/fullscreenoff.svg) no-repeat center center;
+    background: url("../img/zoom_light/fullscreenoff.svg") no-repeat center center;
     cursor: pointer;
     display: block;
     height: 50px;
@@ -489,7 +491,7 @@
 }
 
 .wr360_player .container .lightbox_rollover .closelbox {
-    background: url(../img/zoom_light/lightbox_close.svg) 7px 7px no-repeat;
+    background: url("../img/zoom_light/lightbox_close.svg") 7px 7px no-repeat;
     cursor: pointer;
     height: 28px;
     position: absolute;

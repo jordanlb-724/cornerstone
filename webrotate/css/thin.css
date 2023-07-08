@@ -65,6 +65,7 @@
     transition: 0.2s ease;
 }
 
+/* stylelint-disable-next-line function-url-quotes */
 @-moz-document url-prefix() {
     .wr360_player .container .spinner_hint .spinner_hint_item {
         padding-bottom: 8px;
@@ -90,17 +91,17 @@
 
 .wr360_player .arrow_zoom_cursor,
 .wr360_player .arrow_zoom_cursor > img {
-    cursor: url(../img/basic/pointer-zoom-in.svg), zoom-in !important;
+    cursor: url("../img/basic/pointer-zoom-in.svg"), zoom-in !important;
 }
 
 .wr360_player .arrow_zoom_cursor.container_zoomed,
 .wr360_player .arrow_zoom_cursor.container_zoomed > img {
-    cursor: url(../img/basic/pointer-zoom-out.svg), zoom-out !important;
+    cursor: url("../img/basic/pointer-zoom-out.svg"), zoom-out !important;
 }
 
 .wr360_player .arrow_zoom_cursor.container_zoomoff,
 .wr360_player .arrow_zoom_cursor.container_zoomoff > img {
-    cursor: url(../img/basic/pointer-zoom-off.svg), pointer !important;
+    cursor: url("../img/basic/pointer-zoom-off.svg"), pointer !important;
 }
 
 .wr360_player .zoom_cursor,
@@ -265,6 +266,7 @@
     width: 25px;
 }
 
+/* stylelint-disable-next-line function-url-quotes */
 @-moz-document url-prefix() {
     .wr360_player .container .theme_header .progress_wrap .progress_bar_anim span.percentnums,
     .wr360_player .container .theme_header .progress_wrap .progress_bar_anim_fs span.percentnums {
@@ -336,33 +338,33 @@
 }
 
 .wr360_player .container .theme_panel .toolbar a.left_button {
-    background: url(../img/thin/left.svg) no-repeat 0 0;
+    background: url("../img/thin/left.svg") no-repeat 0 0;
     margin-right: -2px;
 }
 
 .wr360_player .container .theme_panel .toolbar a.right_button {
-    background: url(../img/thin/right.svg) no-repeat 0 0;
+    background: url("../img/thin/right.svg") no-repeat 0 0;
     margin-right: -1px;
 }
 
 .wr360_player .container .theme_panel .toolbar a.up_button {
-    background: url(../img/thin/up.svg) no-repeat 0 0;
+    background: url("../img/thin/up.svg") no-repeat 0 0;
 }
 
 .wr360_player .container .theme_panel .toolbar a.down_button {
-    background: url(../img/thin/down.svg) no-repeat 0 0;
+    background: url("../img/thin/down.svg") no-repeat 0 0;
 }
 
 .wr360_player .container .theme_panel .toolbar a.play_button {
-    background: url(../img/thin/play.svg) no-repeat 0 0;
+    background: url("../img/thin/play.svg") no-repeat 0 0;
 }
 
 .wr360_player .container .theme_panel .toolbar a.pause_button {
-    background: url(../img/thin/pause.svg) no-repeat 0 0;
+    background: url("../img/thin/pause.svg") no-repeat 0 0;
 }
 
 .wr360_player .container .theme_panel .toolbar a.zoomin_button {
-    background: url(../img/thin/zoomin.svg) no-repeat 0 0;
+    background: url("../img/thin/zoomin.svg") no-repeat 0 0;
 }
 
 .wr360_player .container_zoomoff .theme_panel .toolbar a.zoomin_button,
@@ -372,23 +374,23 @@
 }
 
 .wr360_player .container .theme_panel .toolbar a.zoomout_button {
-    background: url(../img/thin/zoomout.svg) no-repeat 0 0;
+    background: url("../img/thin/zoomout.svg") no-repeat 0 0;
 }
 
 .wr360_player .container .theme_panel .toolbar a.hotspotson_button {
-    background: url(../img/thin/hotspoton.svg) no-repeat 0 0;
+    background: url("../img/thin/hotspoton.svg") no-repeat 0 0;
 }
 
 .wr360_player .container .theme_panel .toolbar a.hotspotsoff_button {
-    background: url(../img/thin/hotspotoff.svg) no-repeat 0 0;
+    background: url("../img/thin/hotspotoff.svg") no-repeat 0 0;
 }
 
 .wr360_player .container .theme_panel .toolbar a.fullscreenon_button {
-    background: url(../img/thin/fullscreenon.svg) no-repeat 0 0;
+    background: url("../img/thin/fullscreenon.svg") no-repeat 0 0;
 }
 
 .wr360_player a.fullscreenoff_button {
-    background: url(../img/thin/fullscreenoff.svg) no-repeat center center;
+    background: url("../img/thin/fullscreenoff.svg") no-repeat center center;
     cursor: pointer;
     display: block;
     height: 50px;
@@ -541,7 +543,7 @@
 }
 
 .wr360_player .container .lightbox_rollover .closelbox {
-    background: url(../img/thin/lightbox_close.svg) 7px 7px no-repeat;
+    background: url("../img/thin/lightbox_close.svg") 7px 7px no-repeat;
     cursor: pointer;
     height: 28px;
     position: absolute;

@@ -65,6 +65,7 @@
     transition: 0.2s ease;
 }
 
+/* stylelint-disable-next-line function-url-quotes */
 @-moz-document url-prefix() {
     .wr360_player .container .spinner_hint .spinner_hint_item {
         padding-bottom: 8px;
@@ -90,17 +91,17 @@
 
 .wr360_player .arrow_zoom_cursor,
 .wr360_player .arrow_zoom_cursor > img {
-    cursor: url(../img/basic/pointer-zoom-in.svg), zoom-in !important;
+    cursor: url("../img/basic/pointer-zoom-in.svg"), zoom-in !important;
 }
 
 .wr360_player .arrow_zoom_cursor.container_zoomed,
 .wr360_player .arrow_zoom_cursor.container_zoomed > img {
-    cursor: url(../img/basic/pointer-zoom-out.svg), zoom-out !important;
+    cursor: url("../img/basic/pointer-zoom-out.svg"), zoom-out !important;
 }
 
 .wr360_player .arrow_zoom_cursor.container_zoomoff,
 .wr360_player .arrow_zoom_cursor.container_zoomoff > img {
-    cursor: url(../img/basic/pointer-zoom-off.svg), pointer !important;
+    cursor: url("../img/basic/pointer-zoom-off.svg"), pointer !important;
 }
 
 .wr360_player .zoom_cursor,
@@ -265,6 +266,7 @@
     width: 25px;
 }
 
+/* stylelint-disable-next-line function-url-quotes */
 @-moz-document url-prefix() {
     .wr360_player .container .theme_header .progress_wrap .progress_bar_anim span.percentnums,
     .wr360_player .container .theme_header .progress_wrap .progress_bar_anim_fs span.percentnums {
@@ -335,34 +337,34 @@
 }
 
 .wr360_player .container .theme_panel .toolbar a.left_button {
-    background: url(../img/basic/left.svg) no-repeat 0 0;
+    background: url("../img/basic/left.svg") no-repeat 0 0;
 }
 
 .wr360_player .container .theme_panel .toolbar a.right_button {
-    background: url(../img/basic/right.svg) no-repeat 0 0;
+    background: url("../img/basic/right.svg") no-repeat 0 0;
     margin-right: 2px;
 }
 
 .wr360_player .container .theme_panel .toolbar a.up_button {
-    background: url(../img/basic/up.svg) no-repeat 0 0;
+    background: url("../img/basic/up.svg") no-repeat 0 0;
     margin-left: 10px;
 }
 
 .wr360_player .container .theme_panel .toolbar a.down_button {
-    background: url(../img/basic/down.svg) no-repeat 0 0;
+    background: url("../img/basic/down.svg") no-repeat 0 0;
     margin-left: 7px;
 }
 
 .wr360_player .container .theme_panel .toolbar a.play_button {
-    background: url(../img/basic/play.svg) no-repeat 0 0;
+    background: url("../img/basic/play.svg") no-repeat 0 0;
 }
 
 .wr360_player .container .theme_panel .toolbar a.pause_button {
-    background: url(../img/basic/pause.svg) no-repeat 0 0;
+    background: url("../img/basic/pause.svg") no-repeat 0 0;
 }
 
 .wr360_player .container .theme_panel .toolbar a.zoomin_button {
-    background: url(../img/basic/zoomin.svg) no-repeat 0 0;
+    background: url("../img/basic/zoomin.svg") no-repeat 0 0;
 }
 
 .wr360_player .container_zoomoff .theme_panel .toolbar a.zoomin_button,
@@ -372,25 +374,25 @@
 }
 
 .wr360_player .container .theme_panel .toolbar a.zoomout_button {
-    background: url(../img/basic/zoomout.svg) no-repeat 0 0;
+    background: url("../img/basic/zoomout.svg") no-repeat 0 0;
 }
 
 .wr360_player .container .theme_panel .toolbar a.hotspotson_button {
-    background: url(../img/basic/hotspoton.svg) no-repeat 0 0;
+    background: url("../img/basic/hotspoton.svg") no-repeat 0 0;
     margin-left: 8px;
 }
 
 .wr360_player .container .theme_panel .toolbar a.hotspotsoff_button {
-    background: url(../img/basic/hotspotoff.svg) no-repeat 0 0;
+    background: url("../img/basic/hotspotoff.svg") no-repeat 0 0;
     margin-left: 8px;
 }
 
 .wr360_player .container .theme_panel .toolbar a.fullscreenon_button {
-    background: url(../img/basic/fullscreenon.svg) no-repeat 0 0;
+    background: url("../img/basic/fullscreenon.svg") no-repeat 0 0;
 }
 
 .wr360_player a.fullscreenoff_button {
-    background: url(../img/basic/fullscreenoff.svg) no-repeat center center;
+    background: url("../img/basic/fullscreenoff.svg") no-repeat center center;
     cursor: pointer;
     display: block;
     height: 50px;
@@ -543,7 +545,7 @@
 }
 
 .wr360_player .container .lightbox_rollover .closelbox {
-    background: url(../img/basic/lightbox_close.svg) 7px 7px no-repeat;
+    background: url("../img/basic/lightbox_close.svg") 7px 7px no-repeat;
     cursor: pointer;
     height: 28px;
     position: absolute;
