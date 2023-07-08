@@ -10,29 +10,29 @@ c.context = {
     shippingProvinceErrorMessage: `The 'State/Province' field cannot be blank.`,
 };
 beforeEach(() => {
-	UpdateSpy = spyOn(utils.api.cart, 'itemUpdate');
+    UpdateSpy = spyOn(utils.api.cart, 'itemUpdate');
 
-	dataSpy = function (requestedAction = null) {
-		spyOn(jQuery.fn, 'data').and.callFake(function () {
-		    var param = arguments[0];
-		    switch (param) {
-		    case 'action':
-		    	return requestedAction;
-		    case 'cartItemid':
-		    	return '11111';
-		    case 'quantityMax':
-		    	return 5;
-		    case 'quantityMin':
-		    	return 1;
-		    case 'quantityMinError':
-		    	return 'min error';
-		    case 'quantityMaxError':
-		    	return ' max error';
-		    default:
-		    	return null;
-		    }
-		});
-	};
+    dataSpy = function (requestedAction = null) {
+        spyOn(jQuery.fn, 'data').and.callFake(function () {
+            var param = arguments[0];
+            switch (param) {
+            case 'action':
+                return requestedAction;
+            case 'cartItemid':
+                return '11111';
+            case 'quantityMax':
+                return 5;
+            case 'quantityMin':
+                return 1;
+            case 'quantityMinError':
+                return 'min error';
+            case 'quantityMaxError':
+                return ' max error';
+            default:
+                return null;
+            }
+        });
+    };
 });
 
 var $dom = $('<table class="cart" data-cart-quantity="2">\
@@ -96,31 +96,31 @@ c.onReady();
 
 describe('cartUpdate', () => {
     it('should INCRIMENT qty', () => {
-		dataSpy;
-		dataSpy('inc');
-		spyOn(jQuery.fn, 'val').and.returnValue(2);
-		c.cartUpdate($dom);
+        dataSpy;
+        dataSpy('inc');
+        spyOn(jQuery.fn, 'val').and.returnValue(2);
+        c.cartUpdate($dom);
 
-		expect(UpdateSpy).toHaveBeenCalledWith('11111', 3, jasmine.any(Function));
-	});
+        expect(UpdateSpy).toHaveBeenCalledWith('11111', 3, jasmine.any(Function));
+    });
 
     it('should DECREMENT qty', () => {
-		dataSpy;
-		dataSpy('dec');
-		spyOn(jQuery.fn, 'val').and.returnValue(2);
-		c.cartUpdate($dom);
+        dataSpy;
+        dataSpy('dec');
+        spyOn(jQuery.fn, 'val').and.returnValue(2);
+        c.cartUpdate($dom);
 
-		expect(UpdateSpy).toHaveBeenCalledWith('11111', 1, jasmine.any(Function));
-	});
+        expect(UpdateSpy).toHaveBeenCalledWith('11111', 1, jasmine.any(Function));
+    });
 });
 
 describe('cartUpdateQtyTextChange', () => {
     it('should CHANGE qty completly based on the cart-item-qty-input', () => {
-		dataSpy;
-		dataSpy('manualQtyChange');
-		spyOn(jQuery.fn, 'val').and.returnValue(5, 2);
-		c.cartUpdateQtyTextChange($dom);
+        dataSpy;
+        dataSpy('manualQtyChange');
+        spyOn(jQuery.fn, 'val').and.returnValue(5, 2);
+        c.cartUpdateQtyTextChange($dom);
 
-		expect(UpdateSpy).toHaveBeenCalledWith('11111', 5, jasmine.any(Function));
-	});
+        expect(UpdateSpy).toHaveBeenCalledWith('11111', 5, jasmine.any(Function));
+    });
 });
