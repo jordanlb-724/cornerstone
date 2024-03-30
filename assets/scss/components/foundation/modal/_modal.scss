@@ -6,6 +6,8 @@
 // =============================================================================
 
 .modal {
+    background: transparent;
+    background-color: unset !important;
     left: 50%;
     margin: 0;
     max-height: 90%;
@@ -135,7 +137,7 @@
         }
     }
 
-    .warning-icon { 
+    .warning-icon {
         animation: animate-icon 0.5s;
         border-color: #facea8;
         color: #f8bb86;
