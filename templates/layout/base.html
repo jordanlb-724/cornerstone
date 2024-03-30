@@ -25,9 +25,9 @@
             window.lazySizesConfig.loadMode = 1;
         </script>
         <script async src="{{cdn 'assets/dist/theme-bundle.head_async.js' resourceHint='preload' as='script'}}"></script>
-        
+
         {{getFontsCollection font-display='block'}}
-        
+
         <script async src="{{cdn 'assets/dist/theme-bundle.font.js' resourceHint='preload' as='script'}}"></script>
 
         <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
@@ -65,7 +65,7 @@
                 window.stencilBootstrap("{{page_type}}", {{jsContext}}).load();
 
                 function browserSupportsFormData() {
-                    return typeof FormData !== 'undefined' 
+                    return typeof FormData !== 'undefined'
                         && !!FormData.prototype.keys;
                 }
                 function loadFormDataPolyfillScript(src) {
