@@ -14,7 +14,7 @@ beforeEach(() => {
 
     dataSpy = function (requestedAction = null) {
         spyOn(jQuery.fn, 'data').and.callFake(function () {
-            const param = arguments[0];
+            var param = arguments[0];
             switch (param) {
             case 'action':
                 return requestedAction;
@@ -95,7 +95,7 @@ const $dom = $('<table class="cart" data-cart-quantity="2">\
 c.onReady();
 
 describe('cartUpdate', () => {
-    it('should INCREMENT qty', () => {
+    it('should INCRIMENT qty', () => {
         dataSpy;
         dataSpy('inc');
         spyOn(jQuery.fn, 'val').and.returnValue(2);
@@ -115,7 +115,7 @@ describe('cartUpdate', () => {
 });
 
 describe('cartUpdateQtyTextChange', () => {
-    it('should CHANGE qty completely based on the cart-item-qty-input', () => {
+    it('should CHANGE qty completly based on the cart-item-qty-input', () => {
         dataSpy;
         dataSpy('manualQtyChange');
         spyOn(jQuery.fn, 'val').and.returnValue(5, 2);

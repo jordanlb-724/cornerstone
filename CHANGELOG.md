@@ -88,7 +88,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Added manual captcha to Contact Us form for additional spam protection. [#2290](https://github.com/bigcommerce/cornerstone/pull/2290)
 - Fixed PDP not respecting "quantity box" display settings. [#2291](https://github.com/bigcommerce/cornerstone/pull/2291)
 - Fixed product panels with scrolling/arrows prevent contextual menu on mobile devices [#2310](https://github.com/bigcommerce/cornerstone/pull/2310)
-- Added integrarion of storefront-account-payments lib [#2288][https://github.com/bigcommerce/cornerstone/pull/2288]
+- Added integration of storefront-account-payments lib [#2288][https://github.com/bigcommerce/cornerstone/pull/2288]
 - Bump Stencil utils to 6.13.0 [#2300][https://github.com/bigcommerce/cornerstone/pull/2300]
 - Removed non-working functionality from schema.json [#2301][https://github.com/bigcommerce/cornerstone/pull/2301]
 - Refactored `hide_price_from_guests` logic around `show_cart_action` use [#2304](https://github.com/bigcommerce/cornerstone/pull/2304)
@@ -112,7 +112,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ## 6.6.1 (09-14-2022)
 
 ## 6.6.0 (09-13-2022)
-- Add unionpay img to be display on custumers account. [#2260](https://github.com/bigcommerce/cornerstone/pull/2260)
+- Add unionpay img to be display on customers account. [#2260](https://github.com/bigcommerce/cornerstone/pull/2260)
 - Translations update September 2022. [#2258](https://github.com/bigcommerce/cornerstone/issues/2258)
 - Unable to navigate to home page from search results page after clicking Back button on browser. [#2238](https://github.com/bigcommerce/cornerstone/issues/2238)
 - Cannot Vault 16-digit Diners Club cards - creditcards module version is out of date [#2239](https://github.com/bigcommerce/cornerstone/issues/2239)
@@ -250,7 +250,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Fixed displaying swatch name for multiple swatch options on page. [#2040](https://github.com/bigcommerce/cornerstone/pull/2040)
 - Added settings for payment banners. [#2021](https://github.com/bigcommerce/cornerstone/pull/2021)
 - Use https:// for schema markup. [#2039](https://github.com/bigcommerce/cornerstone/pull/2039)
-- Update focus tooltip styles contrast to achieve accessibility AA Complaince. [#2047](https://github.com/bigcommerce/cornerstone/pull/2047)
+- Update focus tooltip styles contrast to achieve accessibility AA Compliance. [#2047](https://github.com/bigcommerce/cornerstone/pull/2047)
 - Apple pay button displaying needs to be fixed. [#2043](https://github.com/bigcommerce/cornerstone/pull/2043)
 - Fixed search result on search page not notified by screen reader. [#2024](https://github.com/bigcommerce/cornerstone/pull/2024)
 
@@ -281,7 +281,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Update focus trap in Modal. [#1998](https://github.com/bigcommerce/cornerstone/pull/1998)
 - Added unique identifiers to product cards on product list pages. [#1999](https://github.com/bigcommerce/cornerstone/pull/1999)
 - Fixed line breaks on Dropdown menu display mode. [#1996](https://github.com/bigcommerce/cornerstone/pull/1996)
-- Added notifications on Carousel's content cahnge through 'Next/Prev' buttons. [#1986](https://github.com/bigcommerce/cornerstone/pull/1986)
+- Added notifications on Carousel's content change through 'Next/Prev' buttons. [#1986](https://github.com/bigcommerce/cornerstone/pull/1986)
 - Add error message when faceted search fails on search, category, brand pages [#2005](https://github.com/bigcommerce/cornerstone/pull/2005)
 
 ## 5.2.0 (2021-02-22)
@@ -336,7 +336,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Cornerstone - Text hover color does not change when Dropdown menu display mode is set to 'Alternative'. [#1918](https://github.com/bigcommerce/cornerstone/pull/1918)
 - “Sort by” dropdown selection not reflected on search results page for News and Information tab. [#1910](https://github.com/bigcommerce/cornerstone/pull/1910)
 - Header content placed out of the header block on mobile. [#1908](https://github.com/bigcommerce/cornerstone/pull/1908)
-- Fixed an issue with dispaying options that are out of stock for product on Cart. [#1911](https://github.com/bigcommerce/cornerstone/pull/1911)
+- Fixed an issue with displaying options that are out of stock for product on Cart. [#1911](https://github.com/bigcommerce/cornerstone/pull/1911)
 - Selecting product options doesn't update image on PDP in Internet Explorer. [#1913](https://github.com/bigcommerce/cornerstone/pull/1913)
 - HTML Entity displayed as is via system/error message on a Storefront. [#1888](https://github.com/bigcommerce/cornerstone/pull/1888)
 - Shoppers are not anchor-linked to reviews on PDPs if product description tabs are enabled. [#1883](https://github.com/bigcommerce/cornerstone/pull/1883)
@@ -351,7 +351,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Cornerstone - Body text size above 14px is cut off on cart shipping dropdowns. [#1881](https://github.com/bigcommerce/cornerstone/pull/1881)
 - Move Tax Field under Grand Total on Cart when Tax inclusive. [#1903](https://github.com/bigcommerce/cornerstone/pull/1903)
 - Added styling config for the PayPal SPB on checkout page [#1866](https://github.com/bigcommerce/cornerstone/pull/1866)
-- Moved zoomSize and productSize to the upper level, cause product.js is not availabe on the Quick View [#1884](https://github.com/bigcommerce/cornerstone/pull/1884)
+- Moved zoomSize and productSize to the upper level, cause product.js is not available on the Quick View [#1884](https://github.com/bigcommerce/cornerstone/pull/1884)
 - Added new region on the cart page [#1901](https://github.com/bigcommerce/cornerstone/pull/1901)
 - Add pagination for Wishlists.[#1906](https://github.com/bigcommerce/cornerstone/pull/1906)
 
@@ -434,7 +434,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - ARIA attributes on Write Review modal need valid values. [#1790](https://github.com/bigcommerce/cornerstone/pull/1790)
 - Fixed improper heading hierarchy on PLPs. [#1779](https://github.com/bigcommerce/cornerstone/pull/1779)
 - Cornerstone - Cart link not visible on mobile Chrome depending on swatch image size. [#1793](https://github.com/bigcommerce/cornerstone/pull/1793)
-- Added a valid ARIA role for li elemenents on "Related Products" tab [#1782](https://github.com/bigcommerce/cornerstone/pull/1782)
+- Added a valid ARIA role for li elements on "Related Products" tab [#1782](https://github.com/bigcommerce/cornerstone/pull/1782)
 - Fixed IDs used in ARIA and labels which are not unique. [#1791](https://github.com/bigcommerce/cornerstone/pull/1791)
 - Button inputs with the same name attribute should be part of a group. [#1792](https://github.com/bigcommerce/cornerstone/pull/1792)
 - Fixed Shop by price insufficient link text. [#1786](https://github.com/bigcommerce/cornerstone/pull/1786)
@@ -448,7 +448,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Visually hidden cart link read by screen reader. [#1770](https://github.com/bigcommerce/cornerstone/pull/1770)
 - Improper heading hierarchy on Cart page. [#1775](https://github.com/bigcommerce/cornerstone/pull/1775)
 - Fixed failing to add product to cart on IE11 [#1762](https://github.com/bigcommerce/cornerstone/pull/1762)
-- Fixed overlaping at footer columns when long texts (without spaces) are entered [#1753](https://jira.bigcommerce.com/browse/BCTHEME-43)
+- Fixed overlapping at footer columns when long texts (without spaces) are entered [#1753](https://jira.bigcommerce.com/browse/BCTHEME-43)
 - Incorrect focus order on PDPs. [#1771](https://github.com/bigcommerce/cornerstone/pull/1771)
 - Unnecessary heading on product cards. [#1768](https://github.com/bigcommerce/cornerstone/pull/1768)
 - Improper footer heading hierarchy. [#1760](https://github.com/bigcommerce/cornerstone/pull/1760/files)
@@ -459,7 +459,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## 4.9.0 (2020-07-28)
 - Added correct alt text on image change in product view. [#1747](https://github.com/bigcommerce/cornerstone/pull/1747)
-- Description tab is hidden in case of empty product descrioption. [#1746](https://github.com/bigcommerce/cornerstone/pull/1746)
+- Description tab is hidden in case of empty product description. [#1746](https://github.com/bigcommerce/cornerstone/pull/1746)
 - Stencil cli updated to the latest version. [#1744](https://github.com/bigcommerce/cornerstone/pull/1744)
 - Added immediate keyboard focus for quick view modal. [#1743](https://github.com/bigcommerce/cornerstone/pull/1743)
 - Added ability to change sale badge text for merchants. [#1742](https://github.com/bigcommerce/cornerstone/pull/1742)
@@ -506,7 +506,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Optimize polyfills to reduce download sizes on newer browsers as a way to improve performance. [#1669](https://github.com/bigcommerce/cornerstone/pull/1669)
 - Fixed the expand/collapse behavior for Custom filters thad do not have an '&' in their name. [#1693](https://github.com/bigcommerce/cornerstone/pull/1693)
 - Line breaks are getting stripped from 'Return Instructions' printed to the storefront. [#1692](https://github.com/bigcommerce/cornerstone/pull/1692)
-- Fixes Acount Orders Ship/Bill page to correctly display '&' instead of the encoded version: '&amp'. [#1691](https://github.com/bigcommerce/cornerstone/pull/1691)
+- Fixes Account Orders Ship/Bill page to correctly display '&' instead of the encoded version: '&amp'. [#1691](https://github.com/bigcommerce/cornerstone/pull/1691)
 - Fixed the expanding/collapsing behavior for Product Filters on category, brand, and search result pages. [#1689](https://github.com/bigcommerce/cornerstone/pull/1689)
 - Fix author field on Product Reviews from displaying HTML entities in place of special characters. [#1688](https://github.com/bigcommerce/cornerstone/pull/1688)
 - Display wallet on drop-down section from cart [#1687](https://github.com/bigcommerce/cornerstone/pull/1687)
@@ -593,7 +593,7 @@ No actual PR updates. Fixes config values.
 - Reset compare products counter after faceted search updates page content [#1571](https://github.com/bigcommerce/cornerstone/pull/1571)
 
 ## 4.1.0 (2019-08-28)
-- deleted whitespaces in if statments(content.html) [#1560](https://github.com/bigcommerce/cornerstone/pull/1560)
+- deleted whitespaces in if statements(content.html) [#1560](https://github.com/bigcommerce/cornerstone/pull/1560)
 - Remove aria-hidden attribute from main menu [#1563](https://github.com/bigcommerce/cornerstone/pull/1563)
 - Fix tall images on PDPs and PLPs [#1559](https://github.com/bigcommerce/cornerstone/pull/1559)
 
@@ -694,7 +694,7 @@ No actual PR updates. Fixes config values.
   If this applies to you, you'll want to add the cart resource back on the page types that need it (via front matter).
 
 ### Other Changes
-- Added defer tag to addThis and defered execution of related script [#1406](https://github.com/bigcommerce/cornerstone/pull/1406)
+- Added defer tag to addThis and deferred execution of related script [#1406](https://github.com/bigcommerce/cornerstone/pull/1406)
 - Fixed compare buttons for product list display [#1384](https://github.com/bigcommerce/cornerstone/pull/1384)
 - Remove unnecessary API call to get cookie notification status [#1380](https://github.com/bigcommerce/cornerstone/pull/1380)
 - Cart switch from quote item hash to id which is immutable [#1387](https://github.com/bigcommerce/cornerstone/pull/1387)
@@ -738,7 +738,7 @@ No actual PR updates. Fixes config values.
 - Fixed amp page error related to store logo [#1323](https://github.com/bigcommerce/cornerstone/pull/1323)
 - Add link to order status in account menu when viewing order [#1343](https://github.com/bigcommerce/cornerstone/pull/1343)
 - Update cart when quantity changed manually (without using the increase and decrease arrows). [#1338](https://github.com/bigcommerce/cornerstone/pull/1338)
-- Fix option set. Selection from option set that containes multiple similar options. [#1347](https://github.com/bigcommerce/cornerstone/pull/1347)
+- Fix option set. Selection from option set that contains multiple similar options. [#1347](https://github.com/bigcommerce/cornerstone/pull/1347)
 
 ## 2.3.2 (2018-08-17)
 - Fix zoom behavior for small images in gallery (turn off zoom if image is too small). [#1325](https://github.com/bigcommerce/cornerstone/pull/1325)

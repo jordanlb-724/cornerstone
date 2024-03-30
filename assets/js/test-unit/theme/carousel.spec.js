@@ -4,7 +4,7 @@ import 'slick-carousel';
 
 describe('carousel', () => {
     it('should generate carousel WITH dots if carousel has more than one slide', () => {
-        const multipleSlidesElement = $("<section class='heroCarousel' data-slick='{}'>\
+        var multipleSlidesElement = $("<section class='heroCarousel' data-slick='{}'>\
             <a href=''>\
                 <div class='heroCarousel-slide  heroCarousel-slide--first'>\
                     <div class='heroCarousel-image-wrapper' style='height: 42.868654311039485vw'>\
@@ -27,7 +27,7 @@ describe('carousel', () => {
         </section>");
 
         spyOn(jQuery.fn, 'find').and.returnValue(multipleSlidesElement);
-        const slickSpy = spyOn(multipleSlidesElement, 'slick');
+        var slickSpy = spyOn(multipleSlidesElement, 'slick');
         carousel();
         expect(slickSpy).toHaveBeenCalledWith({
             accessibility: false,
@@ -38,7 +38,7 @@ describe('carousel', () => {
     });
 
     it('should generate carousel WITHOUT dots if carousel has one slide', () => {
-        const multipleSlidesElement = $("<section class='heroCarousel' data-slick='{}'>\
+        var multipleSlidesElement = $("<section class='heroCarousel' data-slick='{}'>\
             <a href=''>\
                 <div class='heroCarousel-slide  heroCarousel-slide--first'>\
                     <div class='heroCarousel-image-wrapper' style='height: 42.868654311039485vw'>\
@@ -54,7 +54,7 @@ describe('carousel', () => {
         </section>");
 
         spyOn(jQuery.fn, 'find').and.returnValue(multipleSlidesElement);
-        const slickSpy = spyOn(multipleSlidesElement, 'slick');
+        var slickSpy = spyOn(multipleSlidesElement, 'slick');
         carousel();
         expect(slickSpy).toHaveBeenCalledWith({
             accessibility: false,

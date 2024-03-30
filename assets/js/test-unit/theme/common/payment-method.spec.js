@@ -21,9 +21,9 @@ describe('PaymentMethod', () => {
 
         beforeEach(() => {
             $form = $(`<form>
-                  <input name="credit_card_number" />
-                  <input name="expiration" />
-              '</form>`);
+                        <input name="credit_card_number" />
+                        <input name="expiration" />
+                    '</form>`);
             $form.appendTo(document.body);
         });
 

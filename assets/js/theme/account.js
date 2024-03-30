@@ -12,7 +12,12 @@ import {
     createPasswordValidationErrorTextObject,
 } from './common/utils/form-utils';
 import { createTranslationDictionary } from './common/utils/translations-utils';
-import { creditCardType, storeInstrument, Validators as CCValidators, Formatters as CCFormatters } from './common/payment-method';
+import {
+    creditCardType,
+    storeInstrument,
+    Validators as CCValidators,
+    Formatters as CCFormatters,
+} from './common/payment-method';
 import { showAlertModal } from './global/modal';
 import compareProducts from './global/compare-products';
 

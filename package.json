@@ -64,10 +64,11 @@
     "webpack-cli": "^4.5.0",
     "webpack-merge": "^5.8.0"
   },
+
   "scripts": {
     "build": "npx webpack --config webpack.prod.js",
     "buildDev": "npx webpack --config webpack.dev.js",
-    "lighthouse": "npx lighthouse --config-path=lighthouse-config.js --quiet --output html --chrome-flags=\"--headless\" $URL",
+    "lighthouse": "npx lighthouse --config-path=lighthouse-config.js --quiet --output html --chrome-flags=\"--headless\" http://localhost:3000",
     "test": "npx jest",
     "stylelint": "npx stylelint **/*.{css,scss}",
     "stylelint:fix": "npx stylelint --fix **/*.{css,scss}",
