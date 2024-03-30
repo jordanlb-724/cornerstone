@@ -11,17 +11,19 @@ By contributing to Stencil, you agree that your contributions will be licensed u
 [Stencil Documentation](https://stencil.bigcommerce.com/docs)
 
 [How Can I Contribute?](#how-can-i-contribute)
-  * [Your First Code Contribution](#your-first-code-contribution)
-  * [Pull Requests](#pull-requests)
+
+* [Your First Code Contribution](#your-first-code-contribution)
+* [Pull Requests](#pull-requests)
 
 [Styleguides](#styleguides)
-  * [Git Commit Messages](#git-commit-messages)
-  * [JavaScript Styleguide](#javascript-styleguide)
-  * [CSS/Sass Styleguide](#css-styleguide)
+
+* [Git Commit Messages](#git-commit-messages)
+* [JavaScript Styleguide](#javascript-styleguide)
+* [CSS/Sass Styleguide](#css-styleguide)
 
 ### Your First Code Contribution
 
-Unsure where to begin contributing to Stencil? Check our [forums](https://forum.bigcommerce.com/s/group/0F91300000029tpCAA) or our [stackoverflow](https://stackoverflow.com/questions/tagged/bigcommerce) tag. 
+Unsure where to begin contributing to Stencil? Check our [forums](https://forum.bigcommerce.com/s/group/0F91300000029tpCAA) or our [stackoverflow](https://stackoverflow.com/questions/tagged/bigcommerce) tag.
 
 ### Pull Requests
 
