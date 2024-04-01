@@ -22,7 +22,7 @@
 .optimizedCheckout-header {
     background-color: stencilColor("optimizedCheckout-header-backgroundColor");
     /* stylelint-disable function-url-quotes*/
-    background-image: url(stencilImage('optimizedCheckout-backgroundImage', 'optimizedCheckout-backgroundImage-size'));
+    background-image: url("stencilImage('optimizedCheckout-backgroundImage', 'optimizedCheckout-backgroundImage-size')");
     /* stylelint-enable */
     background-size: cover;
     border-color: stencilColor("optimizedCheckout-header-borderColor");

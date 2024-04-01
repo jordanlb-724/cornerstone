@@ -9,6 +9,9 @@ import videoGallery from './product/video-gallery';
 import { classifyForm } from './common/utils/form-utils';
 import modalFactory from './global/modal';
 
+// Jordan
+import './product/rhino/webRotate360';
+
 export default class Product extends PageManager {
     constructor(context) {
         super(context);
