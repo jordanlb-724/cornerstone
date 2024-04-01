@@ -1,0 +1,5 @@
+**/*.min.css
+**/*.min.css.map
+assets/scss/output.scss
+assets/scss/output.css
+**/*.html

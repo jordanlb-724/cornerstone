@@ -5,28 +5,70 @@
     // along the default ones.
     // Details: https://github.com/victorporof/Sublime-HTMLPrettify#using-your-own-jsbeautifyrc-options
     // Documentation: https://github.com/einars/js-beautify/
+    "css": {
+        "allowed_file_extensions": [
+            "css",
+            "scss",
+            "less"
+        ]
+    },
     "html": {
         "allowed_file_extensions": [
             "htm",
             "html",
-            "xhtml",
-            "shtml",
-            "xml",
-            "svg",
-            "dust"
+            "handlebars",
+            "hbs"
+            // "xhtml",
+            // "shtml",
+            // "xml",
+            // "svg",
+            // "dust",
         ],
-        "brace_style": "collapse", // [collapse|expand|end-expand|none] Put braces on the same line as control statements (default), or put braces on own line (Allman / ANSI style), or just put end braces on own line, or attempt to keep them where they are
-        "end_with_newline": true, // End output with newline
-        "indent_char": " ", // Indentation character
-        "indent_handlebars": false, // e.g. {{#foo}}, {{/foo}}
-        "indent_inner_html": true, // Indent <head> and <body> sections
-        "indent_scripts": "keep", // [keep|separate|normal]
-        "indent_size": 4, // Indentation size
-        "max_preserve_newlines": 1, // Maximum number of line breaks to be preserved in one chunk (0 disables)
-        "preserve_newlines": true, // Whether existing line breaks before elements should be preserved (only works before elements, not inside tags or for text)
+        "brace_style": "collapse,preserve-inline", // DONE
+        "break_chained_methods": false, // DONE - Unsure of
+        "comma_first": false, // DONE
+        "e4x": true, // DONE - Unsure of
+        "end_with_newline": false, // DONE
+        "indent_char": " ", // DONE
+        "indent_empty_lines": true, // DONE
+        "indent_handlebars": true, // e.g. {{#foo}}, {{/foo}} - DONE
+        "indent_inner_html": false, // DONE
+        "indent_scripts": "normal", // DONE
+        "indent_size": "4", // DONE
+        "indent_with_tabs": false,
+        "jslint_happy": true, // DONE
+        "keep_array_indentation": true, // DONE - Unsure of
+        "max_preserve_newlines": "1", // DONE
+        "preserve_newlines": true, // DONE
+        "space_before_conditional": true, // DONE
+        "templating": [
+            "handlebars",
+            "erb"
+        ],
+        "unescape_strings": false,
         "unformatted": [
             "{{/if}}"
         ], // List of tags that should not be reformatted
-        "wrap_line_length": 0 // Lines should wrap at next opportunity after this number of characters (0 disables)
+        "wrap_line_length": "0" // done
+    },
+    "js": {
+        "brace_style": "collapse,preserve-inline",
+        "break_chained_methods": false,
+        "comma_first": false,
+        "e4x": true,
+        "end_with_newline": false,
+        "indent_char": " ",
+        "indent_empty_lines": true,
+        "indent_inner_html": false,
+        "indent_scripts": "normal",
+        "indent_size": "4",
+        "indent_with_tabs": false,
+        "jslint_happy": true,
+        "keep_array_indentation": true,
+        "max_preserve_newlines": "2",
+        "preserve_newlines": true,
+        "space_before_conditional": true,
+        "unescape_strings": false,
+        "wrap_line_length": 0
     }
 }

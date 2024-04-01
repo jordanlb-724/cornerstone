@@ -12,3 +12,5 @@ vendor/bundle
 *.zip
 .idea/
 stencil-steps.yml
+.vscode/settings.json
+.vscode
