@@ -1,3 +1,4 @@
+/* eslint-disable */
 module.exports = {
     options: {
         configFile: '.stylelintrc',
@@ -16,4 +17,3 @@ module.exports = {
         '!assets/scss/maintenance.scss',
     ],
 };
-

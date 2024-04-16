@@ -12,7 +12,7 @@ const inputTagNames = [
  * @param {string} empty defines error text for empty field
  * @param {string} confirm defines error text for empty confirmation field
  * @param {string} mismatch defines error text if confirm passford mismatches passford field
- * @param {string} invalid defines error text for invalid password charaters sequence
+ * @param {string} invalid defines error text for invalid password characters sequence
  * @return {object} messages or default texts if nothing is providing
  */
 export const createPasswordValidationErrorTextObject = (empty, confirm, mismatch, invalid) => ({
@@ -21,7 +21,6 @@ export const createPasswordValidationErrorTextObject = (empty, confirm, mismatch
     onMismatchPasswordErrorText: mismatch,
     onNotValidPasswordErrorText: invalid,
 });
-
 
 /**
  * Apply class name to an input element on its type
@@ -135,7 +134,7 @@ function announceInputErrorMessage({ element, result }) {
     }
     const activeInputContainer = $(element).parent();
     // the reason for using span tag is nod-validate lib
-    // which does not add error message class while initialising form.
+    // which does not add error message class while initializing form.
     // specific class is added since it can be multiple spans
     const errorMessage = $(activeInputContainer).find('span.form-inlineMessage');
 

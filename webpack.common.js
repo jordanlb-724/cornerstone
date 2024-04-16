@@ -1,3 +1,4 @@
+/* eslint-disable */
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin,
     { CleanWebpackPlugin } = require('clean-webpack-plugin'),
     LodashPlugin = require('lodash-webpack-plugin'),
@@ -39,10 +40,10 @@ module.exports = {
                 },
             },
             {
-                test: require.resolve("jquery"),
-                loader: "expose-loader",
+                test: require.resolve('jquery'),
+                loader: 'expose-loader',
                 options: {
-                  exposes: ["$"],
+                    exposes: ['$'],
                 },
             },
         ],
@@ -75,7 +76,7 @@ module.exports = {
         }),
     ],
     resolve: {
-        fallback:  { "url": require.resolve("url/") },
+        fallback: { url: require.resolve('url/') },
         alias: {
             jquery: path.resolve(__dirname, 'node_modules/jquery/dist/jquery.min.js'),
             jstree: path.resolve(__dirname, 'node_modules/jstree/dist/jstree.min.js'),

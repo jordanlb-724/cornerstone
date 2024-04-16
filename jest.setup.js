@@ -1,3 +1,4 @@
+/* eslint-disable */
 // Mimics ProvidePlugin configuration for jQuery
 global.$ = global.jQuery = window.jQuery = require('jquery');
 

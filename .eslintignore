@@ -2,3 +2,7 @@
 /assets/dist
 stencil.conf.js
 webpack.conf.js
+*.min.js
+**/*.min.js
+**/*.min.js.map
+**/*.html

@@ -1,0 +1,74 @@
+{
+    // The plugin looks for a .jsbeautifyrc file in the same directory as the
+    // source file you're prettifying (or any directory above if it doesn't exist,
+    // or in your home folder if everything else fails) and uses those options
+    // along the default ones.
+    // Details: https://github.com/victorporof/Sublime-HTMLPrettify#using-your-own-jsbeautifyrc-options
+    // Documentation: https://github.com/einars/js-beautify/
+    "css": {
+        "allowed_file_extensions": [
+            "css",
+            "scss",
+            "less"
+        ]
+    },
+    "html": {
+        "allowed_file_extensions": [
+            "htm",
+            "html",
+            "handlebars",
+            "hbs"
+            // "xhtml",
+            // "shtml",
+            // "xml",
+            // "svg",
+            // "dust",
+        ],
+        "brace_style": "collapse,preserve-inline", // DONE
+        "break_chained_methods": false, // DONE - Unsure of
+        "comma_first": false, // DONE
+        "e4x": true, // DONE - Unsure of
+        "end_with_newline": false, // DONE
+        "indent_char": " ", // DONE
+        "indent_empty_lines": true, // DONE
+        "indent_handlebars": true, // e.g. {{#foo}}, {{/foo}} - DONE
+        "indent_inner_html": false, // DONE
+        "indent_scripts": "normal", // DONE
+        "indent_size": "4", // DONE
+        "indent_with_tabs": false,
+        "jslint_happy": true, // DONE
+        "keep_array_indentation": true, // DONE - Unsure of
+        "max_preserve_newlines": "1", // DONE
+        "preserve_newlines": true, // DONE
+        "space_before_conditional": true, // DONE
+        "templating": [
+            "handlebars",
+            "erb"
+        ],
+        "unescape_strings": false,
+        "unformatted": [
+            "{{/if}}"
+        ], // List of tags that should not be reformatted
+        "wrap_line_length": "0" // done
+    },
+    "js": {
+        "brace_style": "collapse,preserve-inline",
+        "break_chained_methods": false,
+        "comma_first": false,
+        "e4x": true,
+        "end_with_newline": false,
+        "indent_char": " ",
+        "indent_empty_lines": true,
+        "indent_inner_html": false,
+        "indent_scripts": "normal",
+        "indent_size": "4",
+        "indent_with_tabs": false,
+        "jslint_happy": true,
+        "keep_array_indentation": true,
+        "max_preserve_newlines": "2",
+        "preserve_newlines": true,
+        "space_before_conditional": true,
+        "unescape_strings": false,
+        "wrap_line_length": 0
+    }
+}

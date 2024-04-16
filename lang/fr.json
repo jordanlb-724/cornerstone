@@ -37,10 +37,10 @@
         "title": "Paiement"
     },
     "cart": {
-        "nav_aria_label": "Panier avec 0 article",
+        "nav_aria_label": "Panier avec 0 article",
         "continue_shopping": "Cliquez ici pour continuer vos achats",
         "login_to_checkout": "Connectez-vous pour procéder au paiement",
-        "items": "{NUM, plural, =0{(aucun article)} one {(# article)} other {(# articles)}}",
+        "items": "{NUM, plural, =0{(aucun article)} one {(# article)} other {(# articles)}}",
         "checkout": {
             "address": {
                 "multiple": "procéder au paiement avec plusieurs adresses",
@@ -66,7 +66,7 @@
             "checkout_multiple": "ou procéder au paiement avec plusieurs adresses",
             "view_cart": "Voir mon panier"
         },
-        "label": "Votre panier ({quantity, plural, one {# article} other {# articles}})",
+        "label": "Votre panier ({quantity, plural, one {# article} other {# articles}})",
         "is_empty": "Votre panier est vide",
         "invalid_entry_message": "[ENTRY] n'est pas une saisie valide",
         "coupon_code": "Code promotionnel",
@@ -74,10 +74,10 @@
         "included_in_total": " Inclus dans le total",
         "remove_file": "Supprimer ce fichier",
         "freeshipping": "Livraison gratuite",
-        "reconfigure_product": "Configurer « {name} »",
+        "reconfigure_product": "Configurer « {name} »",
         "shipping_peritem": "Par article expédié",
         "remove_item": "Supprimer {name} du panier",
-        "confirm_delete": "Voulez-vous vraiment supprimer cet article ?",
+        "confirm_delete": "Voulez-vous vraiment supprimer cet article ?",
         "coupons": {
             "apply_coupon": "Appliquer le code promotionnel",
             "empty_error": "Veuillez saisir votre code promotionnel.",
@@ -109,8 +109,8 @@
             "free_shipping": "Livraison gratuite",
             "hide_ups_rates": "Masquer les tarifs UPS",
             "show_ups_rates": "Afficher les tarifs UPS",
-            "empty_country_error": "Le champ « Pays » ne peut pas être vide.",
-            "empty_province_error": "Le champ « État/Province » ne peut être vide."
+            "empty_country_error": "Le champ « Pays » ne peut pas être vide.",
+            "empty_province_error": "Le champ « État/Province » ne peut être vide."
         },
         "gift_wrapping": {
             "title": "Emballage Cadeau",
@@ -124,12 +124,12 @@
             "option_different": "Je souhaite que chaque article soit emballé séparément",
             "choose_type": "Veuillez sélectionner un type d'emballage cadeau",
             "gift_message": "Message à joindre au cadeau",
-            "remove_confirm": "Voulez-vous vraiment supprimer l'emballage cadeau pour cet article ?",
+            "remove_confirm": "Voulez-vous vraiment supprimer l'emballage cadeau pour cet article ?",
             "preview": "Aperçu"
         },
         "added_to_cart": {
-            "what_next": "Ok, {num_products, plural, one {1 article a été ajouté} other {# articles ont été ajoutés}} à votre panier. Quelle est la prochaine étape ?",
-            "your_cart_contains": "Votre panier contient {num_products, plural, one {1 article} other {# articles}}",
+            "what_next": "Ok, {num_products, plural, one {1 article a été ajouté} other {# articles ont été ajoutés}} à votre panier. Quelle est la prochaine étape ?",
+            "your_cart_contains": "Votre panier contient {num_products, plural, one {1 article} other {# articles}}",
             "proceed_to_checkout": "Procéder au paiement",
             "order_subtotal": "Sous-total de la commande",
             "continue_shopping": "Continuer mes achats",
@@ -140,9 +140,9 @@
     "common": {
         "store_credit": "Votre avoir disponible s'élève à <strong>{store_credit}</strong>. Pour l'utiliser, il vous suffit de passer votre commande en choisissant l'avoir comme mode de paiement au moment de régler la commande.",
         "store_credit_overview": "{credit} d'avoir",
-        "generic_error": "Oups ! Une erreur s'est produite.",
-        "currency": "Sélectionnez la devise : {code}",
-        "currency_switch_promotion": "Les promotions et les chèques-cadeaux qui ne s'appliquent pas à la nouvelle devise seront supprimés de votre panier. Voulez-vous vraiment continuer ?",
+        "generic_error": "Oups ! Une erreur s'est produite.",
+        "currency": "Sélectionnez la devise : {code}",
+        "currency_switch_promotion": "Les promotions et les chèques-cadeaux qui ne s'appliquent pas à la nouvelle devise seront supprimés de votre panier. Voulez-vous vraiment continuer ?",
         "newsletter_signup": "Abonnez-vous à notre newsletter",
         "form_submit": "Envoyer",
         "no_preference": "Aucune préférence",
@@ -179,22 +179,22 @@
         "view_all": "Tout afficher",
         "all": "Tout",
         "paginator": {
-            "page_of": "Page {current} sur {total}"
+            "page_of": "Page {current} sur {total}"
         },
         "prices_are_in": "Les prix sont en {CODE}",
         "previous": "Précédent",
         "next": "Suivant",
         "sorter": {
             "relevance": "Pertinence",
-            "sort_by": "Trier par :",
+            "sort_by": "Trier par :",
             "featured": "Articles en vedette",
             "top_sellers": "Meilleures ventes",
             "newest": "Nouveautés",
             "alpha_asc": "A à Z",
             "alpha_desc": "Z à A",
             "reviews": "Par avis",
-            "price_asc": "Prix : par ordre croissant",
-            "price_desc": "Prix : par ordre décroissant"
+            "price_asc": "Prix : par ordre croissant",
+            "price_desc": "Prix : par ordre décroissant"
         },
         "loading": "Chargement",
         "month": "Mois",
@@ -217,9 +217,9 @@
     },
     "compare": {
         "button": "Comparer les produits",
-        "header": "Comparaison de {products, plural, one {# produit} other {# produits}}",
+        "header": "Comparaison de {products, plural, one {# produit} other {# produits}}",
         "remove": "Supprimer",
-        "no_remove": "Vous devez sélectionner au moins 2 articles pour effectuer une comparaison.",
+        "no_remove": "Vous devez sélectionner au moins 2 articles pour effectuer une comparaison.",
         "add_to_cart": "Ajouter au panier",
         "no_compare": "Vous devez sélectionner au moins deux produits pour la comparaison"
     },
@@ -228,7 +228,7 @@
         "product_label": "Produits filtrés",
         "shop_by_price": "Rechercher par prix",
         "shop_by_price_range_aria": "Prix compris entre {from} et {to}",
-        "filter_price_range": "Fourchette de prix :",
+        "filter_price_range": "Fourchette de prix :",
         "add_cart_announcement": "L'article a été ajouté",
         "reset": "Réinitialiser",
         "filter_reset_announcement": "Le filtre a été réinitialisé",
@@ -251,8 +251,8 @@
             "intro": "Pour utiliser un chèque-cadeau sur {store_name}, procédez comme suit.",
             "item1": "Vous avez besoin de votre code unique, qui apparait sur le chèque-cadeau qui vous a été envoyé en pièce jointe par e-mail. Il se présente sous une forme similaire à Z50-Y6K-COS-402.",
             "item2": "Parcourez la boutique et ajoutez des articles à votre panier normalement.",
-            "item3": "Cliquez sur le lien « <a href=\"{cart_url}\">Voir mon panier</a> » pour afficher le contenu de votre panier d'achat.",
-            "item4": "Saisissez le code de votre chèque-cadeau dans la case « Utiliser le chèque-cadeau », puis cliquez sur « Lancer »."
+            "item3": "Cliquez sur le lien « <a href=\"{cart_url}\">Voir mon panier</a> » pour afficher le contenu de votre panier d'achat.",
+            "item4": "Saisissez le code de votre chèque-cadeau dans la case « Utiliser le chèque-cadeau », puis cliquez sur « Lancer »."
         },
         "balance": {
             "heading": "Vérifier le solde du chèque-cadeau",
@@ -270,13 +270,13 @@
     },
     "login": {
         "heading": "Se connecter",
-        "field_email": "Adresse e-mail :",
-        "field_password": "Mot de passe :",
+        "field_email": "Adresse e-mail :",
+        "field_password": "Mot de passe :",
         "submit_value": "Se connecter",
-        "forgot_password": "Mot de passe oublié ?",
+        "forgot_password": "Mot de passe oublié ?",
         "new_customer": {
-            "heading": "Nouveau client ?",
-            "intro": "Créez un compte sur notre site et vous pourrez :",
+            "heading": "Nouveau client ?",
+            "intro": "Créez un compte sur notre site et vous pourrez :",
             "fact1": "Accélérer le processus de paiement",
             "fact2": "Enregistrer plusieurs adresses de livraison",
             "fact3": "Accéder à votre historique de commande",
@@ -310,54 +310,54 @@
             "heading": "Adresses",
             "add_heading": "Ajouter une nouvelle adresse",
             "primary": "Principal",
-            "phone": "Numéro de téléphone :",
+            "phone": "Numéro de téléphone :",
             "new_address": "Nouvelle adresse",
             "no_addresses": "Aucune adresse ajoutée à votre profil pour l'instant"
         },
         "messages": {
             "heading": "Messages",
-            "customer_said": "Vous :",
-            "merchant_said": "{store_name} :"
+            "customer_said": "Vous :",
+            "merchant_said": "{store_name} :"
         },
         "orders": {
             "heading": "Commandes",
             "none": "Vous n'avez passé aucune commande avec nous. Lorsque vous passerez une commande, elle apparaîtra sur cette page.",
             "return": {
-                "already_returned": "Cette commande ne contient aucun produit pouvant être renvoyé. Avez-vous déjà renvoyé tous les articles de cette commande ?",
+                "already_returned": "Cette commande ne contient aucun produit pouvant être renvoyé. Avez-vous déjà renvoyé tous les articles de cette commande ?",
                 "back_button": "Retour",
                 "order_item": "Article",
                 "item_price": "Prix",
                 "quantity": "Qté à retourner",
-                "why": "Quel est le motif de votre retour ?",
+                "why": "Quel est le motif de votre retour ?",
                 "reason": "Motif du retour",
                 "action": "Action de retour",
                 "comments": "Commentaires"
             },
-            "gift_wrapping": "Emballage cadeau :",
+            "gift_wrapping": "Emballage cadeau :",
             "refunded": "(Remboursé)",
             "refunded_quantity": "({qty} remboursé·s)",
             "return_item": "Retour",
-            "return_items": "Retourner des articles ?",
+            "return_items": "Retourner des articles ?",
             "order_placed": "Commande passée",
             "last_update": "Dernière mise à jour",
             "list": {
-                "order_number": "Commande n° {number}",
-                "product_details": "{num_products, plural, one {1 produit} other {# produits}} pour un total de {cost}"
+                "order_number": "Commande n° {number}",
+                "product_details": "{num_products, plural, one {1 produit} other {# produits}} pour un total de {cost}"
             },
             "details": {
-                "heading": "Commande n° {number}",
+                "heading": "Commande n° {number}",
                 "order_contents": "Contenu de la commande",
                 "ship_to": "Expédier à",
                 "ship_to_multi": "Articles expédiés à {street}, {city}, {state}, {zip}, {country}",
                 "ship_to_multi_text": "La commande sera livrée à plusieurs adresses",
                 "pickup_details": "Détails sur le retrait",
                 "bill_to": "Facturer à",
-                "how_to_pay": "Voici comment procéder au paiement de votre commande :",
+                "how_to_pay": "Voici comment procéder au paiement de votre commande :",
                 "order_details": "Détails de la commande",
-                "order_total": "Total de la commande :",
-                "order_status": "Statut de la commande :",
-                "payment_date": "Date de commande :",
-                "payment_method": "Mode de paiement :",
+                "order_total": "Total de la commande :",
+                "order_status": "Statut de la commande :",
+                "payment_date": "Date de commande :",
+                "payment_method": "Mode de paiement :",
                 "comments": "Commentaires sur la commande",
                 "download_items": "Télécharger des articles",
                 "card_ending": "se terminant par {card}",
@@ -379,12 +379,12 @@
                 "opening_hours": "Horaires d'ouverture"
             },
             "downloads": {
-                "heading": "Commande n° {number} Téléchargements",
+                "heading": "Commande n° {number} Téléchargements",
                 "download_files_below": "Vous pouvez télécharger ci-dessous les fichiers pour",
                 "expired_content": "Le fichier a expiré",
-                "days_remaining": "{number, plural, one {1 jour} other {# jours}}",
-                "downloads_remaining": "{number, plural, one {1 téléchargement} other {# téléchargements}} restant·s",
-                "days_or_downloads": "ou {number} téléchargements",
+                "days_remaining": "{number, plural, one {1 jour} other {# jours}}",
+                "downloads_remaining": "{number, plural, one {1 téléchargement} other {# téléchargements}} restant·s",
+                "days_or_downloads": "ou {number} téléchargements",
                 "remaining": "restant·s"
             }
         },
@@ -418,8 +418,8 @@
             "sepa_direct_debit": "SEPA Direct Debit",
             "paypal": "PayPal",
             "billing_address_labels": {
-                "address_line_1": "Ligne d'adresse 1",
-                "address_line_2": "Ligne d'adresse 2",
+                "address_line_1": "Ligne d'adresse 1",
+                "address_line_2": "Ligne d'adresse 2",
                 "suburb_city": "Ville",
                 "state_province": "État/Province",
                 "choose_state": "Choisir un État",
@@ -434,7 +434,7 @@
             "error_no_qty": "Veuillez sélectionner un ou plusieurs articles à retourner.",
             "none": "Vous n'avez effectué aucun retour avec nous. Lorsque vous effectuerez un retour, il apparaîtra sur cette page.",
             "new_return": "Nouveau retour",
-            "from_order": "Retourner des articles de la commande n° {id}",
+            "from_order": "Retourner des articles de la commande n° {id}",
             "date_requested": "Retour demandé",
             "successful_heading": "Demande de retour envoyée",
             "successful": "Votre demande de retour a bien été effectuée. Nous y répondrons rapidement.",
@@ -445,7 +445,7 @@
             "comments": "Vos commentaires",
             "submit_request": "Envoyer une demande de retour",
             "list": {
-                "return_number": "Retour n° {id}",
+                "return_number": "Retour n° {id}",
                 "product_details": "Retour de {num_products}"
             },
             "status": {
@@ -476,7 +476,7 @@
         },
         "wishlists": {
             "heading": "Listes d'envies",
-            "tag_line": "Remplissez le formulaire ci-dessous pour créer une nouvelle liste d'envies. Cliquez sur le bouton « Créer une liste d'envies » lorsque vous avez terminé.",
+            "tag_line": "Remplissez le formulaire ci-dessous pour créer une nouvelle liste d'envies. Cliquez sur le bouton « Créer une liste d'envies » lorsque vous avez terminé.",
             "new": "Nouvelle liste d'envies",
             "you_have_none": "Vous n'avez aucune liste d'envies, ajoutez-en une maintenant.",
             "empty_wishlist": "Votre liste d'envies est vide. Lorsque vous ajouterez des articles à votre liste d'envies, ils apparaîtront ici.",
@@ -489,12 +489,12 @@
             "add": "Ajouter une liste d'envies",
             "delete_all": "Supprimer tout",
             "edit": "Modifier la liste d'envies",
-            "view_heading": "Liste d'envies : {name}",
-            "share_intro": "Partager cette liste d'envies avec des amis :",
-            "num_products": "{num_products, plural, one {1 produit} other {# produits}}",
+            "view_heading": "Liste d'envies : {name}",
+            "share_intro": "Partager cette liste d'envies avec des amis :",
+            "num_products": "{num_products, plural, one {1 produit} other {# produits}}",
             "create": "Créer une liste d'envies",
             "save": "Enregistrer la liste d'envies",
-            "delete_alert": "Voulez-vous vraiment supprimer vos listes d'envies ? Cette action ne peut pas être annulée.",
+            "delete_alert": "Voulez-vous vraiment supprimer vos listes d'envies ? Cette action ne peut pas être annulée.",
             "create_new": "Créer une nouvelle liste d'envies",
             "add_to_default": "Ajouter à ma liste d'envies",
             "enter_wishlist_name_error": "Veuillez saisir un nom de liste d'envies."
@@ -507,28 +507,28 @@
             "heading": "Syndication RSS",
             "blog": {
                 "heading": "Articles de blog récents",
-                "intro": "Le flux d'articles récents contient les {limit} derniers articles publiés sur {store}.",
-                "rss": "{limit} derniers articles de blog (RSS)",
-                "rss_atom": "{limit} derniers articles de blog (Atom)"
+                "intro": "Le flux d'articles récents contient les {limit} derniers articles publiés sur {store}.",
+                "rss": "{limit} derniers articles de blog (RSS)",
+                "rss_atom": "{limit} derniers articles de blog (Atom)"
             },
             "products": {
                 "new": {
                     "heading": "Nouveaux produits",
-                    "intro": "Le flux de produits récents contient les {limit} derniers produits ajoutés à {store}.",
-                    "rss": "{limit} derniers nouveaux produits (RSS)",
-                    "rss_atom": "{limit} derniers nouveaux produits (Atom)"
+                    "intro": "Le flux de produits récents contient les {limit} derniers produits ajoutés à {store}.",
+                    "rss": "{limit} derniers nouveaux produits (RSS)",
+                    "rss_atom": "{limit} derniers nouveaux produits (Atom)"
                 },
                 "popular": {
                     "heading": "Produits populaires",
-                    "intro": "Le flux de produits populaires contient les {limit} produits les plus populaires sur {store}, en fonction des notes attribuées par les utilisateurs.",
-                    "rss": "{limit} derniers produits populaires (RSS)",
-                    "rss_atom": "{limit} derniers produits populaires (Atom)"
+                    "intro": "Le flux de produits populaires contient les {limit} produits les plus populaires sur {store}, en fonction des notes attribuées par les utilisateurs.",
+                    "rss": "{limit} derniers produits populaires (RSS)",
+                    "rss_atom": "{limit} derniers produits populaires (Atom)"
                 },
                 "featured": {
                     "heading": "Produits en vedette",
-                    "intro": "Le flux de produits en vedette contient les {limit} derniers produits en vedette sur {store}.",
-                    "rss": "{limit} derniers produits en vedette (RSS)",
-                    "rss_atom": "{limit} derniers produits en vedette (Atom)"
+                    "intro": "Le flux de produits en vedette contient les {limit} derniers produits en vedette sur {store}.",
+                    "rss": "{limit} derniers produits en vedette (RSS)",
+                    "rss_atom": "{limit} derniers produits en vedette (Atom)"
                 }
             },
             "search": {
@@ -564,12 +564,12 @@
         "address": {
             "add": {
                 "heading": "Ajouter une nouvelle adresse",
-                "description": "Utilisez le formulaire ci-dessous pour modifier votre adresse de livraison. Cliquez sur « Enregistrer l'adresse » lorsque vous avez terminé."
+                "description": "Utilisez le formulaire ci-dessous pour modifier votre adresse de livraison. Cliquez sur « Enregistrer l'adresse » lorsque vous avez terminé."
             },
             "edit": {
                 "heading": "Mettre à jour l'adresse"
             },
-            "confirm_delete": "Voulez-vraiment supprimer cette adresse ?",
+            "confirm_delete": "Voulez-vraiment supprimer cette adresse ?",
             "submit_value": "Enregistrer l'adresse"
         },
         "payment_methods": {
@@ -579,14 +579,14 @@
             "edit": {
                 "heading": "Mettre à jour le mode de paiement"
             },
-            "confirm_delete": "Voulez-vous vraiment supprimer ce mode de paiement ?",
+            "confirm_delete": "Voulez-vous vraiment supprimer ce mode de paiement ?",
             "submit_value": "Enregistrer le mode de paiement",
             "first_name": "Prénom",
             "last_name": "Nom",
             "company": "Nom de l'entreprise",
             "phone": "Numéro de téléphone",
-            "address1": "Ligne d'adresse 1",
-            "address2": "Ligne d'adresse 2",
+            "address1": "Ligne d'adresse 1",
+            "address2": "Ligne d'adresse 2",
             "city": "Ville",
             "country": "Pays",
             "state": "État/Province",
@@ -604,7 +604,7 @@
                 "amount": "Montant",
                 "theme": "Thème du chèque-cadeau",
                 "custom_range": "(la valeur doit être comprise entre {min} et {max})",
-                "agree": "Je comprends que les chèques-cadeaux expirent après {days, plural, one {1 jour} other {# jours}}",
+                "agree": "Je comprends que les chèques-cadeaux expirent après {days, plural, one {1 jour} other {# jours}}",
                 "agree2": "Je reconnais que les chèques-cadeaux ne sont pas remboursables",
                 "preview": "Aperçu",
                 "preview_error": "Une erreur s'est produite lors du chargement de l'aperçu. Veuillez réessayer plus tard.",
@@ -616,8 +616,8 @@
             }
         },
         "inbox": {
-            "order": "Commande :",
-            "order_display": "Commande n° {id} - passée le {date} pour un montant de {total}",
+            "order": "Commande :",
+            "order_display": "Commande n° {id} - passée le {date} pour un montant de {total}",
             "subject": "Objet",
             "message": "Message",
             "submit_value": "Envoyer un message",
@@ -645,11 +645,11 @@
                 "disabled": "Produits non en vedette uniquement"
             },
             "categories": "Catégories",
-            "did_you_mean": "Voulez-vous dire :",
+            "did_you_mean": "Voulez-vous dire :",
             "your_search_for": "Votre recherche pour",
             "no_match": "ne correspond à aucun produit ou information.",
             "suggestions": {
-                "title": "Suggestions :",
+                "title": "Suggestions :",
                 "line1": "Assurez-vous que tous les mots sont orthographiés correctement.",
                 "line2": "Essayez des mots-clés différents.",
                 "line3": "Essayez des mots-clés plus communs."
@@ -659,8 +659,8 @@
             "searchsubs": "Rechercher automatiquement dans les sous-catégories"
         },
         "wishlist": {
-            "name": "Nom de la liste d'envies :",
-            "public": "Partager la liste d'envies ?"
+            "name": "Nom de la liste d'envies :",
+            "public": "Partager la liste d'envies ?"
         },
         "validate": {
             "account": {
@@ -704,46 +704,46 @@
                 "cvv": "Vous devez saisir un cvv valide."
             },
             "reviews": {
-                "rating": "Le champ « Note » ne peut pas être vide.",
-                "title": "Le champ « Objet de l'avis » ne peut pas être vide.",
-                "comment": "Le champ « Commentaires » ne peut pas être vide."
+                "rating": "Le champ « Note » ne peut pas être vide.",
+                "title": "Le champ « Objet de l'avis » ne peut pas être vide.",
+                "comment": "Le champ « Commentaires » ne peut pas être vide."
             }
         }
     },
     "products": {
-        "current_stock": "Stock actuel :",
-        "quantity": "Quantité :",
+        "current_stock": "Stock actuel :",
+        "quantity": "Quantité :",
         "change_product_options": "Modifier les options pour {name}",
         "quantity_decrease": "Diminuer la quantité pour {name}",
         "quantity_increase": "Augmenter la quantité pour {name}",
         "quantity_error_message": "La quantité ne doit contenir que des chiffres",
         "purchase_units": "{quantity, plural, =0{0 aucune unité} one {# unité} other {# unités}}",
-        "max_purchase_quantity": "Quantité maximale d'achat :",
-        "min_purchase_quantity": "Quantité minimale d'achat :",
+        "max_purchase_quantity": "Quantité maximale d'achat :",
+        "min_purchase_quantity": "Quantité minimale d'achat :",
         "related_products": "Produits associés",
         "top": "Produits les plus populaires",
         "similar_by_views": "Les clients ont également consulté",
         "featured": "Produits en vedette",
-        "file_option_set": "Actuellement : <a href=\"{url}\" target=\"_blank\">{name}</a>",
+        "file_option_set": "Actuellement : <a href=\"{url}\" target=\"_blank\">{name}</a>",
         "new": "Nouveaux produits",
         "warranty": "Informations sur la garantie",
         "reviews": {
             "hide": "Masquer les avis",
             "new": "Rédiger un avis",
             "show": "Afficher les avis",
-            "header": "{total, plural, =0{0 avis} one {# avis} other {# avis}}",
-            "link_to_review": "({total, plural, =0{Aucun avis pour le moment} one {# avis} other {# avis}})",
+            "header": "{total, plural, =0{0 avis} one {# avis} other {# avis}}",
+            "link_to_review": "({total, plural, =0{Aucun avis pour le moment} one {# avis} other {# avis}})",
             "post_on_by": "Publié par { name } le { date }",
             "rating_label": "Note",
             "select_rating": "Sélectionnez une note",
             "anonymous_poster": "inconnu",
             "rating_aria_label": "La note du produit {rating_target} est de {current_rating} sur {max_rating}",
             "rating": {
-                "1": "1 étoile (note la plus mauvaise)",
-                "2": "2 étoiles",
-                "3": "3 étoiles (moyenne)",
-                "4": "4 étoiles",
-                "5": "5 étoiles (meilleure note)"
+                "1": "1 étoile (note la plus mauvaise)",
+                "2": "2 étoiles",
+                "3": "3 étoiles (moyenne)",
+                "4": "4 étoiles",
+                "5": "5 étoiles (meilleure note)"
             },
             "write_a_review": "Rédiger un avis",
             "no_reviews": "Aucun avis",
@@ -764,12 +764,12 @@
         "adding_to_cart": "Ajout au panier...",
         "options": "Options",
         "none": "Aucun",
-        "sku": "SKU :",
-        "upc": "CUP :",
-        "condition": "Condition :",
-        "availability": "Disponibilité :",
+        "sku": "SKU :",
+        "upc": "CUP :",
+        "condition": "Condition :",
+        "availability": "Disponibilité :",
         "swatch_option_announcement": "Vous avez sélectionné {swatch_name}",
-        "shipping": "Expédition :",
+        "shipping": "Expédition :",
         "shipping_fixed": "{amount} (frais de livraison fixes)",
         "shipping_free": "Livraison gratuite",
         "shipping_calculated": "Calculés au moment du paiement",
@@ -789,22 +789,22 @@
         "price_without_tax": "({tax_label} non comprise)",
         "including_tax": "Toutes taxes comprises",
         "excluding_tax": "Hors taxes",
-        "weight": "Poids :",
-        "width": "Largeur :",
-        "height": "Hauteur :",
-        "depth": "Profondeur :",
+        "weight": "Poids :",
+        "width": "Largeur :",
+        "height": "Hauteur :",
+        "depth": "Profondeur :",
         "measurement": {
             "metric": "cm",
             "imperial": "pouces"
         },
         "you_save_opening_text": "(Vous économisez",
         "you_save_closing_bracket": ")",
-        "gift_wrapping": "Emballage cadeau :",
+        "gift_wrapping": "Emballage cadeau :",
         "gift_wrapping_available": "Options disponibles",
         "quantity_min": "La quantité minimale pouvant être achetée est de {quantity}",
         "quantity_max": "La quantité maximale pouvant être achetée est de {quantity}",
         "bulk_pricing": {
-            "title": "Prix avec remise sur quantité :",
+            "title": "Prix avec remise sur quantité :",
             "view": "Achetez en grande quantité et économisez",
             "modal_title": "Taux de remise sur quantité",
             "instructions": "Vous trouverez ci-dessous les taux de remise sur quantité disponibles pour chaque article lorsque vous achetez une certaine quantité",
@@ -816,13 +816,13 @@
         "card_default_image_alt": "Image disponible bientôt"
     },
     "invoice": {
-        "for_order": "Facture {name} de la commande n° {id}",
-        "phone": "Numéro de téléphone : {number}",
-        "email": "E-mail : {email}",
-        "order": "Commande :",
-        "payment_method": "Mode de paiement :",
-        "order_date": "Date de commande :",
-        "shipping_method": "Mode de livraison :",
+        "for_order": "Facture {name} de la commande n° {id}",
+        "phone": "Numéro de téléphone : {number}",
+        "email": "E-mail : {email}",
+        "order": "Commande :",
+        "payment_method": "Mode de paiement :",
+        "order_date": "Date de commande :",
+        "shipping_method": "Mode de livraison :",
         "order_items": "Articles de la commande",
         "qty": "Qté",
         "code": "Code/SKU",
@@ -841,10 +841,10 @@
         "subscribe_intro": "Recevez les dernières actualités sur les nouveaux produits et les promotions à venir",
         "subscribe_submit": "S'abonner",
         "email_placeholder": "Votre adresse e-mail",
-        "subscribed_heading": "Merci pour votre abonnement !",
+        "subscribed_heading": "Merci pour votre abonnement !",
         "subscribed_heading_error": "Oups...",
         "subscribed_message": "Merci d'avoir rejoint notre liste de diffusion. Vous recevrez bientôt le prochain numéro de notre newsletter",
-        "unsubscribed_heading": "Vous êtes désabonné·e !",
+        "unsubscribed_heading": "Vous êtes désabonné·e !",
         "unsubscribed_message": "Vous ne recevrez plus de communications marketing de la part de <b>{store_name}</b>"
     },
     "social": {
@@ -852,7 +852,7 @@
     },
     "errors": {
         "shipping_quote_failure": "Une erreur s'est produite lors de la récupération de votre devis de livraison",
-        "state_error": "Une erreur s'est produite lors de la récupération de : États/provinces"
+        "state_error": "Une erreur s'est produite lors de la récupération de : États/provinces"
     },
     "search": {
         "errorMessage": "Une erreur s'est produite lors de la récupération de vos résultats. Veuillez réessayer dans quelques secondes.",
@@ -861,10 +861,10 @@
             "input_placeholder": "Rechercher dans la boutique"
         },
         "results": {
-            "form_label": "Rechercher un mot-clé :",
+            "form_label": "Rechercher un mot-clé :",
             "form_button_text": "Rechercher",
-            "count": "{ count, plural, one {# résultat} other {# résultats} } pour « { search_query } »",
-            "quick_count": "{ count, plural, one {# produit correspondant} other {# produits correspondants} } à « { search_query } »",
+            "count": "{ count, plural, one {# résultat} other {# résultats} } pour « { search_query } »",
+            "quick_count": "{ count, plural, one {# produit correspondant} other {# produits correspondants} } à « { search_query } »",
             "quick_count_live": "produits correspondants à",
             "product_count": "Produits ({count})",
             "content_count": "Actualités et informations ({count})"
@@ -873,7 +873,7 @@
             "selected": {
                 "title": "Affiner par",
                 "facet-label": "Filtres appliqués",
-                "rating-label": "Noté {rating, plural, one {# étoile} other {# étoiles}} ou plus",
+                "rating-label": "Noté {rating, plural, one {# étoile} other {# étoiles}} ou plus",
                 "no-filters": "Aucun filtre appliqué",
                 "clear-all": "Effacer tout"
             },
@@ -902,7 +902,7 @@
         "tabs_accesibility_hint": "Utilisez les flèches gauche et droite pour naviguer entre les onglets."
     },
     "page_not_found": {
-        "page_heading": "Erreur 404 - Page introuvable",
+        "page_heading": "Erreur 404 - Page introuvable",
         "message": "Oh non… Il semble que cette page ait été déplacée ou n'existe plus."
     },
     "server_error": {
@@ -910,7 +910,7 @@
         "message": "La boutique n'est pas disponible pour l'instant, veuillez réessayer dans quelques minutes."
     },
     "forbidden": {
-        "page_heading": "Désolé ! Veuillez vous connecter pour continuer",
+        "page_heading": "Désolé ! Veuillez vous connecter pour continuer",
         "if_you_were_signed_in": "Si vous étiez déjà connecté·e,",
         "sign_in": "veuillez vous reconnecter",
         "to_continue": "pour poursuivre votre travail dans une nouvelle session."
@@ -934,13 +934,13 @@
         "play_pause_button_pause": "Pause",
         "play_pause_button_aria_play": "Lancer le carrousel",
         "play_pause_button_aria_pause": "Arrêter le carrousel",
-        "slide_number": "Diapositive n° {slide_number}"
+        "slide_number": "Diapositive n° {slide_number}"
     },
     "validation_messages": {
         "valid_email": "Vous devez saisir une adresse e-mail valide.",
         "password": "Veuillez saisir un mot de passe.",
         "password_match": "Vos mots de passe ne correspondent pas.",
-        "invalid_password": "Votre mot de passe doit comporter au moins 7 caractères et au moins un chiffre et une lettre.",
+        "invalid_password": "Votre mot de passe doit comporter au moins 7 caractères et au moins un chiffre et une lettre.",
         "field_not_blank": " le champ ne peut être vide.",
         "certificate_amount": "Veuillez indiquer le montant du chèque cadeau.",
         "certificate_amount_range": "Vous devez indiquer un montant compris entre [MIN] et [MAX] pour le chèque-cadeau",
@@ -955,7 +955,7 @@
         "valid_email": "Vous devez saisir une adresse e-mail valide.",
         "password": "Veuillez saisir un mot de passe.",
         "password_match": "Vos mots de passe ne correspondent pas.",
-        "invalid_password": "Votre mot de passe doit comporter au moins 7 caractères et au moins un chiffre et une lettre.",
+        "invalid_password": "Votre mot de passe doit comporter au moins 7 caractères et au moins un chiffre et une lettre.",
         "field_not_blank": " le champ ne peut être vide.",
         "certificate_amount": "Veuillez indiquer le montant du chèque cadeau.",
         "certificate_amount_range": "Vous devez indiquer un montant compris entre [MIN] et [MAX] pour le chèque-cadeau",
@@ -970,7 +970,7 @@
         "valid_email": "Vous devez saisir une adresse e-mail valide.",
         "password": "Veuillez saisir un mot de passe.",
         "password_match": "Vos mots de passe ne correspondent pas.",
-        "invalid_password": "Votre mot de passe doit comporter au moins 7 caractères et au moins un chiffre et une lettre.",
+        "invalid_password": "Votre mot de passe doit comporter au moins 7 caractères et au moins un chiffre et une lettre.",
         "field_not_blank": "Le champ ne peut être vide.",
         "certificate_amount": "Veuillez indiquer le montant du chèque cadeau.",
         "certificate_amount_range": "Vous devez indiquer un montant compris entre [MIN] et [MAX] pour le chèque-cadeau",
@@ -982,11 +982,11 @@
         "invalid_gift_certificate": "Veuillez saisir un code de chèque-cadeau valide."
     },
     "page_builder": {
-        "pdp_sale_badge_label": "Remisé !",
+        "pdp_sale_badge_label": "Remisé !",
         "pdp_sold_out_label": "Épuisé",
-        "pdp-sale-price-label": "Maintenant :",
-        "pdp-non-sale-price-label": "Ancien prix :",
-        "pdp-retail-price-label": "Prix de vente conseillé :",
+        "pdp-sale-price-label": "Maintenant :",
+        "pdp-non-sale-price-label": "Ancien prix :",
+        "pdp-retail-price-label": "Prix de vente conseillé :",
         "pdp-custom-fields-tab-label": "Informations supplémentaires"
     },
     "consent_manager": {
@@ -1012,19 +1012,19 @@
         "advertising_category": "Publicité",
         "advertising_purpose": "Permet de créer des profils ou de personnaliser le contenu afin d'améliorer votre expérience d'achat.",
         "essential_category": "Indispensable",
-        "esential_purpose": "Indispensable au bon fonctionnement du site et des services demandés, mais n'exerce aucune fonction complémentaire ou secondaire.",
+        "essential_purpose": "Indispensable au bon fonctionnement du site et des services demandés, mais n'exerce aucune fonction complémentaire ou secondaire.",
         "yes": "Oui",
         "no": "Non",
         "not_available": "N/A",
         "cancel": "Annuler",
         "save": "Enregistrer",
         "back_to_preferences": "Retour aux préférences",
-        "close_without_changes": "Certaines modifications apportées à vos préférences en matière de collecte de données n'ont pas été enregistrées. Voulez-vous vraiment fermer sans enregistrer ?",
+        "close_without_changes": "Certaines modifications apportées à vos préférences en matière de collecte de données n'ont pas été enregistrées. Voulez-vous vraiment fermer sans enregistrer ?",
         "unsaved_changes": "Certaines de vos modifications n'ont pas été enregistrées",
         "by_using": "En utilisant notre site Web, vous acceptez notre",
         "agree_on_data_collection": "En utilisant notre site Web, vous autorisez la collecte de données conformément à notre ",
         "change_preferences": "Vous pouvez modifier vos préférences à tout moment",
-        "cancel_dialog_title": "Voulez-vous vraiment annuler vos modifications ?",
+        "cancel_dialog_title": "Voulez-vous vraiment annuler vos modifications ?",
         "privacy_policy": "Politique de confidentialité",
         "allow_category_tracking": "Autoriser le suivi de [CATEGORY_NAME]",
         "disallow_category_tracking": "Interdire le suivi de [CATEGORY_NAME]"

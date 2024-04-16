@@ -11,3 +11,6 @@ vendor/bundle
 *.js.map
 *.zip
 .idea/
+stencil-steps.yml
+.vscode/settings.json
+.vscode

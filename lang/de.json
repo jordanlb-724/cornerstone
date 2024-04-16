@@ -119,8 +119,8 @@
             "remove": "Entfernen",
             "choose_how": "Bitte wählen Sie eine Geschenkverpackung für diesen Artikel aus.",
             "option_same": "Ich möchte jeden dieser Artikel mit derselben Geschenkverpackungs-Option verpacken",
-            "item_single": "Geschenkverpackung – {name}",
-            "item_multiple": "Artikel {index} – {name}",
+            "item_single": "Geschenkverpackung – {name}",
+            "item_multiple": "Artikel {index} – {name}",
             "option_different": "Ich möchte jeden Artikel einzeln als Geschenk verpacken",
             "choose_type": "Bitte wählen Sie die Art der Geschenkverpackung aus",
             "gift_message": "Geschenk-Nachricht",
@@ -179,7 +179,7 @@
         "view_all": "Alle anzeigen",
         "all": "Alle",
         "paginator": {
-            "page_of": "Seite {current} von {total}"
+            "page_of": "Seite {current} von {total}"
         },
         "prices_are_in": "Preise in {CODE}",
         "previous": "Zurück",
@@ -341,11 +341,11 @@
             "order_placed": "Bestellung aufgegeben",
             "last_update": "Letztes Update",
             "list": {
-                "order_number": "Bestellung #{number}",
+                "order_number": "Bestellung #{number}",
                 "product_details": "{num_products, plural, one {1 produkt} other {# Produkte}} mit einem Gesamtbetrag von {cost}"
             },
             "details": {
-                "heading": "Bestellung #{number}",
+                "heading": "Bestellung #{number}",
                 "order_contents": "Inhalte der Bestellung",
                 "ship_to": "Versand nach",
                 "ship_to_multi": "An {street}, {city}, {state}, {zip}, {country} versandte Artikel",
@@ -379,7 +379,7 @@
                 "opening_hours": "Öffnungszeiten"
             },
             "downloads": {
-                "heading": "Bestellung #{number} Downloads",
+                "heading": "Bestellung #{number} Downloads",
                 "download_files_below": "Untenstehend können Sie die Dateien herunterladen für:",
                 "expired_content": "Datei ist abgelaufen",
                 "days_remaining": "{number, plural, one {1 Tag} other {# Tage}}",
@@ -508,15 +508,15 @@
             "blog": {
                 "heading": "Neueste Blog-Beiträge",
                 "intro": "Der Feed „Neueste Beiträge“ enthält die {limit} neuesten in {store} veröffentlichten Blog-Beiträge.",
-                "rss": "Neueste {limit} Blog-Beiträge (RSS)",
-                "rss_atom": "Neueste {limit} Blog-Beiträge (Atom)"
+                "rss": "Neueste {limit} Blog-Beiträge (RSS)",
+                "rss_atom": "Neueste {limit} Blog-Beiträge (Atom)"
             },
             "products": {
                 "new": {
                     "heading": "Neue Produkte",
                     "intro": "Der Feed „Neueste Produkte“ enthält die {limit} neuesten in {store} hinzugefügten Produkte.",
-                    "rss": "Neueste {limit} Produkte (RSS)",
-                    "rss_atom": "Neueste {limit} Produkte (Atom)"
+                    "rss": "Neueste {limit} Produkte (RSS)",
+                    "rss_atom": "Neueste {limit} Produkte (Atom)"
                 },
                 "popular": {
                     "heading": "Beliebte Produkte",
@@ -617,7 +617,7 @@
         },
         "inbox": {
             "order": "Bestellung:",
-            "order_display": "Bestellung #{id} – Aufgegeben am {date} für {total}",
+            "order_display": "Bestellung #{id} – Aufgegeben am {date} für {total}",
             "subject": "Betreff",
             "message": "Nachricht",
             "submit_value": "Nachricht senden",
@@ -761,7 +761,7 @@
             "show": "Videos anzeigen"
         },
         "add_to_cart": "Zum Warenkorb hinzufügen",
-        "adding_to_cart": "Wird zum Warenkorb hinzugefügt …",
+        "adding_to_cart": "Wird zum Warenkorb hinzugefügt …",
         "options": "Optionen",
         "none": "Keine",
         "sku": "SKU:",
@@ -863,8 +863,8 @@
         "results": {
             "form_label": "Schlagwort suchen:",
             "form_button_text": "Suchen",
-            "count": "{ count, plural, one {# Ergebnis} other {# Ergebnisse} } für „{ search_query }“",
-            "quick_count": "{ count, plural, one {# Produktergebnis} other {# Produktergebnisse} } für „{ search_query }“",
+            "count": "{ count, plural, one {# Ergebnis} other {# Ergebnisse} } für „{ search_query }“",
+            "quick_count": "{ count, plural, one {# Produktergebnis} other {# Produktergebnisse} } für „{ search_query }“",
             "quick_count_live": "Produktergebnisse für",
             "product_count": "Produkte ({count})",
             "content_count": "Neuigkeiten und Informationen ({count})"
@@ -906,7 +906,7 @@
         "message": "Oh je, sieht so aus, als ob die Seite, die Sie suchen, verschoben wurde oder nicht mehr existiert."
     },
     "server_error": {
-        "page_heading": "Es ist etwas schiefgegangen ...",
+        "page_heading": "Es ist etwas schiefgegangen ...",
         "message": "Der Shop ist derzeit nicht verfügbar, bitte versuchen Sie es in ein paar Minuten erneut"
     },
     "forbidden": {
@@ -934,7 +934,7 @@
         "play_pause_button_pause": "Pause",
         "play_pause_button_aria_play": "Karussell abspielen",
         "play_pause_button_aria_pause": "Karussell pausieren",
-        "slide_number": "Foliennummer {slide_number}"
+        "slide_number": "Foliennummer {slide_number}"
     },
     "validation_messages": {
         "valid_email": "Bitte geben Sie eine gültige E-Mail-Adresse ein.",
@@ -1005,14 +1005,14 @@
         "category": "Kategorie",
         "purpose": "Verwendungszweck",
         "functional_category": "Funktional",
-        "functional_purpose": "Ermöglichen erweiterte Funktionen, wie z. B. Videos und Live-Chat. Wenn Sie diese Cookies nicht zulassen, kann es sein, dass einige oder alle dieser Funktionen nicht richtig ausgeführt werden.",
+        "functional_purpose": "Ermöglichen erweiterte Funktionen, wie z. B. Videos und Live-Chat. Wenn Sie diese Cookies nicht zulassen, kann es sein, dass einige oder alle dieser Funktionen nicht richtig ausgeführt werden.",
         "analytics_category": "Analysen",
-        "analytics_purpose": "Bereitstellung statistischer Informationen über die Nutzung der Website, z. B. Webanalysen, damit wir diese Website im Laufe der Zeit verbessern können.",
+        "analytics_purpose": "Bereitstellung statistischer Informationen über die Nutzung der Website, z. B. Webanalysen, damit wir diese Website im Laufe der Zeit verbessern können.",
         "targeting_category": "Zielgruppenorientierung",
         "advertising_category": "Werbung",
         "advertising_purpose": "Werden verwendet, um Profile zu erstellen oder Inhalte zu personalisieren und auf diese Weise Ihr Einkaufserlebnis zu verbessern.",
         "essential_category": "Unverzichtbar",
-        "esential_purpose": "Unverzichtbar für die Funktionsfähigkeit der Website und aller gewünschten Dienstleistungen, erfüllen jedoch keine zusätzliche oder sekundäre Funktion.",
+        "essential_purpose": "Unverzichtbar für die Funktionsfähigkeit der Website und aller gewünschten Dienstleistungen, erfüllen jedoch keine zusätzliche oder sekundäre Funktion.",
         "yes": "Ja",
         "no": "Nein",
         "not_available": "N/A",

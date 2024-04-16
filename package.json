@@ -64,12 +64,16 @@
     "webpack-cli": "^4.5.0",
     "webpack-merge": "^5.8.0"
   },
+
   "scripts": {
+    "stencil:open": "npx stencil start --open -v Light",
     "build": "npx webpack --config webpack.prod.js",
     "buildDev": "npx webpack --config webpack.dev.js",
-    "lighthouse": "npx lighthouse --config-path=lighthouse-config.js --quiet --output html --chrome-flags=\"--headless\" $URL",
+    "lighthouse": "npx lighthouse --config-path=lighthouse-config.js --quiet --output html --chrome-flags=\"--headless\" http://localhost:3000",
     "test": "npx jest",
-    "stylelint": "npx stylelint **/*.scss",
-    "stylelint:fix": "npx stylelint --fix **/*.scss"
+    "stylelint": "npx stylelint **/*.{css,scss}",
+    "stylelint:fix": "npx stylelint --fix **/*.{css,scss}",
+    "eslint": "npx eslint **/*.js",
+    "eslint:fix": "npx eslint --fix **/*.js"
   }
 }
