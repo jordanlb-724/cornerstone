@@ -1,410 +1,119 @@
 {
-    "header": {
-        "welcome_back": "Ravis de vous revoir, {name}",
-        "skip_to_main": "Passer au contenu principal"
-    },
-    "footer": {
-        "title": "Début du pied de page",
-        "brands": "Marques populaires",
-        "navigate": "Parcourir",
-        "info": "Info",
-        "categories": "Catégories",
-        "call_us": "Appelez-nous au {phone_number}",
-        "powered_by": "Optimisé par"
-    },
-    "home": {
-        "heading": "Accueil"
-    },
-    "blog": {
-        "recent_posts": "Publications récentes",
-        "label": "Blog",
-        "posted_by": "Publié par {name}",
-        "read_more": "En savoir plus"
-    },
-    "unavailable": {
-        "hibernation_title": "Nous revenons bientôt",
-        "hibernation_message": "Merci de votre visite. Notre boutique n'est pas disponible pour l'instant. Veuillez nous excuser pour ce désagrément.",
-        "maintenance_title": "En maintenance",
-        "maintenance_message": "Cette boutique n'est actuellement pas disponible pour cause de maintenance. Elle devrait être à nouveau disponible sous peu. Veuillez nous excuser pour ce désagrément."
-    },
-    "brands": {
-        "no_products": "Il n'y a aucun produit de cette marque."
-    },
-    "categories": {
-        "no_products": "Cette catégorie ne contient aucun produit."
-    },
-    "checkout": {
-        "title": "Paiement"
-    },
-    "cart": {
-        "nav_aria_label": "Panier avec 0 article",
-        "continue_shopping": "Cliquez ici pour continuer vos achats",
-        "login_to_checkout": "Connectez-vous pour procéder au paiement",
-        "items": "{NUM, plural, =0{(aucun article)} one {(# article)} other {(# articles)}}",
-        "checkout": {
-            "address": {
-                "multiple": "procéder au paiement avec plusieurs adresses",
-                "or": "ou"
-            },
-            "button": "Paiement",
-            "empty_cart": "Votre panier est vide",
-            "title": "Cliquez ici pour procéder au paiement",
-            "item": "Article",
-            "price": "Prix",
-            "quantity": "Quantité",
-            "total": "Total",
-            "subtotal": "Sous-total",
-            "enter_code": "Code promotionnel / Chèque-cadeau",
-            "gift_wrapping": "Emballage cadeau",
-            "shipping": "Livraison",
-            "grand_total": "Total",
-            "select": "Sélectionner",
-            "update": "Mettre à jour les frais de livraison"
-        },
-        "preview": {
-            "checkout_now": "Payer",
-            "checkout_multiple": "ou procéder au paiement avec plusieurs adresses",
-            "view_cart": "Voir mon panier"
-        },
-        "label": "Votre panier ({quantity, plural, one {# article} other {# articles}})",
-        "is_empty": "Votre panier est vide",
-        "invalid_entry_message": "[ENTRY] n'est pas une saisie valide",
-        "coupon_code": "Code promotionnel",
-        "discount": "Remise",
-        "included_in_total": " Inclus dans le total",
-        "remove_file": "Supprimer ce fichier",
-        "freeshipping": "Livraison gratuite",
-        "reconfigure_product": "Configurer « {name} »",
-        "shipping_peritem": "Par article expédié",
-        "remove_item": "Supprimer {name} du panier",
-        "confirm_delete": "Voulez-vous vraiment supprimer cet article ?",
-        "coupons": {
-            "apply_coupon": "Appliquer le code promotionnel",
-            "empty_error": "Veuillez saisir votre code promotionnel.",
-            "cancel": "Annuler",
-            "add_code": "Ajouter un code",
-            "add_coupon": "Ajouter un code promotionnel",
-            "button": "Appliquer",
-            "coupon_code": "Saisissez votre code promotionnel",
-            "code_label": "Code promotionnel ({code})",
-            "remove": "Supprimer"
-        },
-        "gift_certificates": {
-            "apply_gift_certificate": "Appliquer le chèque-cadeau",
-            "change_gift_certificate": "Modifier {certificate_name}",
-            "add_cert_code": "Ajouter un chèque-cadeau",
-            "gift_certificate": "Chèque-cadeau",
-            "code_label": "Chèque-cadeau ({code})",
-            "cert_code": "Saisissez le code de votre chèque-cadeau",
-            "remove": "Supprimer"
-        },
-        "shipping_estimator": {
-            "add_info": "Ajouter des informations",
-            "cancel": "Annuler",
-            "select_a_country": "Pays",
-            "select_a_state": "État/Province",
-            "estimate_shipping": "Estimer l'expédition",
-            "suburb_city": "Ville",
-            "zip_postal_code": "Code postal",
-            "free_shipping": "Livraison gratuite",
-            "hide_ups_rates": "Masquer les tarifs UPS",
-            "show_ups_rates": "Afficher les tarifs UPS",
-            "empty_country_error": "Le champ « Pays » ne peut pas être vide.",
-            "empty_province_error": "Le champ « État/Province » ne peut être vide."
-        },
-        "gift_wrapping": {
-            "title": "Emballage Cadeau",
-            "add": "Ajouter",
-            "change": "Modifier",
-            "remove": "Supprimer",
-            "choose_how": "Veuillez indiquer comment vous souhaitez que cet article soit emballé.",
-            "option_same": "Je souhaite que chaque article soit emballé en utilisant les mêmes options d'emballage",
-            "item_single": "Emballage cadeau - {name}",
-            "item_multiple": "Article {index} - {name}",
-            "option_different": "Je souhaite que chaque article soit emballé séparément",
-            "choose_type": "Veuillez sélectionner un type d'emballage cadeau",
-            "gift_message": "Message à joindre au cadeau",
-            "remove_confirm": "Voulez-vous vraiment supprimer l'emballage cadeau pour cet article ?",
-            "preview": "Aperçu"
-        },
-        "added_to_cart": {
-            "what_next": "Ok, {num_products, plural, one {1 article a été ajouté} other {# articles ont été ajoutés}} à votre panier. Quelle est la prochaine étape ?",
-            "your_cart_contains": "Votre panier contient {num_products, plural, one {1 article} other {# articles}}",
-            "proceed_to_checkout": "Procéder au paiement",
-            "order_subtotal": "Sous-total de la commande",
-            "continue_shopping": "Continuer mes achats",
-            "view_or_edit_cart": "Afficher ou modifier votre panier",
-            "you_might_also_like": "Vous aimerez peut-être"
-        }
-    },
-    "common": {
-        "store_credit": "Votre avoir disponible s'élève à <strong>{store_credit}</strong>. Pour l'utiliser, il vous suffit de passer votre commande en choisissant l'avoir comme mode de paiement au moment de régler la commande.",
-        "store_credit_overview": "{credit} d'avoir",
-        "generic_error": "Oups ! Une erreur s'est produite.",
-        "currency": "Devise : {code}",
-        "currency_switch_promotion": "Les promotions et les chèques-cadeaux qui ne s'appliquent pas à la nouvelle devise seront supprimés de votre panier. Voulez-vous vraiment continuer ?",
-        "channel": "Boutique : {code}",
-        "channel_switch_warning": "Texte d'avertissement pour le changement de boutique",
-        "newsletter_signup": "Abonnez-vous à notre newsletter",
-        "form_submit": "Envoyer",
-        "no_preference": "Aucune préférence",
-        "other_details": "Autres informations",
-        "required": "Obligatoire",
-        "optional": "Facultatif",
-        "email_address": "Adresse e-mail",
-        "edit": "Modifier",
-        "not_applicable": "N/A",
-        "no": "Non",
-        "yes": "Oui",
-        "from": "De",
-        "to": "à",
-        "ok": "OK",
-        "cancel": "Annuler",
-        "close": "Fermer",
-        "or": "ou",
-        "and": "et",
-        "compare": "Comparer",
-        "change": "Modifier",
-        "sign_up": "S'abonner",
-        "login": "Se connecter",
-        "login_for_pricing": "Veuillez vous connecter pour connaître les tarifs",
-        "logout": "Déconnexion",
-        "account": "Compte",
-        "cart": "Panier",
-        "search": "Rechercher",
-        "gift_cert": "Chèques-cadeaux",
-        "save": "Enregistrer",
-        "share": "Partager",
-        "delete": "Supprimer",
-        "public": "Publique",
-        "private": "Privé",
-        "view_all": "Tout afficher",
-        "all": "Tout",
-        "paginator": {
-            "page_of": "Page {current} sur {total}"
-        },
-        "pagination": "pagination",
-        "prices_are_in": "Les prix sont en {CODE}",
-        "previous": "Précédent",
-        "next": "Suivant",
-        "sorter": {
-            "relevance": "Pertinence",
-            "sort_by": "Trier par :",
-            "featured": "Articles en vedette",
-            "top_sellers": "Meilleures ventes",
-            "newest": "Nouveautés",
-            "alpha_asc": "A à Z",
-            "alpha_desc": "Z à A",
-            "reviews": "Par avis",
-            "price_asc": "Prix : par ordre croissant",
-            "price_desc": "Prix : par ordre décroissant"
-        },
-        "loading": "Chargement",
-        "month": "Mois",
-        "day": "Jour",
-        "year": "Année",
-        "short_months": {
-            "1": "Janv.",
-            "2": "Févr.",
-            "3": "Mars",
-            "4": "Avr.",
-            "5": "Mai",
-            "6": "Juin",
-            "7": "Juill.",
-            "8": "Août",
-            "9": "Sept.",
-            "10": "Oct.",
-            "11": "Nov.",
-            "12": "Déc."
-        }
-    },
-    "compare": {
-        "button": "Comparer les produits",
-        "header": "Comparaison de {products, plural, one {# produit} other {# produits}}",
-        "remove": "Supprimer",
-        "no_remove": "Vous devez sélectionner au moins 2 articles pour effectuer une comparaison.",
-        "add_to_cart": "Ajouter au panier",
-        "no_compare": "Vous devez sélectionner au moins deux produits pour la comparaison"
-    },
-    "category": {
-        "label": "Catégories",
-        "product_label": "Produits filtrés",
-        "shop_by_price": "Rechercher par prix",
-        "shop_by_price_range_aria": "Prix compris entre {from} et {to}",
-        "filter_price_range": "Fourchette de prix :",
-        "add_cart_announcement": "L'article a été ajouté",
-        "reset": "Réinitialiser",
-        "filter_reset_announcement": "Le filtre a été réinitialisé",
-        "filter_select_announcement": "Le filtre a été appliqué",
-        "view_all": {
-            "name": "Tous les {category}"
-        }
-    },
-    "brand": {
-        "label": "Marques",
-        "view_brands": "Afficher toutes les marques"
-    },
-    "gift_certificate": {
-        "heading": "Chèques-cadeaux",
-        "purchase": {
-            "heading": "Acheter un chèque-cadeau"
-        },
-        "redeem": {
-            "heading": "Utiliser le chèque-cadeau",
-            "intro": "Pour utiliser un chèque-cadeau sur {store_name}, procédez comme suit.",
-            "item1": "Vous avez besoin de votre code unique, qui apparait sur le chèque-cadeau qui vous a été envoyé en pièce jointe par e-mail. Il se présente sous une forme similaire à Z50-Y6K-COS-402.",
-            "item2": "Parcourez la boutique et ajoutez des articles à votre panier normalement.",
-            "item3": "Cliquez sur le lien « <a href=\"{cart_url}\">Voir mon panier</a> » pour afficher le contenu de votre panier d'achat.",
-            "item4": "Saisissez le code de votre chèque-cadeau dans la case « Utiliser le chèque-cadeau », puis cliquez sur « Lancer »."
-        },
-        "balance": {
-            "heading": "Vérifier le solde du chèque-cadeau",
-            "intro": "Vous pouvez vérifier le solde d'un chèque-cadeau en saisissant le code dans la case ci-dessous."
-        }
-    },
-    "create_account": {
-        "heading": "Nouveau compte",
-        "created": {
-            "heading": "Votre compte a été créé",
-            "intro": "Nous vous remercions d'avoir créé un compte sur {store_name}. Les informations de votre compte ont été envoyées par e-mail à {email}.",
-            "continue": "Continuer mes achats"
-        },
-        "recaptcha_title": "reCAPTCHA Google"
-    },
-    "login": {
-        "heading": "Se connecter",
-        "field_email": "Adresse e-mail :",
-        "field_password": "Mot de passe :",
-        "submit_value": "Se connecter",
-        "forgot_password": "Mot de passe oublié ?",
-        "new_customer": {
-            "heading": "Nouveau client ?",
-            "intro": "Créez un compte sur notre site et vous pourrez :",
-            "fact1": "Accélérer le processus de paiement",
-            "fact2": "Enregistrer plusieurs adresses de livraison",
-            "fact3": "Accéder à votre historique de commande",
-            "fact4": "Suivre les nouvelles commandes",
-            "fact5": "Enregistrer des articles dans votre liste d'envies",
-            "create_account": "Créer un compte"
-        }
-    },
-    "reset_password": {
-        "heading": "Réinitialiser le mot de passe",
-        "intro": "Remplissez votre adresse e-mail ci-dessous pour demander un nouveau mot de passe. Un e-mail contenant un lien de vérification de votre adresse e-mail sera envoyé à l'adresse ci-dessous."
-    },
     "account": {
+        "addresses": {
+            "add_heading": "Ajouter une nouvelle adresse",
+            "heading": "Adresses",
+            "new_address": "Nouvelle adresse",
+            "no_addresses": "Aucune adresse ajoutée à votre profil pour l'instant",
+            "phone": "Numéro de téléphone :",
+            "primary": "Principal"
+        },
         "breadcrumb": "Votre compte",
-        "nav": {
-            "overview": "Aperçu",
-            "orders": "Commandes",
-            "returns": "Retours",
-            "messages": "Messages ({num_new_messages})",
-            "wishlists": "Listes d'envies",
-            "recently_viewed": "Consultés récemment",
-            "settings": "Paramètres de compte",
-            "addresses": "Adresses",
-            "payment_methods": "Modes de paiement"
+        "messages": {
+            "customer_said": "Vous :",
+            "heading": "Messages",
+            "merchant_said": "{store_name} :"
         },
         "mobile_nav": {
             "messages": "Messages",
             "wishlists": "Listes d'envies"
         },
-        "addresses": {
-            "heading": "Adresses",
-            "add_heading": "Ajouter une nouvelle adresse",
-            "primary": "Principal",
-            "phone": "Numéro de téléphone :",
-            "new_address": "Nouvelle adresse",
-            "no_addresses": "Aucune adresse ajoutée à votre profil pour l'instant"
-        },
-        "messages": {
-            "heading": "Messages",
-            "customer_said": "Vous :",
-            "merchant_said": "{store_name} :"
+        "nav": {
+            "addresses": "Adresses",
+            "messages": "Messages ({num_new_messages})",
+            "orders": "Commandes",
+            "overview": "Aperçu",
+            "payment_methods": "Modes de paiement",
+            "recently_viewed": "Consultés récemment",
+            "returns": "Retours",
+            "settings": "Paramètres de compte",
+            "wishlists": "Listes d'envies"
         },
         "orders": {
-            "heading": "Commandes",
-            "none": "Vous n'avez passé aucune commande avec nous. Lorsque vous passerez une commande, elle apparaîtra sur cette page.",
-            "return": {
-                "already_returned": "Cette commande ne contient aucun produit pouvant être renvoyé. Avez-vous déjà renvoyé tous les articles de cette commande ?",
-                "back_button": "Retour",
-                "order_item": "Article",
-                "item_price": "Prix",
-                "quantity": "Qté à retourner",
-                "why": "Quel est le motif de votre retour ?",
-                "reason": "Motif du retour",
-                "action": "Action de retour",
-                "comments": "Commentaires"
+            "details": {
+                "actions": "Actions",
+                "bill_to": "Facturer à",
+                "card_ending": "se terminant par {card}",
+                "comments": "Commentaires sur la commande",
+                "download_items": "Télécharger des articles",
+                "email": "E-mail",
+                "heading": "Commande n° {number}",
+                "how_to_pay": "Voici comment procéder au paiement de votre commande :",
+                "in_store_pickup": "Retrait en magasin",
+                "opening_hours": "Horaires d'ouverture",
+                "order_contents": "Contenu de la commande",
+                "order_details": "Détails de la commande",
+                "order_status": "Statut de la commande :",
+                "order_total": "Total de la commande :",
+                "payment_date": "Date de commande :",
+                "payment_method": "Mode de paiement :",
+                "phone": "Numéro de téléphone",
+                "pickup": "Détails sur le retrait",
+                "pickup_details": "Détails sur le retrait",
+                "pickup_method": "Méthode de retrait",
+                "print_invoice": "Imprimer la facture",
+                "reorder": "Acheter à nouveau",
+                "return": "Retour",
+                "ship_to": "Expédier à",
+                "ship_to_multi": "Articles expédiés à {street}, {city}, {state}, {zip}, {country}",
+                "ship_to_multi_text": "La commande sera livrée à plusieurs adresses",
+                "shipments": {
+                    "date": "Date d'expédition",
+                    "header": "Détails de la livraison",
+                    "link": "Lien de suivi de commande",
+                    "method": "Mode de livraison"
+                }
+            },
+            "downloads": {
+                "days_or_downloads": "ou {number} téléchargements",
+                "days_remaining": "{number, plural, one {1 jour} other {# jours}}",
+                "download_files_below": "Vous pouvez télécharger ci-dessous les fichiers pour",
+                "downloads_remaining": "{number, plural, one {1 téléchargement} other {# téléchargements}} restant·s",
+                "expired_content": "Le fichier a expiré",
+                "heading": "Commande n° {number} Téléchargements",
+                "remaining": "restant·s"
             },
             "gift_wrapping": "Emballage cadeau :",
-            "refunded": "(Remboursé)",
-            "refunded_quantity": "({qty} remboursé·s)",
-            "return_item": "Retour",
-            "return_items": "Retourner des articles ?",
-            "order_placed": "Commande passée",
+            "heading": "Commandes",
             "last_update": "Dernière mise à jour",
             "list": {
                 "order_number": "Commande n° {number}",
                 "product_details": "{num_products, plural, one {1 produit} other {# produits}} pour un total de {cost}"
             },
-            "details": {
-                "heading": "Commande n° {number}",
-                "order_contents": "Contenu de la commande",
-                "ship_to": "Expédier à",
-                "ship_to_multi": "Articles expédiés à {street}, {city}, {state}, {zip}, {country}",
-                "ship_to_multi_text": "La commande sera livrée à plusieurs adresses",
-                "pickup_details": "Détails sur le retrait",
-                "bill_to": "Facturer à",
-                "how_to_pay": "Voici comment procéder au paiement de votre commande :",
-                "order_details": "Détails de la commande",
-                "order_total": "Total de la commande :",
-                "order_status": "Statut de la commande :",
-                "payment_date": "Date de commande :",
-                "payment_method": "Mode de paiement :",
-                "comments": "Commentaires sur la commande",
-                "download_items": "Télécharger des articles",
-                "card_ending": "se terminant par {card}",
-                "shipments": {
-                    "date": "Date d'expédition",
-                    "method": "Mode de livraison",
-                    "link": "Lien de suivi de commande",
-                    "header": "Détails de la livraison"
-                },
-                "actions": "Actions",
-                "reorder": "Acheter à nouveau",
-                "return": "Retour",
-                "pickup": "Détails sur le retrait",
-                "pickup_method": "Méthode de retrait",
-                "in_store_pickup": "Retrait en magasin",
-                "print_invoice": "Imprimer la facture",
-                "phone": "Numéro de téléphone",
-                "email": "E-mail",
-                "opening_hours": "Horaires d'ouverture"
+            "none": "Vous n'avez passé aucune commande avec nous. Lorsque vous passerez une commande, elle apparaîtra sur cette page.",
+            "order_placed": "Commande passée",
+            "refunded": "(Remboursé)",
+            "refunded_quantity": "({qty} remboursé·s)",
+            "return": {
+                "action": "Action de retour",
+                "already_returned": "Cette commande ne contient aucun produit pouvant être renvoyé. Avez-vous déjà renvoyé tous les articles de cette commande ?",
+                "back_button": "Retour",
+                "comments": "Commentaires",
+                "item_price": "Prix",
+                "order_item": "Article",
+                "quantity": "Qté à retourner",
+                "reason": "Motif du retour",
+                "why": "Quel est le motif de votre retour ?"
             },
-            "downloads": {
-                "heading": "Commande n° {number} Téléchargements",
-                "download_files_below": "Vous pouvez télécharger ci-dessous les fichiers pour",
-                "expired_content": "Le fichier a expiré",
-                "days_remaining": "{number, plural, one {1 jour} other {# jours}}",
-                "downloads_remaining": "{number, plural, one {1 téléchargement} other {# téléchargements}} restant·s",
-                "days_or_downloads": "ou {number} téléchargements",
-                "remaining": "restant·s"
-            }
+            "return_item": "Retour",
+            "return_items": "Retourner des articles ?"
         },
         "payment_methods": {
-            "heading": "Modes de paiement",
-            "payment_method": "Mode de paiement",
+            "ach": "ACH",
             "bank_account": "Compte bancaire",
             "billing_address": "Adresse de facturation",
+            "billing_address_labels": {
+                "address_line_1": "Ligne d'adresse 1",
+                "address_line_2": "Ligne d'adresse 2",
+                "choose_country": "Choisir un pays",
+                "choose_state": "Choisir un État",
+                "country": "Pays",
+                "state_province": "État/Province",
+                "suburb_city": "Ville",
+                "zip_postcode": "Code postal"
+            },
             "card_ending_in": "se terminant par {last_four}",
             "card_expiry": "{month}/{year}",
-            "new_payment_method": "Ajouter un nouveau mode de paiement",
-            "no_methods": "Aucun mode de paiement n'a été ajouté à votre compte pour l'instant",
-            "name_on_card": "Nom sur la carte",
-            "credit_card_number": "Numéro de carte bancaire",
-            "expiration": "Date d'expiration",
-            "cvv": "CVV",
-            "payment_icons_label": "Icônes de paiement",
             "card_types": {
                 "american_express": "American Express",
                 "credit_card": "Carte de crédit",
@@ -417,104 +126,659 @@
                 "unionpay": "UnionPay",
                 "visa": "Visa"
             },
-            "ach": "ACH",
-            "sepa_direct_debit": "SEPA Direct Debit",
+            "credit_card_number": "Numéro de carte bancaire",
+            "cvv": "CVV",
+            "expiration": "Date d'expiration",
+            "heading": "Modes de paiement",
+            "name_on_card": "Nom sur la carte",
+            "new_payment_method": "Ajouter un nouveau mode de paiement",
+            "no_methods": "Aucun mode de paiement n'a été ajouté à votre compte pour l'instant",
+            "payment_icons_label": "Icônes de paiement",
+            "payment_method": "Mode de paiement",
             "paypal": "PayPal",
-            "billing_address_labels": {
-                "address_line_1": "Ligne d'adresse 1",
-                "address_line_2": "Ligne d'adresse 2",
-                "suburb_city": "Ville",
-                "state_province": "État/Province",
-                "choose_state": "Choisir un État",
-                "country": "Pays",
-                "choose_country": "Choisir un pays",
-                "zip_postcode": "Code postal"
-            }
-        },
-        "returns": {
-            "heading": "Retours",
-            "instructions": "Procédure de retour",
-            "error_no_qty": "Veuillez sélectionner un ou plusieurs articles à retourner.",
-            "none": "Vous n'avez effectué aucun retour avec nous. Lorsque vous effectuerez un retour, il apparaîtra sur cette page.",
-            "new_return": "Nouveau retour",
-            "from_order": "Retourner des articles de la commande n° {id}",
-            "date_requested": "Retour demandé",
-            "successful_heading": "Demande de retour envoyée",
-            "successful": "Votre demande de retour a bien été effectuée. Nous y répondrons rapidement.",
-            "return": "Revenir aux commandes",
-            "last_update": "Dernière mise à jour",
-            "reason": "Motif du retour",
-            "action": "Action de retour",
-            "comments": "Vos commentaires",
-            "submit_request": "Envoyer une demande de retour",
-            "list": {
-                "return_number": "Retour n° {id}",
-                "product_details": "Retour de {num_products}"
-            },
-            "status": {
-                "pending": "En attente",
-                "received": "Reçu",
-                "authorized": "Autorisé",
-                "repaired": "Réparé",
-                "refunded": "Remboursé",
-                "rejected": "Rejeté",
-                "cancelled": "Annulé"
-            }
-        },
-        "settings": {
-            "heading": "Paramètres de compte",
-            "first_name": "Prénom",
-            "last_name": "Nom",
-            "email": "Adresse e-mail",
-            "company": "Société",
-            "phone": "Numéro de téléphone",
-            "old_password": "Ancien mot de passe",
-            "new_password": "Nouveau mot de passe",
-            "confirm_password": "Confirmer le mot de passe",
-            "update_details": "Mettre à jour les détails"
+            "sepa_direct_debit": "SEPA Direct Debit"
         },
         "recent_items": {
             "heading": "Consultés récemment",
             "no_items": "Les articles consultés récemment apparaîtront ci-dessous."
         },
+        "returns": {
+            "action": "Action de retour",
+            "comments": "Vos commentaires",
+            "date_requested": "Retour demandé",
+            "error_no_qty": "Veuillez sélectionner un ou plusieurs articles à retourner.",
+            "from_order": "Retourner des articles de la commande n° {id}",
+            "heading": "Retours",
+            "instructions": "Procédure de retour",
+            "last_update": "Dernière mise à jour",
+            "list": {
+                "product_details": "Retour de {num_products}",
+                "return_number": "Retour n° {id}"
+            },
+            "new_return": "Nouveau retour",
+            "none": "Vous n'avez effectué aucun retour avec nous. Lorsque vous effectuerez un retour, il apparaîtra sur cette page.",
+            "reason": "Motif du retour",
+            "return": "Revenir aux commandes",
+            "status": {
+                "authorized": "Autorisé",
+                "cancelled": "Annulé",
+                "pending": "En attente",
+                "received": "Reçu",
+                "refunded": "Remboursé",
+                "rejected": "Rejeté",
+                "repaired": "Réparé"
+            },
+            "submit_request": "Envoyer une demande de retour",
+            "successful": "Votre demande de retour a bien été effectuée. Nous y répondrons rapidement.",
+            "successful_heading": "Demande de retour envoyée"
+        },
+        "settings": {
+            "company": "Société",
+            "confirm_password": "Confirmer le mot de passe",
+            "email": "Adresse e-mail",
+            "first_name": "Prénom",
+            "heading": "Paramètres de compte",
+            "last_name": "Nom",
+            "new_password": "Nouveau mot de passe",
+            "old_password": "Ancien mot de passe",
+            "phone": "Numéro de téléphone",
+            "update_details": "Mettre à jour les détails"
+        },
         "wishlists": {
-            "heading": "Listes d'envies",
-            "tag_line": "Remplissez le formulaire ci-dessous pour créer une nouvelle liste d'envies. Cliquez sur le bouton « Créer une liste d'envies » lorsque vous avez terminé.",
-            "new": "Nouvelle liste d'envies",
-            "you_have_none": "Vous n'avez aucune liste d'envies, ajoutez-en une maintenant.",
-            "empty_wishlist": "Votre liste d'envies est vide. Lorsque vous ajouterez des articles à votre liste d'envies, ils apparaîtront ici.",
-            "num_items": "Articles",
-            "add_item": "Ajouter à la liste d'envies",
-            "remove_item": "Supprimer l'article",
-            "name": "Nom de la liste d'envies",
-            "shared": "Partagé",
             "action": "Action",
             "add": "Ajouter une liste d'envies",
+            "add_item": "Ajouter à la liste d'envies",
+            "add_to_default": "Ajouter à ma liste d'envies",
+            "create": "Créer une liste d'envies",
+            "create_new": "Créer une nouvelle liste d'envies",
+            "delete_alert": "Voulez-vous vraiment supprimer vos listes d'envies ? Cette action ne peut pas être annulée.",
             "delete_all": "Supprimer tout",
             "edit": "Modifier la liste d'envies",
-            "view_heading": "Liste d'envies : {name}",
-            "share_intro": "Partager cette liste d'envies avec des amis :",
+            "empty_wishlist": "Votre liste d'envies est vide. Lorsque vous ajouterez des articles à votre liste d'envies, ils apparaîtront ici.",
+            "enter_wishlist_name_error": "Veuillez saisir un nom de liste d'envies.",
+            "heading": "Listes d'envies",
+            "name": "Nom de la liste d'envies",
+            "new": "Nouvelle liste d'envies",
+            "num_items": "Articles",
             "num_products": "{num_products, plural, one {1 produit} other {# produits}}",
-            "create": "Créer une liste d'envies",
+            "remove_item": "Supprimer l'article",
             "save": "Enregistrer la liste d'envies",
-            "delete_alert": "Voulez-vous vraiment supprimer vos listes d'envies ? Cette action ne peut pas être annulée.",
-            "create_new": "Créer une nouvelle liste d'envies",
-            "add_to_default": "Ajouter à ma liste d'envies",
-            "enter_wishlist_name_error": "Veuillez saisir un nom de liste d'envies."
+            "share_intro": "Partager cette liste d'envies avec des amis :",
+            "shared": "Partagé",
+            "tag_line": "Remplissez le formulaire ci-dessous pour créer une nouvelle liste d'envies. Cliquez sur le bouton « Créer une liste d'envies » lorsque vous avez terminé.",
+            "view_heading": "Liste d'envies : {name}",
+            "you_have_none": "Vous n'avez aucune liste d'envies, ajoutez-en une maintenant."
         }
+    },
+    "blog": {
+        "label": "Blog",
+        "posted_by": "Publié par {name}",
+        "read_more": "En savoir plus",
+        "recent_posts": "Publications récentes"
+    },
+    "brand": {
+        "label": "Marques",
+        "view_brands": "Afficher toutes les marques"
+    },
+    "brands": {
+        "no_products": "Il n'y a aucun produit de cette marque."
+    },
+    "carousel": {
+        "active_dot_aria_label": "Actif",
+        "arrow_and_dot_aria_label": "Aller à la diapositive [SLIDE_NUMBER] sur [SLIDES_QUANTITY]",
+        "content_announce_message": "Vous êtes actuellement sur la diapositive [SLIDE_NUMBER] sur [SLIDES_QUANTITY]",
+        "play_pause_button_aria_pause": "Arrêter le carrousel",
+        "play_pause_button_aria_play": "Lancer le carrousel",
+        "play_pause_button_pause": "Pause",
+        "play_pause_button_play": "Lecture",
+        "slide_number": "Diapositive n° {slide_number}"
+    },
+    "cart": {
+        "added_to_cart": {
+            "continue_shopping": "Continuer mes achats",
+            "order_subtotal": "Sous-total de la commande",
+            "proceed_to_checkout": "Procéder au paiement",
+            "view_or_edit_cart": "Afficher ou modifier votre panier",
+            "what_next": "Ok, {num_products, plural, one {1 article a été ajouté} other {# articles ont été ajoutés}} à votre panier. Quelle est la prochaine étape ?",
+            "you_might_also_like": "Vous aimerez peut-être",
+            "your_cart_contains": "Votre panier contient {num_products, plural, one {1 article} other {# articles}}"
+        },
+        "checkout": {
+            "address": {
+                "multiple": "procéder au paiement avec plusieurs adresses",
+                "or": "ou"
+            },
+            "button": "Paiement",
+            "empty_cart": "Votre panier est vide",
+            "enter_code": "Code promotionnel / Chèque-cadeau",
+            "gift_wrapping": "Emballage cadeau",
+            "grand_total": "Total",
+            "item": "Article",
+            "price": "Prix",
+            "quantity": "Quantité",
+            "select": "Sélectionner",
+            "shipping": "Livraison",
+            "subtotal": "Sous-total",
+            "title": "Cliquez ici pour procéder au paiement",
+            "total": "Total",
+            "update": "Mettre à jour les frais de livraison"
+        },
+        "confirm_delete": "Voulez-vous vraiment supprimer cet article ?",
+        "continue_shopping": "Cliquez ici pour continuer vos achats",
+        "coupon_code": "Code promotionnel",
+        "coupons": {
+            "add_code": "Ajouter un code",
+            "add_coupon": "Ajouter un code promotionnel",
+            "apply_coupon": "Appliquer le code promotionnel",
+            "button": "Appliquer",
+            "cancel": "Annuler",
+            "code_label": "Code promotionnel ({code})",
+            "coupon_code": "Saisissez votre code promotionnel",
+            "empty_error": "Veuillez saisir votre code promotionnel.",
+            "remove": "Supprimer"
+        },
+        "discount": "Remise",
+        "freeshipping": "Livraison gratuite",
+        "gift_certificates": {
+            "add_cert_code": "Ajouter un chèque-cadeau",
+            "apply_gift_certificate": "Appliquer le chèque-cadeau",
+            "cert_code": "Saisissez le code de votre chèque-cadeau",
+            "change_gift_certificate": "Modifier {certificate_name}",
+            "code_label": "Chèque-cadeau ({code})",
+            "gift_certificate": "Chèque-cadeau",
+            "remove": "Supprimer"
+        },
+        "gift_wrapping": {
+            "add": "Ajouter",
+            "change": "Modifier",
+            "choose_how": "Veuillez indiquer comment vous souhaitez que cet article soit emballé.",
+            "choose_type": "Veuillez sélectionner un type d'emballage cadeau",
+            "gift_message": "Message à joindre au cadeau",
+            "item_multiple": "Article {index} - {name}",
+            "item_single": "Emballage cadeau - {name}",
+            "option_different": "Je souhaite que chaque article soit emballé séparément",
+            "option_same": "Je souhaite que chaque article soit emballé en utilisant les mêmes options d'emballage",
+            "preview": "Aperçu",
+            "remove": "Supprimer",
+            "remove_confirm": "Voulez-vous vraiment supprimer l'emballage cadeau pour cet article ?",
+            "title": "Emballage Cadeau"
+        },
+        "included_in_total": " Inclus dans le total",
+        "invalid_entry_message": "[ENTRY] n'est pas une saisie valide",
+        "is_empty": "Votre panier est vide",
+        "items": "{NUM, plural, =0{(aucun article)} one {(# article)} other {(# articles)}}",
+        "label": "Votre panier ({quantity, plural, one {# article} other {# articles}})",
+        "login_to_checkout": "Connectez-vous pour procéder au paiement",
+        "nav_aria_label": "Panier avec 0 article",
+        "preview": {
+            "checkout_multiple": "ou procéder au paiement avec plusieurs adresses",
+            "checkout_now": "Payer",
+            "view_cart": "Voir mon panier"
+        },
+        "reconfigure_product": "Configurer « {name} »",
+        "remove_file": "Supprimer ce fichier",
+        "remove_item": "Supprimer {name} du panier",
+        "shipping_estimator": {
+            "add_info": "Ajouter des informations",
+            "cancel": "Annuler",
+            "empty_country_error": "Le champ « Pays » ne peut pas être vide.",
+            "empty_province_error": "Le champ « État/Province » ne peut être vide.",
+            "estimate_shipping": "Estimer l'expédition",
+            "free_shipping": "Livraison gratuite",
+            "hide_ups_rates": "Masquer les tarifs UPS",
+            "select_a_country": "Pays",
+            "select_a_state": "État/Province",
+            "show_ups_rates": "Afficher les tarifs UPS",
+            "suburb_city": "Ville",
+            "zip_postal_code": "Code postal"
+        },
+        "shipping_peritem": "Par article expédié"
+    },
+    "categories": {
+        "no_products": "Cette catégorie ne contient aucun produit."
+    },
+    "category": {
+        "add_cart_announcement": "L'article a été ajouté",
+        "filter_price_range": "Fourchette de prix :",
+        "filter_reset_announcement": "Le filtre a été réinitialisé",
+        "filter_select_announcement": "Le filtre a été appliqué",
+        "label": "Catégories",
+        "product_label": "Produits filtrés",
+        "reset": "Réinitialiser",
+        "shop_by_price": "Rechercher par prix",
+        "shop_by_price_range_aria": "Prix compris entre {from} et {to}",
+        "view_all": {
+            "name": "Tous les {category}"
+        }
+    },
+    "checkout": {
+        "title": "Paiement"
+    },
+    "common": {
+        "account": "Compte",
+        "all": "Tout",
+        "and": "et",
+        "cancel": "Annuler",
+        "cart": "Panier",
+        "change": "Modifier",
+        "channel": "Boutique : {code}",
+        "channel_switch_warning": "Texte d'avertissement pour le changement de boutique",
+        "close": "Fermer",
+        "compare": "Comparer",
+        "currency": "Devise : {code}",
+        "currency_switch_promotion": "Les promotions et les chèques-cadeaux qui ne s'appliquent pas à la nouvelle devise seront supprimés de votre panier. Voulez-vous vraiment continuer ?",
+        "day": "Jour",
+        "delete": "Supprimer",
+        "edit": "Modifier",
+        "email_address": "Adresse e-mail",
+        "form_submit": "Envoyer",
+        "from": "De",
+        "generic_error": "Oups ! Une erreur s'est produite.",
+        "gift_cert": "Chèques-cadeaux",
+        "loading": "Chargement",
+        "login": "Se connecter",
+        "login_for_pricing": "Veuillez vous connecter pour connaître les tarifs",
+        "logout": "Déconnexion",
+        "month": "Mois",
+        "newsletter_signup": "Abonnez-vous à notre newsletter",
+        "next": "Suivant",
+        "no": "Non",
+        "no_preference": "Aucune préférence",
+        "not_applicable": "N/A",
+        "ok": "OK",
+        "optional": "Facultatif",
+        "or": "ou",
+        "other_details": "Autres informations",
+        "pagination": "pagination",
+        "paginator": {
+            "page_of": "Page {current} sur {total}"
+        },
+        "previous": "Précédent",
+        "prices_are_in": "Les prix sont en {CODE}",
+        "private": "Privé",
+        "public": "Publique",
+        "required": "Obligatoire",
+        "save": "Enregistrer",
+        "search": "Rechercher",
+        "share": "Partager",
+        "short_months": {
+            "1": "Janv.",
+            "10": "Oct.",
+            "11": "Nov.",
+            "12": "Déc.",
+            "2": "Févr.",
+            "3": "Mars",
+            "4": "Avr.",
+            "5": "Mai",
+            "6": "Juin",
+            "7": "Juill.",
+            "8": "Août",
+            "9": "Sept."
+        },
+        "sign_up": "S'abonner",
+        "sorter": {
+            "alpha_asc": "A à Z",
+            "alpha_desc": "Z à A",
+            "featured": "Articles en vedette",
+            "newest": "Nouveautés",
+            "price_asc": "Prix : par ordre croissant",
+            "price_desc": "Prix : par ordre décroissant",
+            "relevance": "Pertinence",
+            "reviews": "Par avis",
+            "sort_by": "Trier par :",
+            "top_sellers": "Meilleures ventes"
+        },
+        "store_credit": "Votre avoir disponible s'élève à <strong>{store_credit}</strong>. Pour l'utiliser, il vous suffit de passer votre commande en choisissant l'avoir comme mode de paiement au moment de régler la commande.",
+        "store_credit_overview": "{credit} d'avoir",
+        "to": "à",
+        "view_all": "Tout afficher",
+        "year": "Année",
+        "yes": "Oui"
+    },
+    "compare": {
+        "add_to_cart": "Ajouter au panier",
+        "button": "Comparer les produits",
+        "header": "Comparaison de {products, plural, one {# produit} other {# produits}}",
+        "no_compare": "Vous devez sélectionner au moins deux produits pour la comparaison",
+        "no_remove": "Vous devez sélectionner au moins 2 articles pour effectuer une comparaison.",
+        "remove": "Supprimer"
+    },
+    "consent_manager": {
+        "accept": "accepter",
+        "accept_all_cookies": "Accepter tous les cookies",
+        "advertising_category": "Publicité",
+        "advertising_purpose": "Permet de créer des profils ou de personnaliser le contenu afin d'améliorer votre expérience d'achat.",
+        "agree_on_data_collection": "En utilisant notre site Web, vous autorisez la collecte de données conformément à notre ",
+        "allow": "Autoriser",
+        "allow_category_tracking": "Autoriser le suivi de [CATEGORY_NAME]",
+        "analytics_category": "Statistiques",
+        "analytics_purpose": "Fournir des données statistiques sur l'utilisation du site, par exemple des analyses Web qui nous aideront à améliorer ce site Web en continu.",
+        "back_to_preferences": "Retour aux préférences",
+        "by_using": "En utilisant notre site Web, vous acceptez notre",
+        "cancel": "Annuler",
+        "cancel_dialog_title": "Voulez-vous vraiment annuler vos modifications ?",
+        "category": "Catégorie",
+        "change_preferences": "Vous pouvez modifier vos préférences à tout moment",
+        "close_without_changes": "Certaines modifications apportées à vos préférences en matière de collecte de données n'ont pas été enregistrées. Voulez-vous vraiment fermer sans enregistrer ?",
+        "data_categories_table": "Le tableau ci-dessous précise la manière dont nous utilisons ces données par catégorie. Pour désactiver une catégorie de collecte de données, sélectionnez «Non» et enregistrez vos préférences.",
+        "data_collection_preferences": "Préférences en matière de collecte de données sur le site Web",
+        "data_collection_warning": "Nous utilisons des cookies (et d'autres technologies similaires) pour recueillir des données afin d'améliorer votre expérience d'achat.",
+        "deny": "Refuser",
+        "disallow_category_tracking": "Interdire le suivi de [CATEGORY_NAME]",
+        "dismiss": "Ignorer",
+        "esential_purpose": "Indispensable au bon fonctionnement du site et des services demandés, mais n'exerce aucune fonction complémentaire ou secondaire.",
+        "essential_category": "Indispensable",
+        "functional_category": "Fonctionnel",
+        "functional_purpose": "Permet d'offrir des fonctionnalités avancées, telles que les vidéos et le chat en direct. Si vous refusez, les performances de l'ensemble ou d'une partie de ces fonctions risquent d'être affectées.",
+        "gdpr_settings": "Paramètres",
+        "manage_data_collection_preferences": "Gérer les préférences en matière de collecte de données sur le site Web",
+        "no": "Non",
+        "not_available": "N/A",
+        "privacy_policy": "Politique de confidentialité",
+        "purpose": "Objectif",
+        "reject_all": "Tout rejeter",
+        "save": "Enregistrer",
+        "targeting_category": "Ciblage",
+        "unsaved_changes": "Certaines de vos modifications n'ont pas été enregistrées",
+        "use_data_by_cookies": " utilise les données recueillies par les cookies et les bibliothèques JavaScript pour améliorer votre expérience d'achat.",
+        "yes": "Oui"
+    },
+    "create_account": {
+        "created": {
+            "continue": "Continuer mes achats",
+            "heading": "Votre compte a été créé",
+            "intro": "Nous vous remercions d'avoir créé un compte sur {store_name}. Les informations de votre compte ont été envoyées par e-mail à {email}."
+        },
+        "heading": "Nouveau compte",
+        "recaptcha_title": "reCAPTCHA Google"
+    },
+    "errors": {
+        "shipping_quote_failure": "Une erreur s'est produite lors de la récupération de votre devis de livraison",
+        "state_error": "Une erreur s'est produite lors de la récupération de : États/provinces"
+    },
+    "footer": {
+        "brands": "Marques populaires",
+        "call_us": "Appelez-nous au {phone_number}",
+        "categories": "Catégories",
+        "info": "Info",
+        "navigate": "Parcourir",
+        "powered_by": "Optimisé par",
+        "title": "Début du pied de page"
+    },
+    "forbidden": {
+        "if_you_were_signed_in": "Si vous étiez déjà connecté·e,",
+        "page_heading": "Désolé ! Veuillez vous connecter pour continuer",
+        "sign_in": "veuillez vous reconnecter",
+        "to_continue": "pour poursuivre votre travail dans une nouvelle session."
+    },
+    "forms": {
+        "address": {
+            "add": {
+                "description": "Utilisez le formulaire ci-dessous pour modifier votre adresse de livraison. Cliquez sur « Enregistrer l'adresse » lorsque vous avez terminé.",
+                "heading": "Ajouter une nouvelle adresse"
+            },
+            "confirm_delete": "Voulez-vraiment supprimer cette adresse ?",
+            "edit": {
+                "heading": "Mettre à jour l'adresse"
+            },
+            "submit_value": "Enregistrer l'adresse"
+        },
+        "contact_us": {
+            "company": "Nom de l'entreprise",
+            "email": "Adresse e-mail",
+            "full_name": "Nom complet",
+            "manual_captcha_instruction": "Veuillez répondre à la question ci-dessous à des fins de vérification supplémentaire.",
+            "order": "Numéro de commande",
+            "phone": "Numéro de téléphone",
+            "question": "Commentaires/Questions",
+            "rma": "Numéro Autorisation de retour de marchandise (RMA)",
+            "submit": "Envoyer le formulaire",
+            "successful": "Nous avons reçu vos commentaires et nous y répondrons sous peu si nécessaire. <a href=\"{shopPath}\">Continuer</a>."
+        },
+        "create_account": {
+            "submit_value": "Créer un compte"
+        },
+        "gift_certificate": {
+            "balance": {
+                "code": "Code du chèque-cadeau",
+                "submit_value": "Vérifier le solde"
+            },
+            "purchase": {
+                "agree": "Je comprends que les chèques-cadeaux expirent après {days, plural, one {1 jour} other {# jours}}",
+                "agree2": "Je reconnais que les chèques-cadeaux ne sont pas remboursables",
+                "amount": "Montant",
+                "custom_range": "(la valeur doit être comprise entre {min} et {max})",
+                "from_email": "Votre adresse e-mail",
+                "from_name": "Votre nom",
+                "message": "Message (facultatif)",
+                "preview": "Aperçu",
+                "preview_error": "Une erreur s'est produite lors du chargement de l'aperçu. Veuillez réessayer plus tard.",
+                "submit_value": "Ajouter un chèque-cadeau au panier",
+                "theme": "Thème du chèque-cadeau",
+                "to_email": "Adresse e-mail du destinataire",
+                "to_name": "Nom du destinataire"
+            }
+        },
+        "inbox": {
+            "clear_value": "Effacer",
+            "message": "Message",
+            "no_orders": "Lorsque vous aurez passé une commande, vous pourrez envoyer des messages depuis cette page.",
+            "order": "Commande :",
+            "order_display": "Commande n° {id} - passée le {date} pour un montant de {total}",
+            "send_message": "Envoyer un message",
+            "subject": "Objet",
+            "submit_value": "Envoyer un message"
+        },
+        "new_password": {
+            "heading": "Modifier le mot de passe",
+            "password": "Nouveau mot de passe",
+            "password2": "Confirmer le mot de passe",
+            "submit_value": "Continuer"
+        },
+        "payment_methods": {
+            "add": {
+                "heading": "Ajouter un mode de paiement"
+            },
+            "address1": "Ligne d'adresse 1",
+            "address2": "Ligne d'adresse 2",
+            "choose_country": "Choisir un pays",
+            "city": "Ville",
+            "company": "Nom de l'entreprise",
+            "confirm_delete": "Voulez-vous vraiment supprimer ce mode de paiement ?",
+            "country": "Pays",
+            "default_instrument": "Mode de paiement par défaut",
+            "edit": {
+                "heading": "Mettre à jour le mode de paiement"
+            },
+            "first_name": "Prénom",
+            "last_name": "Nom",
+            "phone": "Numéro de téléphone",
+            "postal_code": "Code postal",
+            "state": "État/Province",
+            "submit_value": "Enregistrer le mode de paiement"
+        },
+        "range": "Vous devez saisir des nombres compris entre {limitTo} et {limitFrom} uniquement",
+        "search": {
+            "brand": "Marques",
+            "by_price": "Rechercher par prix",
+            "by_setting": "Rechercher par paramètre",
+            "categories": "Catégories",
+            "did_you_mean": "Voulez-vous dire :",
+            "featured_products": {
+                "disabled": "Produits non en vedette uniquement",
+                "enabled": "Produits en vedette uniquement",
+                "title": "Produits en vedette"
+            },
+            "free_shipping": {
+                "free": "Livraison gratuite uniquement",
+                "paid": "Livraison payante uniquement",
+                "title": "Livraison gratuite"
+            },
+            "hide": "Masquer le formulaire de recherche",
+            "no_match": "ne correspond à aucun produit ou information.",
+            "price_range": "Fourchette de prix",
+            "query": "Rechercher un mot-clé",
+            "refine": "Affiner la recherche",
+            "search": "Rechercher",
+            "searchsubs": "Rechercher automatiquement dans les sous-catégories",
+            "show": "Afficher le formulaire de recherche",
+            "suggestions": {
+                "line1": "Assurez-vous que tous les mots sont orthographiés correctement.",
+                "line2": "Essayez des mots-clés différents.",
+                "line3": "Essayez des mots-clés plus communs.",
+                "title": "Suggestions :"
+            },
+            "title": "Recherche avancée",
+            "your_search_for": "Votre recherche pour"
+        },
+        "validate": {
+            "account": {
+                "edit": {
+                    "first_name": "Veuillez saisir un prénom.",
+                    "last_name": "Veuillez saisir un nom de famille.",
+                    "password": "Veuillez saisir votre mot de passe actuel.",
+                    "phone": "Veuillez saisir un numéro de téléphone."
+                },
+                "inbox": {
+                    "message": "Veuillez rédiger un message.",
+                    "order": "Veuillez sélectionner une commande.",
+                    "subject": "Veuillez saisir un objet."
+                },
+                "reorder": {
+                    "select_item": "Veuillez sélectionner un ou plusieurs articles que vous souhaitez commander à nouveau."
+                }
+            },
+            "common": {
+                "email_address": "Veuillez saisir une adresse e-mail valide, telle que utilisateur@exemple.com.",
+                "name": "Vous devez saisir votre nom.",
+                "password": "Veuillez saisir un mot de passe.",
+                "password_match": "Vos mots de passe ne correspondent pas."
+            },
+            "contact": {
+                "email_address": "Veuillez saisir une adresse e-mail valide, telle que utilisateur@exemple.com.",
+                "question": "Veuillez saisir votre question."
+            },
+            "gift": {
+                "agree_terms": "Vous devez accepter ces conditions.",
+                "cert_theme": "Vous devez sélectionner le thème du chèque-cadeau.",
+                "from_email": "Vous devez saisir une adresse e-mail valide.",
+                "from_name": "Vous devez saisir votre nom.",
+                "to_email": "Vous devez saisir une adresse e-mail de destinataire valide.",
+                "to_name": "Vous devez saisir un nom de destinataire valide."
+            },
+            "payment_method": {
+                "credit_card_number": "Vous devez saisir un numéro de carte bancaire valide.",
+                "cvv": "Vous devez saisir un cvv valide.",
+                "expiration": "Vous devez saisir une date d'expiration valide.",
+                "name_on_card": "Vous devez saisir un nom."
+            },
+            "reviews": {
+                "comment": "Le champ « Commentaires » ne peut pas être vide.",
+                "name": "Le champ « Nom » ne peut être vide.",
+                "rating": "Le champ « Note » ne peut pas être vide.",
+                "title": "Le champ « Objet de l'avis » ne peut pas être vide."
+            }
+        },
+        "wishlist": {
+            "name": "Nom de la liste d'envies :",
+            "public": "Partager la liste d'envies ?"
+        }
+    },
+    "gift_certificate": {
+        "balance": {
+            "heading": "Vérifier le solde du chèque-cadeau",
+            "intro": "Vous pouvez vérifier le solde d'un chèque-cadeau en saisissant le code dans la case ci-dessous."
+        },
+        "heading": "Chèques-cadeaux",
+        "purchase": {
+            "heading": "Acheter un chèque-cadeau"
+        },
+        "redeem": {
+            "heading": "Utiliser le chèque-cadeau",
+            "intro": "Pour utiliser un chèque-cadeau sur {store_name}, procédez comme suit.",
+            "item1": "Vous avez besoin de votre code unique, qui apparait sur le chèque-cadeau qui vous a été envoyé en pièce jointe par e-mail. Il se présente sous une forme similaire à Z50-Y6K-COS-402.",
+            "item2": "Parcourez la boutique et ajoutez des articles à votre panier normalement.",
+            "item3": "Cliquez sur le lien « <a href=\"{cart_url}\">Voir mon panier</a> » pour afficher le contenu de votre panier d'achat.",
+            "item4": "Saisissez le code de votre chèque-cadeau dans la case « Utiliser le chèque-cadeau », puis cliquez sur « Lancer »."
+        }
+    },
+    "header": {
+        "skip_to_main": "Passer au contenu principal",
+        "welcome_back": "Ravis de vous revoir, {name}"
+    },
+    "home": {
+        "heading": "Accueil"
+    },
+    "invoice": {
+        "code": "Code/SKU",
+        "comments": "Commentaires",
+        "digital": "Numérique",
+        "email": "E-mail : {email}",
+        "for_order": "Facture {name} de la commande n° {id}",
+        "fulfillment": "Distribution",
+        "order": "Commande :",
+        "order_date": "Date de commande :",
+        "order_items": "Articles de la commande",
+        "payment_method": "Mode de paiement :",
+        "phone": "Numéro de téléphone : {number}",
+        "pickup": "Retrait",
+        "price": "Prix",
+        "product_name": "Nom du produit",
+        "qty": "Qté",
+        "shipping": "Livraison",
+        "shipping_address": "Adresse de livraison",
+        "shipping_method": "Mode de livraison :",
+        "total": "Total"
+    },
+    "login": {
+        "field_email": "Adresse e-mail :",
+        "field_password": "Mot de passe :",
+        "forgot_password": "Mot de passe oublié ?",
+        "heading": "Se connecter",
+        "new_customer": {
+            "create_account": "Créer un compte",
+            "fact1": "Accélérer le processus de paiement",
+            "fact2": "Enregistrer plusieurs adresses de livraison",
+            "fact3": "Accéder à votre historique de commande",
+            "fact4": "Suivre les nouvelles commandes",
+            "fact5": "Enregistrer des articles dans votre liste d'envies",
+            "heading": "Nouveau client ?",
+            "intro": "Créez un compte sur notre site et vous pourrez :"
+        },
+        "submit_value": "Se connecter"
+    },
+    "maintenance": {
+        "down": "En maintenance"
+    },
+    "newsletter": {
+        "email_placeholder": "Votre adresse e-mail",
+        "subscribe": "Abonnez-vous à notre newsletter",
+        "subscribe_intro": "Recevez les dernières actualités sur les nouveaux produits et les promotions à venir",
+        "subscribe_submit": "S'abonner",
+        "subscribed_heading": "Merci pour votre abonnement !",
+        "subscribed_heading_error": "Oups...",
+        "subscribed_message": "Merci d'avoir rejoint notre liste de diffusion. Vous recevrez bientôt le prochain numéro de notre newsletter",
+        "unsubscribed_heading": "Vous êtes désabonné·e !",
+        "unsubscribed_message": "Vous ne recevrez plus de communications marketing de la part de <b>{store_name}</b>"
     },
     "page": {
         "label": "Liens rapides",
         "rss": {
-            "intro": "Les flux RSS sont utilisés pour syndiquer le contenu qui change souvent sur un site Web, y compris celui-ci. Vous pouvez ouvrir un flux RSS à l'aide d'un lecteur RSS et l'utiliser pour voir si du nouveau contenu est présent sur ce site. Vous pouvez également configurer un script côté serveur pour analyser le flux et l'afficher sur votre site Web.",
-            "heading": "Syndication RSS",
             "blog": {
                 "heading": "Articles de blog récents",
                 "intro": "Le flux d'articles récents contient les {limit} derniers articles publiés sur {store}.",
                 "rss": "{limit} derniers articles de blog (RSS)",
                 "rss_atom": "{limit} derniers articles de blog (Atom)"
             },
+            "heading": "Syndication RSS",
+            "intro": "Les flux RSS sont utilisés pour syndiquer le contenu qui change souvent sur un site Web, y compris celui-ci. Vous pouvez ouvrir un flux RSS à l'aide d'un lecteur RSS et l'utiliser pour voir si du nouveau contenu est présent sur ce site. Vous pouvez également configurer un script côté serveur pour analyser le flux et l'afficher sur votre site Web.",
             "products": {
+                "featured": {
+                    "heading": "Produits en vedette",
+                    "intro": "Le flux de produits en vedette contient les {limit} derniers produits en vedette sur {store}.",
+                    "rss": "{limit} derniers produits en vedette (RSS)",
+                    "rss_atom": "{limit} derniers produits en vedette (Atom)"
+                },
                 "new": {
                     "heading": "Nouveaux produits",
                     "intro": "Le flux de produits récents contient les {limit} derniers produits ajoutés à {store}.",
@@ -526,12 +790,6 @@
                     "intro": "Le flux de produits populaires contient les {limit} produits les plus populaires sur {store}, en fonction des notes attribuées par les utilisateurs.",
                     "rss": "{limit} derniers produits populaires (RSS)",
                     "rss_atom": "{limit} derniers produits populaires (Atom)"
-                },
-                "featured": {
-                    "heading": "Produits en vedette",
-                    "intro": "Le flux de produits en vedette contient les {limit} derniers produits en vedette sur {store}.",
-                    "rss": "{limit} derniers produits en vedette (RSS)",
-                    "rss_atom": "{limit} derniers produits en vedette (Atom)"
                 }
             },
             "search": {
@@ -541,207 +799,88 @@
             }
         }
     },
-    "forms": {
-        "range": "Vous devez saisir des nombres compris entre {limitTo} et {limitFrom} uniquement",
-        "contact_us": {
-            "full_name": "Nom complet",
-            "email": "Adresse e-mail",
-            "company": "Nom de l'entreprise",
-            "phone": "Numéro de téléphone",
-            "order": "Numéro de commande",
-            "rma": "Numéro Autorisation de retour de marchandise (RMA)",
-            "question": "Commentaires/Questions",
-            "submit": "Envoyer le formulaire",
-            "successful": "Nous avons reçu vos commentaires et nous y répondrons sous peu si nécessaire. <a href=\"{shopPath}\">Continuer</a>.",
-            "manual_captcha_instruction": "Veuillez répondre à la question ci-dessous à des fins de vérification supplémentaire."
-        },
-        "create_account": {
-            "submit_value": "Créer un compte"
-        },
-        "new_password": {
-            "heading": "Modifier le mot de passe",
-            "password": "Nouveau mot de passe",
-            "password2": "Confirmer le mot de passe",
-            "submit_value": "Continuer"
-        },
-        "address": {
-            "add": {
-                "heading": "Ajouter une nouvelle adresse",
-                "description": "Utilisez le formulaire ci-dessous pour modifier votre adresse de livraison. Cliquez sur « Enregistrer l'adresse » lorsque vous avez terminé."
-            },
-            "edit": {
-                "heading": "Mettre à jour l'adresse"
-            },
-            "confirm_delete": "Voulez-vraiment supprimer cette adresse ?",
-            "submit_value": "Enregistrer l'adresse"
-        },
-        "payment_methods": {
-            "add": {
-                "heading": "Ajouter un mode de paiement"
-            },
-            "edit": {
-                "heading": "Mettre à jour le mode de paiement"
-            },
-            "confirm_delete": "Voulez-vous vraiment supprimer ce mode de paiement ?",
-            "submit_value": "Enregistrer le mode de paiement",
-            "first_name": "Prénom",
-            "last_name": "Nom",
-            "company": "Nom de l'entreprise",
-            "phone": "Numéro de téléphone",
-            "address1": "Ligne d'adresse 1",
-            "address2": "Ligne d'adresse 2",
-            "city": "Ville",
-            "country": "Pays",
-            "state": "État/Province",
-            "postal_code": "Code postal",
-            "choose_country": "Choisir un pays",
-            "default_instrument": "Mode de paiement par défaut"
-        },
-        "gift_certificate": {
-            "purchase": {
-                "to_name": "Nom du destinataire",
-                "to_email": "Adresse e-mail du destinataire",
-                "from_name": "Votre nom",
-                "from_email": "Votre adresse e-mail",
-                "message": "Message (facultatif)",
-                "amount": "Montant",
-                "theme": "Thème du chèque-cadeau",
-                "custom_range": "(la valeur doit être comprise entre {min} et {max})",
-                "agree": "Je comprends que les chèques-cadeaux expirent après {days, plural, one {1 jour} other {# jours}}",
-                "agree2": "Je reconnais que les chèques-cadeaux ne sont pas remboursables",
-                "preview": "Aperçu",
-                "preview_error": "Une erreur s'est produite lors du chargement de l'aperçu. Veuillez réessayer plus tard.",
-                "submit_value": "Ajouter un chèque-cadeau au panier"
-            },
-            "balance": {
-                "code": "Code du chèque-cadeau",
-                "submit_value": "Vérifier le solde"
-            }
-        },
-        "inbox": {
-            "order": "Commande :",
-            "order_display": "Commande n° {id} - passée le {date} pour un montant de {total}",
-            "subject": "Objet",
-            "message": "Message",
-            "submit_value": "Envoyer un message",
-            "send_message": "Envoyer un message",
-            "clear_value": "Effacer",
-            "no_orders": "Lorsque vous aurez passé une commande, vous pourrez envoyer des messages depuis cette page."
-        },
-        "search": {
-            "query": "Rechercher un mot-clé",
-            "show": "Afficher le formulaire de recherche",
-            "hide": "Masquer le formulaire de recherche",
-            "title": "Recherche avancée",
-            "price_range": "Fourchette de prix",
-            "by_price": "Rechercher par prix",
-            "by_setting": "Rechercher par paramètre",
-            "search": "Rechercher",
-            "free_shipping": {
-                "title": "Livraison gratuite",
-                "free": "Livraison gratuite uniquement",
-                "paid": "Livraison payante uniquement"
-            },
-            "featured_products": {
-                "title": "Produits en vedette",
-                "enabled": "Produits en vedette uniquement",
-                "disabled": "Produits non en vedette uniquement"
-            },
-            "categories": "Catégories",
-            "did_you_mean": "Voulez-vous dire :",
-            "your_search_for": "Votre recherche pour",
-            "no_match": "ne correspond à aucun produit ou information.",
-            "suggestions": {
-                "title": "Suggestions :",
-                "line1": "Assurez-vous que tous les mots sont orthographiés correctement.",
-                "line2": "Essayez des mots-clés différents.",
-                "line3": "Essayez des mots-clés plus communs."
-            },
-            "refine": "Affiner la recherche",
-            "brand": "Marques",
-            "searchsubs": "Rechercher automatiquement dans les sous-catégories"
-        },
-        "wishlist": {
-            "name": "Nom de la liste d'envies :",
-            "public": "Partager la liste d'envies ?"
-        },
-        "validate": {
-            "account": {
-                "edit": {
-                    "password": "Veuillez saisir votre mot de passe actuel.",
-                    "first_name": "Veuillez saisir un prénom.",
-                    "last_name": "Veuillez saisir un nom de famille.",
-                    "phone": "Veuillez saisir un numéro de téléphone."
-                },
-                "reorder": {
-                    "select_item": "Veuillez sélectionner un ou plusieurs articles que vous souhaitez commander à nouveau."
-                },
-                "inbox": {
-                    "order": "Veuillez sélectionner une commande.",
-                    "subject": "Veuillez saisir un objet.",
-                    "message": "Veuillez rédiger un message."
-                }
-            },
-            "common": {
-                "name": "Vous devez saisir votre nom.",
-                "password": "Veuillez saisir un mot de passe.",
-                "password_match": "Vos mots de passe ne correspondent pas.",
-                "email_address": "Veuillez saisir une adresse e-mail valide, telle que utilisateur@exemple.com."
-            },
-            "contact": {
-                "email_address": "Veuillez saisir une adresse e-mail valide, telle que utilisateur@exemple.com.",
-                "question": "Veuillez saisir votre question."
-            },
-            "gift": {
-                "to_name": "Vous devez saisir un nom de destinataire valide.",
-                "to_email": "Vous devez saisir une adresse e-mail de destinataire valide.",
-                "from_name": "Vous devez saisir votre nom.",
-                "from_email": "Vous devez saisir une adresse e-mail valide.",
-                "cert_theme": "Vous devez sélectionner le thème du chèque-cadeau.",
-                "agree_terms": "Vous devez accepter ces conditions."
-            },
-            "payment_method": {
-                "credit_card_number": "Vous devez saisir un numéro de carte bancaire valide.",
-                "expiration": "Vous devez saisir une date d'expiration valide.",
-                "name_on_card": "Vous devez saisir un nom.",
-                "cvv": "Vous devez saisir un cvv valide."
-            },
-            "reviews": {
-                "rating": "Le champ « Note » ne peut pas être vide.",
-                "title": "Le champ « Objet de l'avis » ne peut pas être vide.",
-                "name": "Le champ « Nom » ne peut être vide.",
-                "comment": "Le champ « Commentaires » ne peut pas être vide."
-            }
-        }
+    "page_builder": {
+        "pdp-custom-fields-tab-label": "Informations supplémentaires",
+        "pdp-non-sale-price-label": "Ancien prix :",
+        "pdp-retail-price-label": "Prix de vente conseillé :",
+        "pdp-sale-price-label": "Maintenant :",
+        "pdp_sale_badge_label": "Remisé !",
+        "pdp_sold_out_label": "Épuisé"
+    },
+    "page_not_found": {
+        "message": "Oh non… Il semble que cette page ait été déplacée ou n'existe plus.",
+        "page_heading": "Erreur 404 - Page introuvable"
     },
     "products": {
-        "current_stock": "Stock actuel :",
-        "quantity": "Quantité :",
+        "add_to_cart": "Ajouter au panier",
+        "adding_to_cart": "Ajout au panier...",
+        "availability": "Disponibilité :",
+        "bulk_pricing": {
+            "fixed": "et ne payez que {discount} l'unité",
+            "instructions": "Vous trouverez ci-dessous les taux de remise sur quantité disponibles pour chaque article lorsque vous achetez une certaine quantité",
+            "modal_title": "Taux de remise sur quantité",
+            "percent": "et bénéficiez de {discount} de remise",
+            "price": "et bénéficiez de {discount} de remise",
+            "range": "Acheter {min} {max, plural, =0{ou plus} other {- #}}",
+            "title": "Prix avec remise sur quantité :",
+            "view": "Achetez en grande quantité et économisez"
+        },
+        "card_default_image_alt": "Image disponible bientôt",
         "change_product_options": "Modifier les options pour {name}",
-        "quantity_decrease": "Diminuer la quantité pour {name}",
-        "quantity_increase": "Augmenter la quantité pour {name}",
-        "quantity_error_message": "La quantité ne doit contenir que des chiffres",
-        "purchase_units": "{quantity, plural, =0{0 aucune unité} one {# unité} other {# unités}}",
-        "max_purchase_quantity": "Quantité maximale d'achat :",
-        "min_purchase_quantity": "Quantité minimale d'achat :",
-        "related_products": "Produits associés",
-        "top": "Produits les plus populaires",
-        "similar_by_views": "Les clients ont également consulté",
+        "choose_an_option": "Veuillez choisir une option",
+        "choose_options": "Choisir les options",
+        "compare": "Comparer",
+        "condition": "Condition :",
+        "current_stock": "Stock actuel :",
+        "depth": "Profondeur :",
+        "description": "Description",
+        "excluding_tax": "Hors taxes",
         "featured": "Produits en vedette",
         "file_option_set": "Actuellement : <a href=\"{url}\" target=\"_blank\">{name}</a>",
+        "filetypes": "les types de fichiers sont",
+        "gift_wrapping": "Emballage cadeau :",
+        "gift_wrapping_available": "Options disponibles",
+        "height": "Hauteur :",
+        "including_tax": "Toutes taxes comprises",
+        "kilobytes_abbreviation": "Ko",
+        "max_filesize": "La taille maximale de fichier est",
+        "max_purchase_quantity": "Quantité maximale d'achat :",
+        "measurement": {
+            "imperial": "pouces",
+            "metric": "cm"
+        },
+        "min_purchase_quantity": "Quantité minimale d'achat :",
         "new": "Nouveaux produits",
-        "warranty": "Informations sur la garantie",
+        "none": "Aucun",
+        "options": "Options",
+        "out_of_stock_default_message": "Épuisé",
+        "pre_order": "Précommander maintenant",
+        "price_with_tax": "({tax_label} incluse)",
+        "price_without_tax": "({tax_label} non comprise)",
+        "purchase_units": "{quantity, plural, =0{0 aucune unité} one {# unité} other {# unités}}",
+        "quantity": "Quantité :",
+        "quantity_decrease": "Diminuer la quantité pour {name}",
+        "quantity_error_message": "La quantité ne doit contenir que des chiffres",
+        "quantity_increase": "Augmenter la quantité pour {name}",
+        "quantity_max": "La quantité maximale pouvant être achetée est de {quantity}",
+        "quantity_min": "La quantité minimale pouvant être achetée est de {quantity}",
+        "quick_view": "Aperçu rapide",
+        "related_products": "Produits associés",
         "reviews": {
-            "hide": "Masquer les avis",
-            "new": "Rédiger un avis",
-            "show": "Afficher les avis",
-            "header": "{total, plural, =0{0 avis} one {# avis} other {# avis}}",
-            "link_to_review": "({total, plural, =0{Aucun avis pour le moment} one {# avis} other {# avis}})",
-            "post_on_by": "Publié par { name } le { date }",
-            "rating_label": "Note",
-            "select_rating": "Sélectionnez une note",
             "anonymous_poster": "inconnu",
-            "rating_aria_label": "La note du produit {rating_target} est de {current_rating} sur {max_rating}",
+            "form_write": {
+                "comments": "Commentaires",
+                "email": "E-mail",
+                "name": "Nom",
+                "subject": "Objet de l'avis",
+                "submit_value": "Envoyer l'avis"
+            },
+            "header": "{total, plural, =0{0 avis} one {# avis} other {# avis}}",
+            "hide": "Masquer les avis",
+            "link_to_review": "({total, plural, =0{Aucun avis pour le moment} one {# avis} other {# avis}})",
+            "new": "Rédiger un avis",
+            "no_reviews": "Aucun avis",
+            "post_on_by": "Publié par { name } le { date }",
             "rating": {
                 "1": "1 étoile (note la plus mauvaise)",
                 "2": "2 étoiles",
@@ -749,289 +888,150 @@
                 "4": "4 étoiles",
                 "5": "5 étoiles (meilleure note)"
             },
-            "write_a_review": "Rédiger un avis",
-            "no_reviews": "Aucun avis",
-            "form_write": {
-                "name": "Nom",
-                "email": "E-mail",
-                "subject": "Objet de l'avis",
-                "comments": "Commentaires",
-                "submit_value": "Envoyer l'avis"
-            }
+            "rating_aria_label": "La note du produit {rating_target} est de {current_rating} sur {max_rating}",
+            "rating_label": "Note",
+            "select_rating": "Sélectionnez une note",
+            "show": "Afficher les avis",
+            "write_a_review": "Rédiger un avis"
         },
+        "select_one": "Veuillez faire un choix",
+        "shipping": "Expédition :",
+        "shipping_calculated": "Calculés au moment du paiement",
+        "shipping_fixed": "{amount} (frais de livraison fixes)",
+        "shipping_free": "Livraison gratuite",
+        "similar_by_views": "Les clients ont également consulté",
+        "sku": "SKU :",
+        "sold_out": "Épuisé",
+        "swatch_option_announcement": "Vous avez sélectionné {swatch_name}",
+        "top": "Produits les plus populaires",
+        "upc": "CUP :",
         "videos": {
             "header": "Vidéos",
             "hide": "Masquer les vidéos",
             "show": "Afficher les vidéos"
         },
-        "add_to_cart": "Ajouter au panier",
-        "adding_to_cart": "Ajout au panier...",
-        "options": "Options",
-        "none": "Aucun",
-        "sku": "SKU :",
-        "upc": "CUP :",
-        "condition": "Condition :",
-        "availability": "Disponibilité :",
-        "swatch_option_announcement": "Vous avez sélectionné {swatch_name}",
-        "shipping": "Expédition :",
-        "shipping_fixed": "{amount} (frais de livraison fixes)",
-        "shipping_free": "Livraison gratuite",
-        "shipping_calculated": "Calculés au moment du paiement",
-        "sold_out": "Épuisé",
-        "out_of_stock_default_message": "Épuisé",
-        "pre_order": "Précommander maintenant",
-        "choose_options": "Choisir les options",
-        "quick_view": "Aperçu rapide",
-        "compare": "Comparer",
-        "max_filesize": "La taille maximale de fichier est",
-        "kilobytes_abbreviation": "Ko",
-        "filetypes": "les types de fichiers sont",
-        "choose_an_option": "Veuillez choisir une option",
-        "select_one": "Veuillez faire un choix",
-        "description": "Description",
-        "price_with_tax": "({tax_label} incluse)",
-        "price_without_tax": "({tax_label} non comprise)",
-        "including_tax": "Toutes taxes comprises",
-        "excluding_tax": "Hors taxes",
+        "warranty": "Informations sur la garantie",
         "weight": "Poids :",
         "width": "Largeur :",
-        "height": "Hauteur :",
-        "depth": "Profondeur :",
-        "measurement": {
-            "metric": "cm",
-            "imperial": "pouces"
-        },
-        "you_save_opening_text": "(Vous économisez",
         "you_save_closing_bracket": ")",
-        "gift_wrapping": "Emballage cadeau :",
-        "gift_wrapping_available": "Options disponibles",
-        "quantity_min": "La quantité minimale pouvant être achetée est de {quantity}",
-        "quantity_max": "La quantité maximale pouvant être achetée est de {quantity}",
-        "bulk_pricing": {
-            "title": "Prix avec remise sur quantité :",
-            "view": "Achetez en grande quantité et économisez",
-            "modal_title": "Taux de remise sur quantité",
-            "instructions": "Vous trouverez ci-dessous les taux de remise sur quantité disponibles pour chaque article lorsque vous achetez une certaine quantité",
-            "range": "Acheter {min} {max, plural, =0{ou plus} other {- #}}",
-            "percent": "et bénéficiez de {discount} de remise",
-            "price": "et bénéficiez de {discount} de remise",
-            "fixed": "et ne payez que {discount} l'unité"
-        },
-        "card_default_image_alt": "Image disponible bientôt"
+        "you_save_opening_text": "(Vous économisez"
     },
-    "invoice": {
-        "for_order": "Facture {name} de la commande n° {id}",
-        "phone": "Numéro de téléphone : {number}",
-        "email": "E-mail : {email}",
-        "order": "Commande :",
-        "payment_method": "Mode de paiement :",
-        "order_date": "Date de commande :",
-        "shipping_method": "Mode de livraison :",
-        "order_items": "Articles de la commande",
-        "qty": "Qté",
-        "code": "Code/SKU",
-        "shipping_address": "Adresse de livraison",
-        "fulfillment": "Distribution",
-        "digital": "Numérique",
-        "shipping": "Livraison",
-        "pickup": "Retrait",
-        "product_name": "Nom du produit",
-        "price": "Prix",
-        "total": "Total",
-        "comments": "Commentaires"
-    },
-    "newsletter": {
-        "subscribe": "Abonnez-vous à notre newsletter",
-        "subscribe_intro": "Recevez les dernières actualités sur les nouveaux produits et les promotions à venir",
-        "subscribe_submit": "S'abonner",
-        "email_placeholder": "Votre adresse e-mail",
-        "subscribed_heading": "Merci pour votre abonnement !",
-        "subscribed_heading_error": "Oups...",
-        "subscribed_message": "Merci d'avoir rejoint notre liste de diffusion. Vous recevrez bientôt le prochain numéro de notre newsletter",
-        "unsubscribed_heading": "Vous êtes désabonné·e !",
-        "unsubscribed_message": "Vous ne recevrez plus de communications marketing de la part de <b>{store_name}</b>"
-    },
-    "social": {
-        "connect": "Rejoignez-nous"
-    },
-    "errors": {
-        "shipping_quote_failure": "Une erreur s'est produite lors de la récupération de votre devis de livraison",
-        "state_error": "Une erreur s'est produite lors de la récupération de : États/provinces"
+    "reset_password": {
+        "heading": "Réinitialiser le mot de passe",
+        "intro": "Remplissez votre adresse e-mail ci-dessous pour demander un nouveau mot de passe. Un e-mail contenant un lien de vérification de votre adresse e-mail sera envoyé à l'adresse ci-dessous."
     },
     "search": {
+        "error": {
+            "empty_field": "Le champ de recherche ne peut être vide."
+        },
         "errorMessage": "Une erreur s'est produite lors de la récupération de vos résultats. Veuillez réessayer dans quelques secondes.",
+        "faceted": {
+            "browse-by": "Parcourir par",
+            "clear": "Effacer",
+            "hide-filters": "Masquer les filtres",
+            "label": "Le champ de texte suivant filtre les résultats au fur et à mesure de la saisie",
+            "more": "Plus",
+            "range": {
+                "max-description": "Saisir le prix maximum pour filtrer les produits par",
+                "max-placeholder": "Max.",
+                "min-description": "Saisir le prix minimum pour filtrer les produits par",
+                "min-placeholder": "Min.",
+                "update": "Mettre à jour"
+            },
+            "rating": {
+                "and-up": "et plus"
+            },
+            "selected": {
+                "clear-all": "Effacer tout",
+                "facet-label": "Filtres appliqués",
+                "no-filters": "Aucun filtre appliqué",
+                "rating-label": "Noté {rating, plural, one {# étoile} other {# étoiles}} ou plus",
+                "title": "Affiner par"
+            },
+            "show-filters": "Afficher les filtres",
+            "show-less": "Voir moins",
+            "show-more": "Voir plus",
+            "toggleSection": "Activer/désactiver la section de filtre {title}"
+        },
         "quick_search": {
             "input_label": "Rechercher",
             "input_placeholder": "Rechercher dans la boutique"
         },
         "results": {
-            "form_label": "Rechercher un mot-clé :",
-            "form_button_text": "Rechercher",
+            "content_count": "Actualités et informations ({count})",
             "count": "{ count, plural, one {# résultat} other {# résultats} } pour « { search_query } »",
-            "quick_count": "{ count, plural, one {# produit correspondant} other {# produits correspondants} } à « { search_query } »",
-            "quick_count_live": "produits correspondants à",
+            "form_button_text": "Rechercher",
+            "form_label": "Rechercher un mot-clé :",
             "product_count": "Produits ({count})",
-            "content_count": "Actualités et informations ({count})"
-        },
-        "faceted": {
-            "selected": {
-                "title": "Affiner par",
-                "facet-label": "Filtres appliqués",
-                "rating-label": "Noté {rating, plural, one {# étoile} other {# étoiles}} ou plus",
-                "no-filters": "Aucun filtre appliqué",
-                "clear-all": "Effacer tout"
-            },
-            "range": {
-                "update": "Mettre à jour",
-                "min-placeholder": "Min.",
-                "max-placeholder": "Max.",
-                "min-description": "Saisir le prix minimum pour filtrer les produits par",
-                "max-description": "Saisir le prix maximum pour filtrer les produits par"
-            },
-            "rating": {
-                "and-up": "et plus"
-            },
-            "label": "Le champ de texte suivant filtre les résultats au fur et à mesure de la saisie",
-            "toggleSection": "Activer/désactiver la section de filtre {title}",
-            "clear": "Effacer",
-            "more": "Plus",
-            "show-more": "Voir plus",
-            "show-less": "Voir moins",
-            "show-filters": "Afficher les filtres",
-            "hide-filters": "Masquer les filtres",
-            "browse-by": "Parcourir par"
-        },
-        "error": {
-            "empty_field": "Le champ de recherche ne peut être vide."
+            "quick_count": "{ count, plural, one {# produit correspondant} other {# produits correspondants} } à « { search_query } »",
+            "quick_count_live": "produits correspondants à"
         },
         "tabs_accesibility_hint": "Utilisez les flèches gauche et droite pour naviguer entre les onglets."
     },
-    "page_not_found": {
-        "page_heading": "Erreur 404 - Page introuvable",
-        "message": "Oh non… Il semble que cette page ait été déplacée ou n'existe plus."
-    },
     "server_error": {
-        "page_heading": "Une erreur s'est produite...",
-        "message": "La boutique n'est pas disponible pour l'instant, veuillez réessayer dans quelques minutes."
-    },
-    "forbidden": {
-        "page_heading": "Désolé ! Veuillez vous connecter pour continuer",
-        "if_you_were_signed_in": "Si vous étiez déjà connecté·e,",
-        "sign_in": "veuillez vous reconnecter",
-        "to_continue": "pour poursuivre votre travail dans une nouvelle session."
+        "message": "La boutique n'est pas disponible pour l'instant, veuillez réessayer dans quelques minutes.",
+        "page_heading": "Une erreur s'est produite..."
     },
     "sitemap": {
         "page_title": "Plan du site",
         "show_all_link": "Afficher tout"
     },
+    "social": {
+        "connect": "Rejoignez-nous"
+    },
     "text_truncate": {
-        "view_more": "Afficher plus de détails",
-        "view_less": "Masquer les détails"
+        "view_less": "Masquer les détails",
+        "view_more": "Afficher plus de détails"
     },
-    "maintenance": {
-        "down": "En maintenance"
-    },
-    "carousel": {
-        "arrow_and_dot_aria_label": "Aller à la diapositive [SLIDE_NUMBER] sur [SLIDES_QUANTITY]",
-        "active_dot_aria_label": "Actif",
-        "content_announce_message": "Vous êtes actuellement sur la diapositive [SLIDE_NUMBER] sur [SLIDES_QUANTITY]",
-        "play_pause_button_play": "Lecture",
-        "play_pause_button_pause": "Pause",
-        "play_pause_button_aria_play": "Lancer le carrousel",
-        "play_pause_button_aria_pause": "Arrêter le carrousel",
-        "slide_number": "Diapositive n° {slide_number}"
-    },
-    "validation_messages": {
-        "valid_email": "Vous devez saisir une adresse e-mail valide.",
-        "password": "Veuillez saisir un mot de passe.",
-        "password_match": "Vos mots de passe ne correspondent pas.",
-        "invalid_password": "Votre mot de passe doit comporter au moins 7 caractères et au moins un chiffre et une lettre.",
-        "field_not_blank": " le champ ne peut être vide.",
-        "certificate_amount": "Veuillez indiquer le montant du chèque cadeau.",
-        "certificate_amount_range": "Vous devez indiquer un montant compris entre [MIN] et [MAX] pour le chèque-cadeau",
-        "price_min_evaluation": "Le prix minimum doit être inférieur au prix maximum.",
-        "price_max_evaluation": "Le prix minimum doit être inférieur au prix maximum.",
-        "price_min_not_entered": "Veuillez saisir un prix minimum.",
-        "price_max_not_entered": "Veuillez saisir un prix maximum.",
-        "price_invalid_value": "La saisie doit être supérieure à 0.",
-        "invalid_gift_certificate": "Veuillez saisir un code de chèque-cadeau valide."
-    },
-    "validation_fallback_messages": {
-        "valid_email": "Vous devez saisir une adresse e-mail valide.",
-        "password": "Veuillez saisir un mot de passe.",
-        "password_match": "Vos mots de passe ne correspondent pas.",
-        "invalid_password": "Votre mot de passe doit comporter au moins 7 caractères et au moins un chiffre et une lettre.",
-        "field_not_blank": " le champ ne peut être vide.",
-        "certificate_amount": "Veuillez indiquer le montant du chèque cadeau.",
-        "certificate_amount_range": "Vous devez indiquer un montant compris entre [MIN] et [MAX] pour le chèque-cadeau",
-        "price_min_evaluation": "Le prix minimum doit être inférieur au prix maximum.",
-        "price_max_evaluation": "Le prix minimum doit être inférieur au prix maximum.",
-        "price_min_not_entered": "Veuillez saisir un prix minimum.",
-        "price_max_not_entered": "Veuillez saisir un prix maximum.",
-        "price_invalid_value": "La saisie doit être supérieure à 0.",
-        "invalid_gift_certificate": "Veuillez saisir un code de chèque-cadeau valide."
+    "unavailable": {
+        "hibernation_message": "Merci de votre visite. Notre boutique n'est pas disponible pour l'instant. Veuillez nous excuser pour ce désagrément.",
+        "hibernation_title": "Nous revenons bientôt",
+        "maintenance_message": "Cette boutique n'est actuellement pas disponible pour cause de maintenance. Elle devrait être à nouveau disponible sous peu. Veuillez nous excuser pour ce désagrément.",
+        "maintenance_title": "En maintenance"
     },
     "validation_default_messages": {
-        "valid_email": "Vous devez saisir une adresse e-mail valide.",
-        "password": "Veuillez saisir un mot de passe.",
-        "password_match": "Vos mots de passe ne correspondent pas.",
-        "invalid_password": "Votre mot de passe doit comporter au moins 7 caractères et au moins un chiffre et une lettre.",
-        "field_not_blank": "Le champ ne peut être vide.",
         "certificate_amount": "Veuillez indiquer le montant du chèque cadeau.",
         "certificate_amount_range": "Vous devez indiquer un montant compris entre [MIN] et [MAX] pour le chèque-cadeau",
-        "price_min_evaluation": "Le prix minimum doit être inférieur au prix maximum.",
-        "price_max_evaluation": "Le prix minimum doit être inférieur au prix maximum.",
-        "price_min_not_entered": "Veuillez saisir un prix minimum.",
-        "price_max_not_entered": "Veuillez saisir un prix maximum.",
+        "field_not_blank": "Le champ ne peut être vide.",
+        "invalid_gift_certificate": "Veuillez saisir un code de chèque-cadeau valide.",
+        "invalid_password": "Votre mot de passe doit comporter au moins 7 caractères et au moins un chiffre et une lettre.",
+        "password": "Veuillez saisir un mot de passe.",
+        "password_match": "Vos mots de passe ne correspondent pas.",
         "price_invalid_value": "La saisie doit être supérieure à 0.",
-        "invalid_gift_certificate": "Veuillez saisir un code de chèque-cadeau valide."
+        "price_max_evaluation": "Le prix minimum doit être inférieur au prix maximum.",
+        "price_max_not_entered": "Veuillez saisir un prix maximum.",
+        "price_min_evaluation": "Le prix minimum doit être inférieur au prix maximum.",
+        "price_min_not_entered": "Veuillez saisir un prix minimum.",
+        "valid_email": "Vous devez saisir une adresse e-mail valide."
     },
-    "page_builder": {
-        "pdp_sale_badge_label": "Remisé !",
-        "pdp_sold_out_label": "Épuisé",
-        "pdp-sale-price-label": "Maintenant :",
-        "pdp-non-sale-price-label": "Ancien prix :",
-        "pdp-retail-price-label": "Prix de vente conseillé :",
-        "pdp-custom-fields-tab-label": "Informations supplémentaires"
+    "validation_fallback_messages": {
+        "certificate_amount": "Veuillez indiquer le montant du chèque cadeau.",
+        "certificate_amount_range": "Vous devez indiquer un montant compris entre [MIN] et [MAX] pour le chèque-cadeau",
+        "field_not_blank": " le champ ne peut être vide.",
+        "invalid_gift_certificate": "Veuillez saisir un code de chèque-cadeau valide.",
+        "invalid_password": "Votre mot de passe doit comporter au moins 7 caractères et au moins un chiffre et une lettre.",
+        "password": "Veuillez saisir un mot de passe.",
+        "password_match": "Vos mots de passe ne correspondent pas.",
+        "price_invalid_value": "La saisie doit être supérieure à 0.",
+        "price_max_evaluation": "Le prix minimum doit être inférieur au prix maximum.",
+        "price_max_not_entered": "Veuillez saisir un prix maximum.",
+        "price_min_evaluation": "Le prix minimum doit être inférieur au prix maximum.",
+        "price_min_not_entered": "Veuillez saisir un prix minimum.",
+        "valid_email": "Vous devez saisir une adresse e-mail valide."
     },
-    "consent_manager": {
-        "data_collection_warning": "Nous utilisons des cookies (et d'autres technologies similaires) pour recueillir des données afin d'améliorer votre expérience d'achat.",
-        "accept_all_cookies": "Accepter tous les cookies",
-        "gdpr_settings": "Paramètres",
-        "data_collection_preferences": "Préférences en matière de collecte de données sur le site Web",
-        "manage_data_collection_preferences": "Gérer les préférences en matière de collecte de données sur le site Web",
-        "use_data_by_cookies": " utilise les données recueillies par les cookies et les bibliothèques JavaScript pour améliorer votre expérience d'achat.",
-        "data_categories_table": "Le tableau ci-dessous précise la manière dont nous utilisons ces données par catégorie. Pour désactiver une catégorie de collecte de données, sélectionnez «Non» et enregistrez vos préférences.",
-        "allow": "Autoriser",
-        "accept": "accepter",
-        "deny": "Refuser",
-        "dismiss": "Ignorer",
-        "reject_all": "Tout rejeter",
-        "category": "Catégorie",
-        "purpose": "Objectif",
-        "functional_category": "Fonctionnel",
-        "functional_purpose": "Permet d'offrir des fonctionnalités avancées, telles que les vidéos et le chat en direct. Si vous refusez, les performances de l'ensemble ou d'une partie de ces fonctions risquent d'être affectées.",
-        "analytics_category": "Statistiques",
-        "analytics_purpose": "Fournir des données statistiques sur l'utilisation du site, par exemple des analyses Web qui nous aideront à améliorer ce site Web en continu.",
-        "targeting_category": "Ciblage",
-        "advertising_category": "Publicité",
-        "advertising_purpose": "Permet de créer des profils ou de personnaliser le contenu afin d'améliorer votre expérience d'achat.",
-        "essential_category": "Indispensable",
-        "esential_purpose": "Indispensable au bon fonctionnement du site et des services demandés, mais n'exerce aucune fonction complémentaire ou secondaire.",
-        "yes": "Oui",
-        "no": "Non",
-        "not_available": "N/A",
-        "cancel": "Annuler",
-        "save": "Enregistrer",
-        "back_to_preferences": "Retour aux préférences",
-        "close_without_changes": "Certaines modifications apportées à vos préférences en matière de collecte de données n'ont pas été enregistrées. Voulez-vous vraiment fermer sans enregistrer ?",
-        "unsaved_changes": "Certaines de vos modifications n'ont pas été enregistrées",
-        "by_using": "En utilisant notre site Web, vous acceptez notre",
-        "agree_on_data_collection": "En utilisant notre site Web, vous autorisez la collecte de données conformément à notre ",
-        "change_preferences": "Vous pouvez modifier vos préférences à tout moment",
-        "cancel_dialog_title": "Voulez-vous vraiment annuler vos modifications ?",
-        "privacy_policy": "Politique de confidentialité",
-        "allow_category_tracking": "Autoriser le suivi de [CATEGORY_NAME]",
-        "disallow_category_tracking": "Interdire le suivi de [CATEGORY_NAME]"
+    "validation_messages": {
+        "certificate_amount": "Veuillez indiquer le montant du chèque cadeau.",
+        "certificate_amount_range": "Vous devez indiquer un montant compris entre [MIN] et [MAX] pour le chèque-cadeau",
+        "field_not_blank": " le champ ne peut être vide.",
+        "invalid_gift_certificate": "Veuillez saisir un code de chèque-cadeau valide.",
+        "invalid_password": "Votre mot de passe doit comporter au moins 7 caractères et au moins un chiffre et une lettre.",
+        "password": "Veuillez saisir un mot de passe.",
+        "password_match": "Vos mots de passe ne correspondent pas.",
+        "price_invalid_value": "La saisie doit être supérieure à 0.",
+        "price_max_evaluation": "Le prix minimum doit être inférieur au prix maximum.",
+        "price_max_not_entered": "Veuillez saisir un prix maximum.",
+        "price_min_evaluation": "Le prix minimum doit être inférieur au prix maximum.",
+        "price_min_not_entered": "Veuillez saisir un prix minimum.",
+        "valid_email": "Vous devez saisir une adresse e-mail valide."
     }
 }

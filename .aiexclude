@@ -1,0 +1,147 @@
+# .aiexclude - Files and directories AI assistants should ignore
+
+# Dependencies and package management
+node_modules/
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build outputs
+dist/
+build/
+assets/dist/
+*.bundle.js
+*.bundle.css
+*.min.js
+*.min.css
+*.map
+*.map.json
+
+# Auto-generated files
+assets/scss/tailwind.scss
+assets/icons/svg-symbols.svg
+
+# BigCommerce specific
+.stencil
+*.zip
+bundled/
+
+# Cache and temporary files
+.cache/
+.tmp/
+*.tmp
+*.temp
+*.cache
+*.log
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Test coverage
+coverage/
+.nyc_output/
+*.lcov
+
+# IDE and editor files
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+.project
+.classpath
+.settings/
+
+# Documentation builds
+docs/_build/
+docs/.vuepress/dist/
+
+# Large binary files
+*.jpg
+*.jpeg
+*.png
+*.gif
+*.ico
+*.webp
+*.svg
+*.mp4
+*.mov
+*.avi
+*.pdf
+*.zip
+*.tar
+*.gz
+*.rar
+
+# Backup files
+*.backup
+*.bak
+*.old
+backup/
+backups/
+
+# Environment and config files with secrets
+.env
+.env.*
+!.env.example
+secrets/
+credentials/
+
+# OS generated files
+Desktop.ini
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+
+# Third-party vendor files
+vendor/
+bower_components/
+
+# Large data files
+*.sql
+*.sqlite
+*.db
+data/dumps/
+
+# Compiled files
+*.pyc
+*.pyo
+*.dll
+*.so
+*.dylib
+
+# Other unnecessary files for AI context
+CHANGELOG.md
+CHANGELOG.txt
+LICENSE
+LICENSE.md
+LICENSE.txt
+CONTRIBUTORS.md
+SECURITY.md
+
+# Project-specific exclusions
+_Other/**/*.jpg
+_Other/**/*.png
+_Other/**/*.pdf
+assets/img/samples/
+lang/*.json
+!lang/en.json  # Keep English language file for reference
+
+# Keep these files (exceptions)
+!assets/js/
+!assets/scss/
+!templates/
+!config.json
+!schema.json
+!schemaTranslations.json
+!package.json
+!webpack.*.js
+!tailwind.config.js
+!.prettierrc*
+!.eslintrc*
+!.stylelintrc*
+!jest.config.js
+!AGENTS.md
+!CLAUDE.md
+!README.md

@@ -1,13 +1,127 @@
+# Build Output
+.astro
+.astro/
+.bundle
+.output/
+.venv
+.yarnclean
+*.js.map
+*.zip
+/dist
+assets/dist
+assets/js/bundle.js
+dev-dist/
+dist
+dist-ssr
+dist/
+public
+public/
+vendor/bundle
+yarn.lock
+
+**/*.js.gz
+**/*.css.gz
+**/*.map
+report.html
+assets/dist/**/*.js.gz
+assets/dist/**/*.css.gz
+assets/dist/**/*.map
+assets/dist/report.html
+
+
+# Compiled Files
+/site/assets/css/style.css
+/site/assets/css/style.min.css
+/site/static/js/index.min.js
+/site/static/js/index.min.js.map
+/site/static/js/plugin.cjs
+/site/static/js/plugin.js
+/site/static/js/tw-elements.umd.min.js
+/site/static/js/tw-elements.umd.min.js.map
+
+# Demo
+/dist-demo
+
+# Dependencies
+/mdb
+node_modules
 node_modules/
+
+# Editor Directories and Files
+*.njsproj
+*.ntvs*
+*.sln
+*.suo
+*.sw?
+
+# Environment Variables
+.env
+.env.local
+.env.production
+*.local
+
+# Hugo Default Output Directory
+/site/public
+/site/resources
+
+# Logs
+*.log
+lerna-debug.log*
+logs
+npm-debug.log
+npm-debug.log*
+pnpm-debug.log*
+yarn-debug.log*
+yarn-error.log
+yarn-error.log*
+
+# MacOS-Specific Files
+.DS_Store
+/site/.DS_Store
+
+# Misc.
+.dev*
+/test/coverage/*
+
+# Nerden's Misc.
+.idea
+.idea/
+*.cache
+assets/css-artifacts
+gemini-questions.txt
+icon.d.ts
+stencil-steps.txt
+stencil-steps.yml
+temp.js
+temp.scss
+z-notes.txt
+
+# Production
+/site/te-starter.zip
+/site/twe-starter.zip
+
+# Stencil
 .stencil
 config.stencil.json
 secrets.stencil.json
-.DS_Store
-assets/css-artifacts
-assets/js/bundle.js
-assets/dist
-vendor/bundle
-.bundle
-*.js.map
-*.zip
-.idea/
+
+# Validators
+hint-report
+megalinter-reports/
+newreport.html
+report.html
+validation-report.txt
+
+# VS Code
+*.code-workspace
+LuxWatches-Stencil.code-workspace
+
+# Windows OS Files
+/site/$RECYCLE.BIN/
+/site/Desktop.ini
+/site/ehthumbs.db
+/site/Thumbs.db
+desktop.ini
+
+_temp-claude-images/spec-page-mobile-layout-problem.png
+_temp

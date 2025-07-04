@@ -1,0 +1,33 @@
+{
+    "compilerOptions": {
+        "allowJs": true,
+        "allowSyntheticDefaultImports": true,
+        "baseUrl": "./",
+        "checkJs": false,
+        "esModuleInterop": true,
+        "forceConsistentCasingInFileNames": true,
+        "jsx": "react",
+        "lib": ["es2015", "dom", "dom.iterable"],
+        "module": "commonjs",
+        "moduleResolution": "node",
+        "noEmit": true,
+        "paths": {
+            "@/*": ["assets/js/*"],
+            "@common/*": ["assets/js/theme/common/*"],
+            "@components/*": ["assets/js/theme/components/*"],
+            "@global/*": ["assets/js/theme/global/*"],
+            "@nerden/*": ["assets/js/theme/nerden/*"],
+            "@theme/*": ["assets/js/theme/*"]
+        },
+        "resolveJsonModule": true,
+        "skipLibCheck": true,
+        "target": "es2015"
+    },
+    "exclude": [
+        "node_modules",
+        "assets/dist/theme-bundle.main.js",
+        "assets/dist/theme-bundle.chunk.*",
+        "assets/dist/report.html"
+    ],
+    "include": ["assets/js/**/*", "assets/dist/**/*"]
+}

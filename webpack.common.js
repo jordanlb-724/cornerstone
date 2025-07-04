@@ -1,3 +1,4 @@
+/* eslint-disable */
 const BundleAnalyzerPlugin = require('webpack-bundle-analyzer').BundleAnalyzerPlugin,
     { CleanWebpackPlugin } = require('clean-webpack-plugin'),
     LodashPlugin = require('lodash-webpack-plugin'),
@@ -28,21 +29,24 @@ module.exports = {
                             'lodash', // Tree-shake lodash
                         ],
                         presets: [
-                            ['@babel/preset-env', {
-                                loose: true, // Enable "loose" transformations for any plugins in this preset that allow them
-                                modules: false, // Don't transform modules; needed for tree-shaking
-                                useBuiltIns: 'entry',
-                                corejs: '^3.6.5',
-                            }],
+                            [
+                                '@babel/preset-env',
+                                {
+                                    loose: true, // Enable "loose" transformations for any plugins in this preset that allow them
+                                    modules: false, // Don't transform modules; needed for tree-shaking
+                                    useBuiltIns: 'entry',
+                                    corejs: '^3.6.5',
+                                },
+                            ],
                         ],
                     },
                 },
             },
             {
-                test: require.resolve("jquery"),
-                loader: "expose-loader",
+                test: require.resolve('jquery'),
+                loader: 'expose-loader',
                 options: {
-                  exposes: ["$"],
+                    exposes: ['$'],
                 },
             },
         ],
@@ -64,9 +68,10 @@ module.exports = {
             watch: false,
         }),
         new LodashPlugin(), // Complements babel-plugin-lodash by shrinking its cherry-picked builds further.
-        new webpack.ProvidePlugin({ // Provide jquery automatically without explicit import
-            $: 'jquery',
-            jQuery: 'jquery',
+        new webpack.ProvidePlugin({
+            // Provide jquery automatically without explicit import
+            '$': 'jquery',
+            'jQuery': 'jquery',
             'window.jQuery': 'jquery',
         }),
         new BundleAnalyzerPlugin({
@@ -75,11 +80,11 @@ module.exports = {
         }),
     ],
     resolve: {
-        fallback:  { "url": require.resolve("url/") },
+        fallback: { url: require.resolve('url/') },
         alias: {
-            jquery: path.resolve(__dirname, 'node_modules/jquery/dist/jquery.min.js'),
-            jstree: path.resolve(__dirname, 'node_modules/jstree/dist/jstree.min.js'),
-            lazysizes: path.resolve(__dirname, 'node_modules/lazysizes/lazysizes.min.js'),
+            'jquery': path.resolve(__dirname, 'node_modules/jquery/dist/jquery.min.js'),
+            'jstree': path.resolve(__dirname, 'node_modules/jstree/dist/jstree.min.js'),
+            'lazysizes': path.resolve(__dirname, 'node_modules/lazysizes/lazysizes.min.js'),
             'slick-carousel': path.resolve(__dirname, 'node_modules/slick-carousel/slick/slick.min.js'),
             'svg-injector': path.resolve(__dirname, 'node_modules/svg-injector/dist/svg-injector.min.js'),
         },

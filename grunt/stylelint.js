@@ -1,12 +1,12 @@
 module.exports = {
     options: {
         configFile: '.stylelintrc',
+        failOnError: true,
+        fix: false,
         formatter: 'string',
         ignoreDisables: false,
-        failOnError: true,
         outputFile: '',
         reportNeedlessDisables: false,
-        fix: false,
         syntax: '',
     },
     src: [
@@ -16,4 +16,3 @@ module.exports = {
         '!assets/scss/maintenance.scss',
     ],
 };
-

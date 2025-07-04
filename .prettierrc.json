@@ -1,0 +1,196 @@
+{
+    "arrowParens": "always",
+    "attributeGroups": [
+        "$CLASS",
+        "^(id|name)$",
+        "$FOR",
+        "$SRC",
+        "$TYPE",
+        "$VALUE",
+        "data-min",
+        "data-max",
+        "data-min-formatted",
+        "data-max-formatted",
+        "$HREF",
+        "$TITLE",
+        "$ALT",
+        "data-src",
+        "$ROLE",
+        "$TARGET",
+        "$REL",
+        "width",
+        "height",
+        "data-mdb-img",
+        "data-sizes",
+        "loading",
+        "decoding",
+        "class",
+        "id",
+        "for",
+        "name",
+        "type",
+        "value",
+        "data-min",
+        "data-max",
+        "data-min-formatted",
+        "data-max-formatted",
+        "href",
+        "src",
+        "title",
+        "role",
+        "target",
+        "rel",
+        "alt",
+        "data-mdb-img",
+        "data-sizes",
+        "width",
+        "height",
+        "loading",
+        "data-product-attribute-value"
+    ],
+    "attributeSort": "ASC",
+    "bracketSameLine": true,
+    "bracketSpacing": true,
+    "embeddedLanguageFormatting": "auto",
+    "endOfLine": "lf",
+    "experimentalOperatorPosition": "end",
+    "experimentalTernaries": false,
+    "htmlWhitespaceSensitivity": "css",
+    "insertPragma": false,
+    "jsonRecursiveSort": true,
+    "jsxSingleQuote": false,
+    "objectWrap": "preserve",
+    "organizeImportsSkipDestructiveCodeActions": true,
+    "overrides": [
+        {
+            "files": "**/*.{js,mjs,cjs}",
+            "options": {
+                "bracketSpacing": true,
+                "embeddedLanguageFormatting": "off",
+                "experimentalTernaries": true,
+                "jsxSingleQuote": true,
+                "parser": "meriyah",
+                "quoteProps": "consistent",
+                "singleAttributePerLine": true,
+                "tabWidth": 4
+            }
+        },
+        {
+            "files": "**/*.{jsx,tsx,ts}",
+            "options": {
+                "bracketSpacing": true,
+                "embeddedLanguageFormatting": "off",
+                "experimentalTernaries": true,
+                "jsxSingleQuote": true,
+                "parser": "babel-ts",
+                "quoteProps": "consistent",
+                "singleAttributePerLine": true,
+                "tabWidth": 4
+            }
+        },
+        {
+            "files": "**/*.{handlebars,hbs}",
+            "options": {
+                "embeddedLanguageFormatting": "off",
+                "htmlWhitespaceSensitivity": "ignore",
+                "parser": "html",
+                "printWidth": 2000,
+                "singleAttributePerLine": true,
+                "tabWidth": 4
+            }
+        },
+        {
+            "files": "*.html",
+            "options": {
+                "embeddedLanguageFormatting": "off",
+                "htmlWhitespaceSensitivity": "ignore",
+                "parser": "html",
+                "printWidth": 2000,
+                "singleAttributePerLine": true,
+                "singleQuote": false,
+                "tabWidth": 4
+            }
+        },
+        {
+            "files": "*.md",
+            "options": {
+                "embeddedLanguageFormatting": "auto",
+                "htmlWhitespaceSensitivity": "ignore",
+                "jsxSingleQuote": true,
+                "parser": "markdown",
+                "tabWidth": 4,
+                "vueIndentScriptAndStyle": false
+            }
+        },
+        {
+            "files": "*.mdx",
+            "options": {
+                "embeddedLanguageFormatting": "auto",
+                "htmlWhitespaceSensitivity": "css",
+                "jsxSingleQuote": true,
+                "parser": "mdx",
+                "tabWidth": 4,
+                "vueIndentScriptAndStyle": true
+            }
+        },
+        {
+            "files": "**/*.{css,less,sass,scss}",
+            "options": {
+                "parser": "scss",
+                "printWidth": 200,
+                "tabWidth": 4
+            }
+        },
+        {
+            "files": "**/*.{json,jsonc,iml.json,.jsbeautifyrc}",
+            "options": {
+                "parser": "json",
+                "tabWidth": 4,
+                "trailingComma": "none"
+            }
+        },
+        {
+            "files": "**/*.{yaml,yml}",
+            "options": {
+                "parser": "yaml",
+                "tabWidth": 2
+            }
+        },
+        {
+            "files": ["*.astro"],
+            "options": {
+                "parser": "astro",
+                "tabWidth": 4
+            }
+        },
+        {
+            "files": ["*.vue"],
+            "options": {
+                "bracketSameLine": false,
+                "parser": "vue",
+                "printWidth": 80,
+                "singleQuote": false,
+                "tabWidth": 2,
+                "vueIndentScriptAndStyle": false
+            }
+        }
+    ],
+    "plugins": [
+        "prettier-plugin-sort-json",
+        "prettier-plugin-organize-attributes",
+        "prettier-plugin-organize-imports",
+        "prettier-plugin-tailwindcss-extra-plus",
+        "prettier-plugin-tailwindcss"
+    ],
+    "printWidth": 120,
+    "proseWrap": "preserve",
+    "quoteProps": "as-needed",
+    "requirePragma": false,
+    "semi": true,
+    "singleAttributePerLine": false,
+    "singleQuote": true,
+    "tabWidth": 4,
+    "trailingComma": "all",
+    "useTabs": false,
+    "vueIndentScriptAndStyle": true
+}

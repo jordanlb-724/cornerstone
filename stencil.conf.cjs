@@ -1,3 +1,4 @@
+/* eslint-disable */
 var webpack = require('webpack');
 
 /**
@@ -6,18 +7,10 @@ var webpack = require('webpack');
  */
 var watchOptions = {
     // If files in these directories change, reload the page.
-    files: [
-        '/templates',
-        '/lang',
-    ],
+    files: ['/templates', '/lang'],
 
     //Do not watch files in these directories
-    ignored: [
-        '/assets/scss',
-        '/assets/less',
-        '/assets/css',
-        '/assets/dist',
-    ]
+    ignored: ['/assets/scss', '/assets/less', '/assets/css', '/assets/dist'],
 };
 
 /**
@@ -73,7 +66,7 @@ function production() {
 
 if (process.send) {
     // running as a forked worker
-    process.on('message', message => {
+    process.on('message', (message) => {
         if (message === 'development') {
             development();
         }

@@ -1,3 +1,4 @@
+/* eslint-disable */
 // Mimics ProvidePlugin configuration for jQuery
 global.$ = global.jQuery = window.jQuery = require('jquery');
 
@@ -7,7 +8,7 @@ document.getElementsByTagName('head')[0].appendChild(document.createElement('scr
 // jQuery thinks all elements are not visible under jsdom
 // See https://github.com/jsdom/jsdom/issues/1048
 window.Element.prototype.getClientRects = function () {
-    var node = this;
+    let node = this;
     while (node) {
         if (node === document) {
             break;
@@ -18,5 +19,5 @@ window.Element.prototype.getClientRects = function () {
         }
         node = node.parentNode;
     }
-    return [{ width: this.offsetWidth, height: this.offsetHeight }];
+    return [{ height: this.offsetHeight, width: this.offsetWidth }];
 };
